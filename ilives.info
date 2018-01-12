@@ -42,6 +42,9 @@ stylesheets[all][] = css/app.css
 ;stylesheets[all][] = donteverloadmeagain.css
 
 ;-------------- JS -------------
+;scripts[] = bower_components/jquery/dist/jquery.js
+scripts[] = bower_components/what-input/dist/what-input.js
+scripts[] = bower_components/foundation-sites/dist/js/foundation.js
 scripts[] = js/app.js
 
 ;-------------- Default Mothership Settings  -------------

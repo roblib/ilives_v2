@@ -41,11 +41,8 @@
   }
 ?>
 <?php print $page_bottom; //stuff from modules always render last ?>
-    <script src="sites/all/themes/ilives/bower_components/jquery/dist/jquery.js"></script>
-    <script src="sites/all/themes/ilives/bower_components/what-input/dist/what-input.js"></script>
-    <script src="sites/all/themes/ilives/bower_components/foundation-sites/dist/js/foundation.js"></script>
 <script>
-      $(document).foundation();
+      jQuery(document).foundation();
 </script>
 
 
