@@ -9,6 +9,32 @@ var sassPaths = [
     'bower_components/motion-ui/src',
 ];
 
+gulp.task('bsRemote', ['sass'], function() {
+    var REGEX = new RegExp('http.*themes\/ilives\/((css)|(js))', 'g');
+    browserSync.init({
+        proxy: 'http://islandlives.hp1.islandarchives.ca',
+        serveStatic: ['css', 'js'],
+        injectChanges: true,
+        files: ['css/app.css', 'js/app.js'],
+        rewriteRules: [{
+
+                        match: REGEX,
+            fn: function(matched) {
+                                return ''
+
+            }
+
+        }]
+
+    });
+    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('js/app.js').on('change', browserSync.reload);
+});
+
+
+
+
+
 gulp.task('bsLocal', ['sass'], function() {
     browserSync.init({
         proxy: 'drupal7.dev',
@@ -33,4 +59,4 @@ gulp.task('sass', function() {
 });
 
 
-gulp.task('default', ['bsLocal']);
+gulp.task('default', ['bsRemote']);
