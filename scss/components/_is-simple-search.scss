@@ -9,6 +9,7 @@
         @extend .input-group-field;
     }
     &__button {
+        @extend .button;
         @extend .input-group-button;
     }
 }
