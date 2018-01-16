@@ -1,0 +1,27 @@
+//@format
+
+.islandora-simple-search,
+%islandora-simple-search {
+    &__wrapper {
+        @extend .input-group;
+    }
+    &__text {
+        @extend .input-group-field;
+    }
+    &__button {
+        @extend .input-group-button;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.islandora-simple-search .form-wrapper {
+    @extend %islandora-simple-search__wrapper;
+}
+.islandora-simple-search input[type='text'] {
+    @extend %islandora-simple-search__text;
+}
+.islandora-simple-search input[type='submit'] {
+    @extend %islandora-simple-search__button;
+}
