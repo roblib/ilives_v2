@@ -44,7 +44,8 @@ stylesheets[all][] = css/app.css
 
 ;-------------- JS -------------
 ;scripts[] = bower_components/jquery/dist/jquery.js
-scripts[] = bower_components/what-input/dist/what-input.js
+;scripts[] = bower_components/what-input/dist/what-input.js
+scripts[] = node_modules/what-input/dist/what-input.min.js
 scripts[] = bower_components/foundation-sites/dist/js/foundation.js
 scripts[] = lib/fontawesome/svg-with-js/js/fontawesome-all.js
 scripts[] = js/app.js
