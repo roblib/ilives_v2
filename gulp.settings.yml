@@ -6,11 +6,12 @@ REGEX: 'http.*themes\/ilives\/((css)|(js))'
 
 PORT: 8000
 
-PATHS: sass_includes:
+PATHS:
+    sass_includes:
     # Paths to Sass libraries, which can then be loaded with @import
-        - 'bower_components/normalize.scss/sass' -
-          'bower_components/foundation-sites/scss' -
-          'bower_components/motion-ui/src'
+        #- 'bower_components/normalize.scss/sass'
+        - 'node_modules/foundation-sites/scss'
+        - 'node_modules/foundation-sites/node_modules/motion-ui/src'
 
     localAssets:
     # directories to be made available to BrowserSync proxy
