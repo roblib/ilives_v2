@@ -43,7 +43,7 @@ stylesheets[all][] = css/app.css
 ;stylesheets[all][] = donteverloadmeagain.css
 
 ;-------------- JS -------------
-scripts[] = node_modules/what-input/dist/what-input.min.js
+scripts[] = node_modules/foundation-sites/node_modules/what-input/dist/what-input.min.js
 scripts[] = node_modules/foundation-sites/dist/js/foundation.min.js
 scripts[] = lib/fontawesome/svg-with-js/js/fontawesome-all.js
 scripts[] = js/app.js
