@@ -6,15 +6,14 @@ REGEX: 'http.*themes\/ilives\/((css)|(js))'
 
 PORT: 8000
 
-PATHS:
+PATHS: sass_includes:
     # Paths to Sass libraries, which can then be loaded with @import
-    sass_includes:
-        - 'bower_components/normalize.scss/sass'
-        - 'bower_components/foundation-sites/scss'
-        - 'bower_components/motion-ui/src'
+        - 'bower_components/normalize.scss/sass' -
+          'bower_components/foundation-sites/scss' -
+          'bower_components/motion-ui/src'
 
-    # directories to be made available to BrowserSync proxy
     localAssets:
+    # directories to be made available to BrowserSync proxy
         - 'css'
         - 'js'
         - 'mockups'
@@ -22,21 +21,20 @@ PATHS:
         - 'lib'
         - 'images'
 
+    images: 
     #Browsersync can watch your files as you work. 
     #Changes you make will either be injected into the page (CSS & images)
     #or will cause all browsers to do a full-page refresh.
-    images: 
         source: 'img-src/*'
         destination: 'images'
 
     mainFiles:
         - 'css/app.css'
         - 'js/app.js'
-          
+
     sassWatch: 'scss/**/*.scss'
 
-    # just watch these for changes and reload browser (no processing)
     reloadFiles:
+    # just watch these for changes and reload browser (no processing)
         - 'js/app.js'
         - 'mockups/*.html'
-          
