@@ -41,9 +41,11 @@
   }
 ?>
 <?php print $page_bottom; //stuff from modules always render last ?>
-<script>
-      jQuery(document).foundation();
-</script>
+  <script>
+      (function ($, Drupal, window, document, undefined) {
+            $(document).foundation();
+          })(jQuery, Drupal, this, this.document);
+    </script>
 
 
 </body>
