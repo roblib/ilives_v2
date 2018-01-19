@@ -1,3 +1,47 @@
+//@format
+%top-bar-left,
+%top-bar-right {
+    flex: 0 0 auto;
+}
+
 header {
-    //@include top-bar-container();
+    @include top-bar-container();
+    .left {
+        display: flex;
+        @extend %top-bar-left;
+    }
+    .right {
+        @extend %top-bar-right;
+        @include flex-align(null, middle);
+    }
+    .branding-top {
+        display: flex;
+        @include flex-align(null, middle);
+    }
+    .main-menu {
+        display: flex;
+        @include flex-align(null, middle);
+    }
+    .is-search {
+        margin: 0;
+        display: flex;
+        @include flex-align(null, middle);
+    }
+}
+.header-region {
+    @extend %top-bar-right;
+    display: flex;
+}
+.siteinfo {
+    display: flex;
+    @include flex-align(null, middle);
+    flex: 0 0 auto;
+    h1 {
+        color: $white;
+        margin: 0;
+    }
+    figure {
+        width: 30px;
+        margin-right: $global-margin/2;
+    }
 }
