@@ -3,6 +3,14 @@
   Preprocess
 */
 
+
+function ilives_menu_tree__main_menu($variables){
+  return '<ul class="your-custom-class" id="your-custom-id">' . $variables['tree'] . '</ul>';
+}
+
+
+
+
 /*
 function NEWTHEME_preprocess_html(&$vars) {
   //  kpr($vars['content']);
