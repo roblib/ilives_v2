@@ -6,12 +6,7 @@
 //kill of the <ul class="menu" around the menues
 //we already have the menu-block-wrapper that adds a <nav tag
 function ilives_menu_tree($variables) {
-    knt($variables);
-  if(theme_get_setting('mothership_classes_menu_wrapper')){
-    return '<ul>' . $variables['tree'] . '</ul>';
-  }else{
     return '<ul class="menu">' . $variables['tree'] . '</ul>';
-  }
 }
 /*
 function NEWTHEME_preprocess_html(&$vars) {
