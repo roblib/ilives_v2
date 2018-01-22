@@ -4,6 +4,7 @@
 %islandora-simple-search {
     &__wrapper {
         @extend .input-group;
+        margin-bottom: 0;
     }
     &__text {
         @extend .input-group-field;

@@ -1,0 +1,15 @@
+.admin_tabs {
+    .tabs {
+        @include menu-base;
+        background: #fff;
+        border: 3px double $light-gray;
+        border-right: 0px;
+        border-left: 0px;
+        a {
+            transition: background-color 0.5s ease;
+            &:hover {
+                background-color: $green--light !important;
+            }
+        }
+    }
+}
