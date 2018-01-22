@@ -56,7 +56,7 @@
     <?php endif; ?>
 
     <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
-      <nav class="tabs"><?php print render($tabs); ?></nav>
+      <nav class="admin_tabs"><?php print render($tabs); ?></nav>
     <?php endif; ?>
 
     <?php if($page['highlighted'] OR $messages){ ?>
