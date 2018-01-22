@@ -8,8 +8,8 @@
 
 //kill of the <ul class="menu" around the menues
 //we already have the menu-block-wrapper that adds a <nav tag
-function ilives_menu_tree__menu_block__1($variables) {
-    return '<ul class="dropdown menu" data-dropdown-menu >' . $variables['tree'] . '</ul>';
+function ilives_menu_tree($variables) {
+    return '<ul class="menu">' . $variables['tree'] . '</ul>';
 }
 /*
 function NEWTHEME_preprocess_html(&$vars) {

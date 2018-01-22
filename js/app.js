@@ -1,17 +1,13 @@
-(function ($) {
+//@format
+(function($) {
 
-
-//$('.menu--main > ul').addClass('hello').attr('data-dropdown-menu', '');
-
-    //var dropdownmenu = new Foundation.DropdownMenu($('.menu--main ul'));
-
-
-
-
-
-
-
-
+    /*
+     *Intialize Foundation JS components
+     */
+    //main menu
+            $('.menu--main ul').addClass('menu');
+            $('.menu--main > ul')
+                .addClass('dropdown')
+                .attr('data-dropdown-menu', '');
 
 })(jQuery);
-
