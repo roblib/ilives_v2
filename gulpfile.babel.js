@@ -7,6 +7,7 @@ import plugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import sassGlob from 'gulp-sass-glob';
 import imagemin from 'gulp-imagemin';
+import concat from 'gulp-concat-util';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -26,6 +27,8 @@ const {REGEX, URL, PORT, PATHS} = loadConfig();
 gulp.task('default', ['sass-dev', 'images', 'bsRemote'], () => {
     // watch and compile sass
     gulp.watch(PATHS.sassWatch, ['sass-dev']);
+    // watch and compile sass
+    gulp.watch(PATHS.jsWatch, ['js-concat']);
     // watch for minify images
     gulp.watch(PATHS.images.source, ['images']);
     // watch this stuff and reload the browser when there are changes
@@ -65,6 +68,16 @@ gulp.task('bsRemote', () => {
             },
         ],
     });
+});
+
+// sub-task: JS concatination
+gulp.task('js-concat', () => {
+    gulp
+        .src('scss/{,*/}*.js')
+        .pipe(concat('app.js'))
+        .pipe(concat.header('(function($) {\n'))
+        .pipe(concat.footer('\n})(jQuery);'))
+        .pipe(gulp.dest('js'));
 });
 
 //sub-task: Sass compiler (dev)

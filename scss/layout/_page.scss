@@ -11,6 +11,8 @@
 .no-sidebars {
     #main-content {
         @include xy-cell(12);
+        padding-top: $global-padding;
+        padding-bottom: $global-padding;
     }
 }
 

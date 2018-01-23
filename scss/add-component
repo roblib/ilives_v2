@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+#get the vars
+echo "Name of new component"
+read componentName
+
+fugly="//@format
+
+.$componentName,
+%$componentName {
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %""$componentName""__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %""$componentName""__part-b;
+}"
+
+drupalJs="
+/*
+Drupal.behaviors.$componentName = {
+  attach: function (context, settings) {
+    $('#some_element', context).once('$componentName', function () {
+      // Code here will only be applied to $('#some_element')
+      // a single time.
+    });
+  }
+};
+*/
+"
+
+#make component dir
+mkdir components/$componentName
+echo "Created directory"
+
+#make template partial
+touch components/$componentName/$componentName.js
+echo "$drupalJs" >> components/$componentName/$componentName.js
+echo "Created $componentName.js"
+
+#make Sass partial
+touch components/$componentName/_$componentName.scss
+echo "$fugly" >> components/$componentName/_$componentName.scss
+echo "Created _$componentName.scss"
+
+echo "Done :-)"
+

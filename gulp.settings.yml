@@ -34,6 +34,7 @@ PATHS:
         - 'js/app.js'
 
     sassWatch: 'scss/**/*.scss'
+    jsWatch: 'scss/**/*.js'
 
     reloadFiles:
     # just watch these for changes and reload browser (no processing)

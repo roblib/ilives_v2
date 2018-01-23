@@ -1,4 +1,3 @@
-(function($) {
 /*
  *Intialize Foundation JS components
  */
@@ -6,5 +5,3 @@
 $('.menu--main > ul')
     .addClass('dropdown')
     .attr('data-dropdown-menu', '');
-
-})(jQuery);
