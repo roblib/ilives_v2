@@ -2,8 +2,8 @@
 URL: "http://islandlives.hp1.islandarchives.ca"
 
 # Regex pattern used to manipulate the assets url so they can be found in PATH.localAssets
-#REGEX: 'http.*themes\/ilives\/((css)|(js))'
-REGEX: 'http.*themes\/ilives'
+REGEX: 'http.*themes\/ilives\/dist\/((css)|(js))'
+#REGEX: 'http.*themes\/ilives'
 
 PORT: 8000
 

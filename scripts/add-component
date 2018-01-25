@@ -40,17 +40,17 @@ Drupal.behaviors.$componentName = {
 "
 
 #make component dir
-mkdir components/$componentName
+mkdir ../src/scss/components/$componentName
 echo "Created directory"
 
 #make template partial
-touch components/$componentName/$componentName.js
-echo "$drupalJs" >> components/$componentName/$componentName.js
+touch ../src/scss/components/$componentName/$componentName.js
+echo "$drupalJs" >> ../src/scss/components/$componentName/$componentName.js
 echo "Created $componentName.js"
 
 #make Sass partial
-touch components/$componentName/_$componentName.scss
-echo "$fugly" >> components/$componentName/_$componentName.scss
+touch ../src/scss/components/$componentName/_$componentName.scss
+echo "$fugly" >> ../src/scss/components/$componentName/_$componentName.scss
 echo "Created _$componentName.scss"
 
 echo "Done :-)"

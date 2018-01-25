@@ -1,7 +1,7 @@
 {
-  "name": "foundation-sites-template",
+  "name": "Drupal 7 theme development",
   "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Drupal 7 theme development",
   "main": "gulpfile.js",
   "devDependencies": {
     "babel": "^6.23.0",
@@ -23,7 +23,9 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass"
+    "build": "gulp sass",
+    "new-component" : "scripts/add-component",
+    "nc" : "scripts/add-component"
   },
   "repository": {
     "type": "git",

@@ -61,8 +61,8 @@ gulp.task('bsRemote', () => {
     browserSync.init({
         proxy: URL,
         port: 8000,
-        logLevel: 'debug',
-        serveStatic: ['dist'],
+        //logLevel: 'debug',
+        serveStatic: ['dist/js', 'dist/css'],
         injectChanges: true,
         files: ['dist/css/app.css', 'dist/js/app.js'],
         rewriteRules: [
