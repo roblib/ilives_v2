@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+#get the vars
+echo "What is the site's name (no spaces)"
+read siteName
+echo "What is the site's URL (no 'http*://' or trailing slash)"
+read siteUrl
+
+
+_ALIAS="
+$aliases['remote'] = array(
+   'uri' => '$siteUrl',
+	'remote-host' => '$siteUrl',
+	'remote-user' => 'rdrew',
+    'root' => '/var/www/html/drupal',
+	'ssh-options' => '-p 22',
+ );
+ "
+
+echo "$_ALIAS" >> ~/.drush/$siteName.aliases.drushrc.php
+
+echo "Done :-)"
+
