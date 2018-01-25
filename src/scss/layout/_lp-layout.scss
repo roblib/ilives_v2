@@ -1,0 +1,46 @@
+//@format
+
+.nice-component-name,
+%nice-component-name {
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+.node-landing-page {
+    @include xy-grid-container;
+    @include xy-grid;
+    .lp-left {
+        @include xy-cell(6);
+    }
+    .lp-right {
+        @include xy-cell(6);
+    }
+    .lp-feature-blocks {
+        @include xy-grid;
+        margin-top: $global-margin*2;
+        .lp-feature-block {
+            @include xy-cell(6);
+        }
+    }
+}
+
+.logo--ilives {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %nice-component-name__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %nice-component-name__part-b;
+}

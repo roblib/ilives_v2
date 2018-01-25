@@ -1,0 +1,21 @@
+//@format
+
+.nice-component-name,
+%nice-component-name {
+    &__part-a {
+        //style
+    }
+    &__part-b {
+        //style
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %nice-component-name__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %nice-component-name__part-b;
+}

@@ -2,7 +2,8 @@
 URL: "http://islandlives.hp1.islandarchives.ca"
 
 # Regex pattern used to manipulate the assets url so they can be found in PATH.localAssets
-REGEX: 'http.*themes\/ilives\/((css)|(js))'
+#REGEX: 'http.*themes\/ilives\/((css)|(js))'
+REGEX: 'http.*themes\/ilives'
 
 PORT: 8000
 
@@ -26,8 +27,8 @@ PATHS:
     #Browsersync can watch your files as you work. 
     #Changes you make will either be injected into the page (CSS & images)
     #or will cause all browsers to do a full-page refresh.
-        source: 'img-src/*'
-        destination: 'images'
+        source: 'src/img-src/*'
+        destination: 'dist/images'
 
     mainFiles:
         - 'css/app.css'

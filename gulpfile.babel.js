@@ -24,30 +24,35 @@ const {REGEX, URL, PORT, PATHS} = loadConfig();
  */
 
 // Default Task
-gulp.task('default', ['sass-dev', 'images', 'bsRemote'], () => {
+gulp.task('default', ['sass-dev', 'images', 'file-mover', 'bsRemote'], () => {
     // watch and compile sass
-    gulp.watch(PATHS.sassWatch, ['sass-dev']);
+    gulp.watch('src/scss/**/*.scss', ['sass-dev']);
     // watch and compile sass
-    gulp.watch(PATHS.jsWatch, ['js-concat']);
+    gulp.watch('src/scss/**/*.js', ['js-concat']);
     // watch for minify images
-    gulp.watch(PATHS.images.source, ['images']);
+    gulp.watch('src/img-src/*', ['images']);
     // watch this stuff and reload the browser when there are changes
-    gulp.watch(PATHS.reloadFiles).on('change', browserSync.reload);
+    gulp.watch('src/assets/*', ['file-mover']);
+    //gulp.watch(PATHS.reloadFiles).on('change', browserSync.reload);
 });
 
 // 'build' task (for production: compressed css, no sourcemaps etc)
-gulp.task('build', ['images', 'sass-prod']);
+gulp.task('build', ['images', 'file-mover', 'sass-prod']);
 
 /*
  * Subtasks
  */
 
+gulp.task('file-mover', () => {
+    gulp.src('src/assets/**/*').pipe(gulp.dest('dist/assets'));
+});
+
 //sub-task: Imagemin
 gulp.task('images', () => {
     gulp
-        .src(PATHS.images.source)
+        .src('src/img-src/*')
         .pipe(imagemin())
-        .pipe(gulp.dest(PATHS.images.destination));
+        .pipe(gulp.dest('dist/images'));
 });
 
 //sub-task: BrowserSync Remote Proxy
@@ -55,10 +60,11 @@ gulp.task('bsRemote', () => {
     var stringRemove = new RegExp(REGEX, 'g');
     browserSync.init({
         proxy: URL,
-        port: PORT,
-        serveStatic: PATHS.localAssets,
+        port: 8000,
+        logLevel: 'debug',
+        serveStatic: ['dist'],
         injectChanges: true,
-        files: PATHS.mainFiles,
+        files: ['dist/css/app.css', 'dist/js/app.js'],
         rewriteRules: [
             {
                 match: stringRemove,
@@ -73,11 +79,11 @@ gulp.task('bsRemote', () => {
 // sub-task: JS concatination
 gulp.task('js-concat', () => {
     gulp
-        .src('scss/{,*/}*.js')
+        .src('src/scss/{,*/}*.js')
         .pipe(concat('app.js'))
         .pipe(concat.header('(function($) {\n'))
         .pipe(concat.footer('\n})(jQuery);'))
-        .pipe(gulp.dest('js'));
+        .pipe(gulp.dest('dist/js'));
 });
 
 //sub-task: Sass compiler (dev)
@@ -90,13 +96,13 @@ gulp.task('sass-dev', () => {
         browsers: ['last 2 versions', 'ie >= 9'],
     };
     gulp
-        .src('scss/app.scss')
+        .src('src/scss/app.scss')
         .pipe(sassGlob())
         .pipe($.sourcemaps.init())
         .pipe($.sass(sassOptions).on('error', $.sass.logError))
         .pipe($.autoprefixer(autoprefixerOptions))
         .pipe($.sourcemaps.write())
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream());
 });
 
@@ -111,9 +117,9 @@ gulp.task('sass-prod', () => {
         browsers: ['last 2 versions', 'ie >= 9'],
     };
     gulp
-        .src('scss/app.scss')
+        .src('src/scss/app.scss')
         .pipe(sassGlob())
         .pipe($.sass(sassOptions).on('error', $.sass.logError))
         .pipe($.autoprefixer(autoprefixerOptions))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('dist/css'));
 });
