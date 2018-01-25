@@ -1,5 +1,5 @@
 {
-  "name": "Drupal 7 theme development",
+  "name": "Drupal7_theme_development",
   "version": "1.0.0",
   "description": "Drupal 7 theme development",
   "main": "gulpfile.js",
@@ -24,8 +24,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp sass",
-    "new-component" : "scripts/add-component",
-    "nc" : "scripts/add-component"
+    "nc" : "./scripts/add-component"
   },
   "repository": {
     "type": "git",

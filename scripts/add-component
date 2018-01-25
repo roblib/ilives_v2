@@ -30,27 +30,26 @@ drupalJs="
 /*
 Drupal.behaviors.$componentName = {
   attach: function (context, settings) {
-    $('#some_element', context).once('$componentName', function () {
-      // Code here will only be applied to $('#some_element')
+    \$('#some_element', context).once('$componentName', function () {
+      // Code here will only be applied to \$('#some_element')
       // a single time.
     });
   }
 };
-*/
-"
+*/"
 
 #make component dir
-mkdir ../src/scss/components/$componentName
+mkdir src/scss/components/$componentName
 echo "Created directory"
 
 #make template partial
-touch ../src/scss/components/$componentName/$componentName.js
-echo "$drupalJs" >> ../src/scss/components/$componentName/$componentName.js
+touch src/scss/components/$componentName/$componentName.js
+echo "$drupalJs" >> src/scss/components/$componentName/$componentName.js
 echo "Created $componentName.js"
 
 #make Sass partial
-touch ../src/scss/components/$componentName/_$componentName.scss
-echo "$fugly" >> ../src/scss/components/$componentName/_$componentName.scss
+touch src/scss/components/$componentName/_$componentName.scss
+echo "$fugly" >> src/scss/components/$componentName/_$componentName.scss
 echo "Created _$componentName.scss"
 
 echo "Done :-)"

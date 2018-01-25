@@ -1,0 +1,20 @@
+//@format
+.lp-search-block,
+%lp-search-block {
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %lp-search-block__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %lp-search-block__part-b;
+}

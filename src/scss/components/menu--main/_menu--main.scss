@@ -1,0 +1,27 @@
+//@format
+
+.menu--main,
+%menu--main {
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+.menu--main {
+    ul {
+        //@include menu-base;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %menu--main__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %menu--main__part-b;
+}
