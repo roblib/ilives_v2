@@ -13,29 +13,29 @@
 <header role="banner">
   <div class="siteinfo">
     <?php if ($logo): ?>
-      <figure>
+    <figure>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
         <img src="sites/islandlives.hp1.islandarchives.ca/themes/ilives/images/white_svg_upei_logo.svg" alt="<?php print t('Home'); ?>" />
       </a>
-      </figure>
+    </figure>
     <?php endif; ?>
 
     <?php if($site_name OR $site_slogan ): ?>
     <hgroup>
-      <?php if($site_name): ?>
-        <h1><?php print $site_name; ?></h1>
-      <?php endif; ?>
-      <?php if ($site_slogan): ?>
-        <h2><?php print $site_slogan; ?></h2>
-      <?php endif; ?>
+    <?php if($site_name): ?>
+    <h1><?php print $site_name; ?></h1>
+    <?php endif; ?>
+    <?php if ($site_slogan): ?>
+    <h2><?php print $site_slogan; ?></h2>
+    <?php endif; ?>
     </hgroup>
     <?php endif; ?>
   </div>
 
   <?php if($page['header']): ?>
-    <div class="header-region">
-      <?php print render($page['header']); ?>
-    </div>
+  <div class="header-region">
+    <?php print render($page['header']); ?>
+  </div>
   <?php endif; ?>
 
 </header>
@@ -45,25 +45,25 @@
   <div role="main" id="main-content">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
-      <h1><?php print $title; ?></h1>
+    <h1><?php print $title; ?></h1>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
     <?php print $breadcrumb; ?>
 
     <?php if ($action_links): ?>
-      <ul class="action-links"><?php print render($action_links); ?></ul>
+    <ul class="action-links"><?php print render($action_links); ?></ul>
     <?php endif; ?>
 
     <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
-      <nav class="admin_tabs"><?php print render($tabs); ?></nav>
+    <nav class="admin_tabs"><?php print render($tabs); ?></nav>
     <?php endif; ?>
 
     <?php if($page['highlighted'] OR $messages){ ?>
-      <div class="drupal-messages">
+    <div class="drupal-messages">
       <?php print render($page['highlighted']); ?>
       <?php print $messages; ?>
-      </div>
+    </div>
     <?php } ?>
 
 
@@ -76,18 +76,37 @@
   </div><!-- /main-->
 
   <?php if ($page['sidebar_first']): ?>
-    <div class="sidebar-first">
+  <div class="sidebar-first">
     <?php print render($page['sidebar_first']); ?>
-    </div>
+  </div>
   <?php endif; ?>
 
   <?php if ($page['sidebar_second']): ?>
-    <div class="sidebar-second">
-      <?php print render($page['sidebar_second']); ?>
-    </div>
+  <div class="sidebar-second">
+    <?php print render($page['sidebar_second']); ?>
+  </div>
   <?php endif; ?>
 </div><!-- /page-->
 
 <footer role="contentinfo">
-  <?php print render($page['footer']); ?>
+<div class="container">
+
+  <div class="footer-left footer-branding">
+      <figure class="footer-logo">
+    <a href="upei.ca">
+        <img src="sites/islandlives.hp1.islandarchives.ca/themes/ilives/images/UPEI_Logo_white.svg" alt="">
+    </a>
+
+
+      </figure>
+
+<div class="footer-blurb">
+
+      IslandLives is part of the <a href="islandarchives.ca">IslandArchives Collection</a>
+</div>
+  </div>
+  <div class="footer-right footer-region">
+    <?php print render($page['footer']); ?>
+  </div>
+</div>
 </footer>
