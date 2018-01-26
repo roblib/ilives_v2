@@ -1,0 +1,30 @@
+//@format
+
+.logo--ilives,
+%logo--ilives {
+    &__island {
+        fill: blue !important;
+        stroke: green !important;
+    }
+    &__lives {
+        fill: blue !important;
+        stroke: green !important;
+    }
+    &__map {
+        fill: blue !important;
+        stroke: green !important;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+#logo--island path {
+    @extend %logo--ilives__island;
+}
+#logo--lives path {
+    @extend %logo--ilives__lives;
+}
+#logo--map path {
+    @extend %logo--ilives__map;
+}
