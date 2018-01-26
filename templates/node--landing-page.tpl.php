@@ -3,6 +3,7 @@
 //http://drupalcontrib.org/api/drupal/drupal--modules--node--node.tpl.php
 //node--[CONTENT TYPE].tpl.php
 
+$theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 //$content['field_name']['#theme'] = "nomarkup";
 //hide($content['field_name']);
 if ($classes) {
@@ -25,7 +26,8 @@ hide($content['links']);
 
     <figure class="logo--ilives">
 
-      <img src="http://via.placeholder.com/350x150">
+      <!--<img src="http://via.placeholder.com/350x150">-->
+      <img src="<?php print $theme_path; ?>/dist/images/ilives_logo.svg">
       <figcaption>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis urna tellus, vel laoreet magna feugiat nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam nibh risus, eleifend at consectetur vitae, pulvinar et quam. Sed et ligula egestas, laoreet libero nec, malesuada diam. Donec id bibendum nisi, vitae aliquet nulla. Fusce maximus, enim id scelerisque vulputate, metus turpis rhoncus ipsum, at fermentum nisl neque et elit. Morbi nunc urna, tincidunt ac eleifend ac, dignissim convallis ipsum. Suspendisse laoreet euismod lacus nec porttitor. Proin a lorem cursus, porta tortor et, euismod justo. Praesent sed ligula nec augue egestas commodo. Mauris sagittis porttitor cursus. Nunc fermentum efficitur hendrerit. Sed bibendum varius urna et faucibus.
       </figcaption>
