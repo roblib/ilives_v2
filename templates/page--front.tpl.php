@@ -3,6 +3,7 @@
 //kpr($theme_hook_suggestions);
 //template naming
 //page--[CONTENT TYPE].tpl.php
+$theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 ?>
 <?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
 <!-- page.tpl.php-->
@@ -15,7 +16,7 @@
     <?php if ($logo): ?>
     <figure>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-        <img src="sites/islandlives.hp1.islandarchives.ca/themes/ilives/images/white_svg_upei_logo.svg" alt="<?php print t('Home'); ?>" />
+        <img src="<?php print $theme_path; ?>/dist/images/white_svg_upei_logo.svg" alt="<?php print t('Home'); ?>" />
       </a>
     </figure>
     <?php endif; ?>
@@ -96,8 +97,7 @@
   <div class="footer-left footer-branding">
       <figure class="footer-logo">
     <a href="upei.ca">
-        <img src="sites/islandlives.hp1.islandarchives.ca/themes/ilives/images/UPEI_Logo_white.svg" alt="">
-    </a>
+        <img src="<?php print $theme_path; ?>/dist/images/UPEI_Logo_white.svg" alt=""></a>
 
 
       </figure>
