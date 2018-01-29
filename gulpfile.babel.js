@@ -8,6 +8,8 @@ import browserSync from 'browser-sync';
 import sassGlob from 'gulp-sass-glob';
 import imagemin from 'gulp-imagemin';
 import concat from 'gulp-concat-util';
+import handlebars from 'gulp-compile-handlebars';
+import rename from 'gulp-rename';
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -37,7 +39,24 @@ gulp.task('default', ['sass-dev', 'images', 'file-mover', 'bsRemote'], () => {
 });
 
 // 'build' task (for production: compressed css, no sourcemaps etc)
-gulp.task('build', ['images', 'file-mover', 'sass-prod']);
+gulp.task('production', ['images', 'file-mover', 'sass-prod']);
+
+gulp.task(
+    'static',
+    ['sass-dev', 'images', 'file-mover', 'mockup-templates', 'mockup-server'],
+    () => {
+        gulp.watch('src/mockups/**/*', ['mockup-templates']);
+        // watch and compile sass
+        gulp.watch('src/scss/**/*.scss', ['sass-dev']);
+        // watch and compile sass
+        gulp.watch('src/scss/**/*.js', ['js-concat']);
+        // watch for minify images
+        gulp.watch('src/img-src/*', ['images']);
+        // watch this stuff and reload the browser when there are changes
+        gulp.watch('src/assets/*', ['file-mover']);
+        //gulp.watch(PATHS.reloadFiles).on('change', browserSync.reload);
+    },
+);
 
 /*
  * Subtasks
@@ -74,6 +93,43 @@ gulp.task('bsRemote', () => {
             },
         ],
     });
+});
+
+gulp.task(
+    'static--watch',
+    ['sass-dev', 'static--templates', 'static--server'],
+    () => {
+        gulp.watch('dist/static/*').on('change', browserSync.reload);
+        gulp.watch('src/static/**/*.*', ['static--templates']);
+        gulp.watch('src/scss/**/*.scss', ['sass-dev']);
+        gulp.watch('src/scss/**/*.js', ['js-concat']);
+    },
+);
+
+gulp.task('static--server', () => {
+    browserSync.init({
+        server: './dist',
+        startPath: '/static',
+        files: ['dist/css/app.css', 'dist/js/app.js'],
+    });
+});
+gulp.task('static--templates', () => {
+    const templateData = {
+            // these can be inserted in templates by {{ thingOne }}
+            thingOne: 'yay',
+            thingTwo: 'woooo',
+        },
+        options = {
+            ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
+            partials: {
+                dummy_partial: '<span>this can be used as a partial</span>',
+            },
+            batch: ['src/static/partials'],
+        };
+    gulp
+        .src('src/static/index.html')
+        .pipe(handlebars(templateData, options))
+        .pipe(gulp.dest('dist/static'));
 });
 
 // sub-task: JS concatination

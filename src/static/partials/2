@@ -1,0 +1,9 @@
+<div class="showcase">
+
+<div class="container">
+
+    {{> logo--ilives }}
+
+    {{> block--search }}
+</div>
+</div>

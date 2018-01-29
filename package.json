@@ -13,9 +13,11 @@
     "fs": "0.0.1-security",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-compile-handlebars": "^0.6.1",
     "gulp-concat-util": "^0.5.5",
     "gulp-imagemin": "^4.1.0",
     "gulp-load-plugins": "^1.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-sourcemaps": "^2.6.3",
@@ -24,7 +26,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp sass",
-    "nc" : "./scripts/add-component"
+    "nc": "./scripts/add-component"
   },
   "repository": {
     "type": "git",
