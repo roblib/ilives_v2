@@ -1,18 +1,23 @@
 //@format
 
+$island: $brown--light;
+$lives: $brown--light;
+//$map: $brown;
+$map: $brown;
+
 .logo--ilives,
 %logo--ilives {
     &__island {
-        fill: blue !important;
-        stroke: green !important;
+        fill: $island !important;
+        stroke: $island !important;
     }
     &__lives {
-        fill: blue !important;
-        stroke: green !important;
+        fill: $lives !important;
+        stroke: $lives !important;
     }
     &__map {
-        fill: blue !important;
-        stroke: green !important;
+        fill: $map !important;
+        stroke: $map !important;
     }
 }
 

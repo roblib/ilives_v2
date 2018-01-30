@@ -33,7 +33,7 @@ $search-width: 600px;
         width: rem-calc($logo-width);
     }
     .lp-search-block {
-        @include callout;
+        //@include callout;
         margin-bottom: 0;
         width: rem-calc($search-width);
     }

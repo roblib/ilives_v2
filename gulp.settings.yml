@@ -12,7 +12,7 @@ PATHS:
     # Paths to Sass libraries, which can then be loaded with @import
         #- 'bower_components/normalize.scss/sass'
         - 'node_modules/foundation-sites/scss'
-        - 'node_modules/foundation-sites/node_modules/motion-ui/src'
+        - 'node_modules/motion-ui/src'
 
     localAssets:
     # directories to be made available to BrowserSync proxy

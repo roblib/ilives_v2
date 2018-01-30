@@ -94,37 +94,20 @@
     
         
             <div class="lp-search-block">
-              <h3 class="lp-search-block__title">
-                Search IslandLives' online collections:
-              </h3>
-        
-        
-        
-              <ul class="lp-search-block__tabs tabs" data-tabs id="lp-search-block__tabs">
-                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Full-Text</a></li>
-                <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-              </ul>
-        
-              <div class="tabs-content" data-tabs-content="lp-search-block__tabs">
-                <div class="tabs-panel is-active" id="panel1">
-                  <div class="input-group">
+        <div class="input-group">
+              <select class="input-group-field">
+                  <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                          <option value="hotdog">Hot Dog</option>
+                              <option value="apollo">Apollo</option>
+                                </select>
+                                </label></option>
+              </select>
                     <input class="input-group-field" type="text" placeholder="Search IslandLives...">
                     <div class="input-group-button">
                       <input class="button" type="submit">
                     </div>
-                  </div>
-                </div>
-        
-                <div class="tabs-panel" id="panel2">
-                  <div class="input-group">
-                    <input class="input-group-field" type="text" placeholder="Search IslandLives...">
-                    <div class="input-group-button">
-                      <input class="button" type="submit">
-                    </div>
-                  </div>
-                </div>
-              </div>
-        
+        </div>
         
         
         
@@ -139,6 +122,26 @@
             </div>
     </div>
     </div>
+    <header class="hero-search-filter">
+          <div class="hero-search-filter-content">
+                  <img class="hero-search-filter-logo" src="https://placehold.it/160x80" alt="" />
+                      <form class="hero-search-filter-form" action="">
+                                <label for="findtext">Find</label>
+                                      <input id="findtext" class="hero-search-filter-form-find" type="text" />
+                                            <div class="divider">&nbsp;</div>
+                <label for="findlocate">Near</label>
+                <input id="findlocate" class="hero-search-filter-form-near" type="text" />
+                <button class="button"><i class="fa fa-search"></i></button>
+                    </form>
+                        <ul class="hero-search-filter-menu menu align-center">
+                                  <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Restaurants</a></li>
+                                        <li><a href="#"><i class="fa fa-glass" aria-hidden="true"></i> Nightlife</a></li>
+                                              <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Home Services</a></li>
+                                                    <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Delivery</a></li>
+                                                        </ul>
+                                                          </div>
+                                                          </header>
+                                                          
 
     <script src="../assets/lib/jquery.min.js"></script>
     <script src="../assets/lib/what-input.min.js"></script>
