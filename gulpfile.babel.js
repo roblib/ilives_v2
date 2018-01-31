@@ -1,5 +1,30 @@
-/*@format*/
-'use strict';
+//@format
+let siteUrl, sassImportPaths;
+/*=================
+ * Project Settings
+ *=================*/
+//###########################################################
+// site to be proxied
+//###########################################################
+siteUrl = 'http://islandlives.hp1.islandarchives.ca';
+//###########################################################
+// sass libraries to be made available to '@import' in *.scss files
+//###########################################################
+sassImportPaths = [
+    'node_modules/foundation-sites/scss',
+    'node_modules/motion-ui/src',
+];
+//###########################################################
+// this will be removed from the css/js paths to redirect to locally hosted versions
+//###########################################################
+const regEx = 'http.*themes/ilives/dist/((css)|(js))';
+//###########################################################
+const browserSyncPort = 8000;
+//###########################################################
+
+/*==============
+ *Module Imports
+ *==============*/
 import gulp from 'gulp';
 import fs from 'fs';
 import yaml from 'js-yaml';
@@ -11,19 +36,47 @@ import concat from 'gulp-concat-util';
 import handlebars from 'gulp-compile-handlebars';
 import rename from 'gulp-rename';
 
-// Load all Gulp plugins into one variable
+/*==============
+ *Module Options
+ *==============*/
+
+// Gulp-load-plugins: Load all Gulp plugins into one variable
 const $ = plugins();
 
-// Import settings in yml format from external config file (gulp.settings.yml)
-const ymlFile = fs.readFileSync('gulp.settings.yml', 'utf8');
-const loadConfig = () => yaml.load(ymlFile);
+// Sass--Development
+const sassOptions__dev = {
+    includePaths: sassImportPaths,
+};
+// Sass--Production
+const sassOptions__prod = {
+    includePaths: sassImportPaths,
+    outputStyle: 'compressed', // if css compressed **file size**
+};
 
-// Load variables from gulp.settings.yml
-const {REGEX, URL, PORT, PATHS} = loadConfig();
+// Autoprefixer
+const autoprefixerOptions = {
+    browsers: ['last 2 versions', 'ie >= 9'],
+};
 
-/*
- * Primary Gulp Tasks
- */
+// Handlebars (arbitrary global template varables)
+const handlebarsTemplateData = {
+    // these can be inserted in handlebars templates by {{ thingOne }}
+    thingOne: 'yay',
+    thingTwo: 'woooo',
+};
+
+const handlebarsOptions = {
+    ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
+    partials: {
+        // arbitrary partials: the following could be used as {{> dummy_partial }}
+        //dummy_partial: '<span>this can be used as a partial</span>',
+    },
+    //location of partials (html or hbs)
+    batch: ['src/static/partials'],
+};
+/*==================
+ *Primary Gulp Tasks
+ *==================*/
 
 // Default Task
 gulp.task('default', ['sass-dev', 'images', 'file-mover', 'bsRemote'], () => {
@@ -58,10 +111,9 @@ gulp.task(
     },
 );
 
-/*
- * Subtasks
- */
-
+/*========
+ *Subtasks
+ *========*/
 gulp.task('file-mover', () => {
     gulp.src('src/assets/**/*').pipe(gulp.dest('dist/assets'));
 });
@@ -76,10 +128,10 @@ gulp.task('images', () => {
 
 //sub-task: BrowserSync Remote Proxy
 gulp.task('bsRemote', () => {
-    var stringRemove = new RegExp(REGEX, 'g');
+    var stringRemove = new RegExp(regEx, 'g');
     browserSync.init({
-        proxy: URL,
-        port: 8000,
+        proxy: siteUrl,
+        port: browserSyncPort,
         //logLevel: 'debug',
         serveStatic: ['dist/js', 'dist/css'],
         injectChanges: true,
@@ -114,21 +166,9 @@ gulp.task('static--server', () => {
     });
 });
 gulp.task('static--templates', () => {
-    const templateData = {
-            // these can be inserted in templates by {{ thingOne }}
-            thingOne: 'yay',
-            thingTwo: 'woooo',
-        },
-        options = {
-            ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
-            partials: {
-                dummy_partial: '<span>this can be used as a partial</span>',
-            },
-            batch: ['src/static/partials'],
-        };
     gulp
         .src('src/static/index.html')
-        .pipe(handlebars(templateData, options))
+        .pipe(handlebars(handlebarsTemplateData, handlebarsOptions))
         .pipe(gulp.dest('dist/static'));
 });
 
@@ -144,18 +184,11 @@ gulp.task('js-concat', () => {
 
 //sub-task: Sass compiler (dev)
 gulp.task('sass-dev', () => {
-    let sassOptions = {
-        includePaths: PATHS.sass_includes,
-        //outputStyle: 'compressed'
-    };
-    let autoprefixerOptions = {
-        browsers: ['last 2 versions', 'ie >= 9'],
-    };
     gulp
         .src('src/scss/app.scss')
         .pipe(sassGlob())
         .pipe($.sourcemaps.init())
-        .pipe($.sass(sassOptions).on('error', $.sass.logError))
+        .pipe($.sass(sassOptions__dev).on('error', $.sass.logError))
         .pipe($.autoprefixer(autoprefixerOptions))
         .pipe($.sourcemaps.write())
         .pipe(gulp.dest('dist/css'))
@@ -164,18 +197,10 @@ gulp.task('sass-dev', () => {
 
 //sub-task: Sass compiler (prod)
 gulp.task('sass-prod', () => {
-    const sassOptions = {
-        includePaths: PATHS.sass_includes,
-        outputStyle: 'compressed', // if css compressed **file size**
-    };
-
-    const autoprefixerOptions = {
-        browsers: ['last 2 versions', 'ie >= 9'],
-    };
     gulp
         .src('src/scss/app.scss')
         .pipe(sassGlob())
-        .pipe($.sass(sassOptions).on('error', $.sass.logError))
+        .pipe($.sass(sassOptions__prod).on('error', $.sass.logError))
         .pipe($.autoprefixer(autoprefixerOptions))
         .pipe(gulp.dest('dist/css'));
 });

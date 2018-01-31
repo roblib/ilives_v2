@@ -4,14 +4,15 @@ $showcase-height: 60vh;
 $showcase-max-width: 1100px;
 $logo-width: 300px;
 $search-width: 600px;
+$bg-url: 'https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg';
+$bg-url: '../images/pei-scenery.jpg';
 
 //$grid-container: 100px;
 .showcase,
 %showcase {
     height: $showcase-height;
     padding-top: $global-padding*3;
-    background: url('https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg')
-        50% no-repeat;
+    background: url($bg-url) 50% no-repeat;
     background-size: cover;
     text-align: center;
     &__part-a {
