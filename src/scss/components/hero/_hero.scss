@@ -1,0 +1,46 @@
+//@format
+
+.hero,
+%hero {
+    &--wrapper {
+        /*style*/
+        width: 100%;
+        @include callout;
+        margin-top: $global-margin*2;
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    //@extend %hero__part-a;
+}
+.fugly-drupal-name-02 {
+    //@extend %hero__part-b;
+}
+
+$hero-height: 60vh;
+$hero-height: 400px;
+
+$bg-url: '../images/pei-scenery--1900w.png';
+//$bg-url: '../images/hero/Lake_of_Shining_Waters--1900w.png';
+//$bg-url: '../images/hero/Prince_edward_island_zz.jpg';
+.hero-section {
+    background: url($bg-url) 50% no-repeat;
+    background-size: cover;
+    height: $hero-height;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-section-text {
+        color: $white;
+        text-shadow: 1px 1px 2px $black;
+    }
+}

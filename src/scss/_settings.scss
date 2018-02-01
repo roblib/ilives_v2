@@ -74,6 +74,7 @@ $brown--light: #895627;
 $brown--dark: #33210D;
 $light-green: rgb(231, 237, 224);
 $yellow: #FBB040;
+$camel: #ce8a3e;
 $tan: rgb(207, 197, 170);
 //===========================
 // 1. Global
@@ -81,6 +82,7 @@ $tan: rgb(207, 197, 170);
 
 $global-font-size: 100%;
 $global-width: rem-calc(1440);
+//$global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: $green,
@@ -92,13 +94,15 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #333;
 $white: #fefefe;
+$body-background: $parchment;
 $body-background: $parchment;
 $body-font-color: $brown;
 //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 //$body-font-family: et-book;
-$body-font-family: Roboto;
+//$body-font-family: Roboto;
+$body-font-family: 'Lato', 'Roboto', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -405,6 +409,7 @@ $dropdown-sizes: (
 
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: $white;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
@@ -415,7 +420,7 @@ $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: 1px solid $medium-gray;
 $dropdown-menu-item-color-active: get-color(primary);
-$dropdown-menu-item-background-active: transparent;
+$dropdown-menu-item-background-active: lighten($brown--dark, 20%);
 
 // 19. Flexbox Utilities
 // ---------------------
@@ -486,7 +491,7 @@ $mediaobject-image-width-stacked: 100%;
 // 23. Menu
 // --------
 
-$menu-margin: 0;
+$menu-margin: 20px;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
@@ -864,8 +869,9 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $brown;
-$topbar-submenu-background: $topbar-background;
+//$topbar-padding: 0 0.5rem ;
+$topbar-background: $brown--dark;
+$topbar-submenu-background: lighten($brown--dark, 10%);
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;

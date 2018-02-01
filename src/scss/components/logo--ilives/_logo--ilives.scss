@@ -1,18 +1,27 @@
 //@format
 
+$island: $brown--light;
+$lives: $brown--light;
+$map: #ecb785;
+
 .logo--ilives,
 %logo--ilives {
+    margin-bottom: $global-margin;
     &__island {
-        fill: blue !important;
-        stroke: green !important;
+        fill: $island !important;
+        stroke: darken($island, 10%) !important;
+        stroke-width: 1px !important;
     }
     &__lives {
-        fill: blue !important;
-        stroke: green !important;
+        fill: $lives !important;
+        stroke: darken($lives, 10%);
+        stroke-width: 1px !important;
     }
     &__map {
-        fill: blue !important;
-        stroke: green !important;
+        fill: $map !important;
+        //stroke: $map !important;
+        stroke: $brown--dark !important;
+        stroke-width: 1px !important;
     }
 }
 

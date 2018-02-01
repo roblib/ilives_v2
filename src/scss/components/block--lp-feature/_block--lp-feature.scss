@@ -1,0 +1,21 @@
+//@format
+
+.block--lp-feature,
+%block--lp-feature {
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %block--lp-feature__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %block--lp-feature__part-b;
+}

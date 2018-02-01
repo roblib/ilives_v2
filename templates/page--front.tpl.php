@@ -11,6 +11,38 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 
 <?php print $mothership_poorthemers_helper; ?>
 
+
+
+
+
+<header role="banner">
+
+    <div class="navbar">
+        <div class="navbar__left">
+            <ul class="menu navbar--branding">
+                <li class="navbar--branding__logo">
+                    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                        <img src="sites/islandlives.hp1.islandarchives.ca/themes/ilives/images/white_svg_upei_logo.svg" alt="<?php print t('Home'); ?>" />
+                    </a>
+                </li>
+                <li class="navbar--branding__title">
+                    <?php if($site_name): ?>
+                    <a href="/">
+                        <h1><?php print $site_name; ?></h1>
+                    </a>
+                    <?php endif; ?>
+            </ul>
+        </div>
+        <?php if($page['header']): ?>
+        <div class="navbar__right header-region">
+            <?php print render($page['header']); ?>
+        </div>
+        <?php endif; ?>
+    </div>
+</header>
+
+
+
 <header role="banner">
   <div class="siteinfo">
     <?php if ($logo): ?>

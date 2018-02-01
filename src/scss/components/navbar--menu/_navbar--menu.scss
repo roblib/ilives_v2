@@ -1,0 +1,34 @@
+//@format
+.navbar--main-menu,
+%navbar--main-menu {
+    color: $tan !important;
+    &__link {
+        margin-left: 1px;
+        background-color: lighten($brown--dark, 10%);
+        &:hover,
+        .is-active a {
+            background-color: lighten($brown--dark, 20%);
+        }
+        line-height: 1.3;
+        /*style*/
+    }
+    &__dropdown {
+        /*style*/
+        border: 0;
+        margin-top: rem-calc(7);
+    }
+}
+
+ul.dropdown.menu.navbar--main-menu a {
+    color: white;
+    color: $tan !important;
+}
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.navbar--main-menu li a {
+    @extend %navbar--main-menu__link;
+}
+.navbar--main-menu .submenu {
+    @extend %navbar--main-menu__dropdown;
+}
