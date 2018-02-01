@@ -9,71 +9,66 @@
     <link rel="stylesheet" href="../css/app.css" />
   </head>
   <body>
+<div class="navbar--wrapper">
 <div class="navbar">
+<div class="navbar__left">
+
     <ul class="menu navbar--branding">
-        <li class="navbar--branding__logo">Logo</li>
-        <li class="navbar--branding__title">Island Lives</li>
-    </ul>
-    <ul class="menu navbar--main-menu">
-        <li>link1</li>
-        <li>link2</li>
-    </ul>
-    <div class="navbar--search">
-    <input class="navbar--search__input" type="text"> type="text"> 
-    </div>
-</div>
-<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-    <div class="title-bar-title">Menu</div>
-</div>
-
-<div class="top-bar" id="responsive-menu">
-    <div class="top-bar-left">
-        <div class="upei-branding">
-       <div class="upei-branding__logo">
-       
+        <li class="navbar--branding__logo">
         <img src="../images/UPEI_Logo_white.svg" alt="">
-       </div>
-      <h1 class="upei-branding__title">
-      Island Lives</h1>
+        </li>
+        <li class="navbar--branding__title"><h1>Island Lives</h1></li>
+    </ul>
+</div>
+<div class="navbar__right">
+    
+    
+    <ul class="dropdown menu navbar--main-menu" data-dropdown-menu>
+      <li>
+        <a href="#">Item 1</a>
+        <ul class="menu">
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 1A</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li><a href="#">Item 4</a></li>
+    </ul>
+    
+    <div class="block--lp-search">
+        <div class="block--lp-search__search-bar input-group">
+            <!--dropdown button-->
+            <button class="input-group-label block--lp-search__adv-button" type="button" data-toggle="navbar--search__dropdown"> <i class="block--lp-search__menu__icon fas fa-cogs" aria-hidden="true"></i></button>
+            <!--search input -->
+            <input class="block--lp-search__input input-group-field" type="text" placeholder="Search IslandLives...">
+            <!--search submit button-->
+            <button class="button block--lp-search__button"> <i class="fas fa-search" aria-hidden="true"></i> </button>
         </div>
-        <ul class="menu">
-            <li>
-            </li>
-        </ul>
-        <!--<img src="../images/UPEI_Logo_white.svg" alt="">-->
-
-        <ul class="top-bar--branding menu">
-            <li class="top-bar--branding__logo">
-<figure>
-
-                <img src="../images/UPEI_Logo_white.svg" alt="">
-</figure>
-            </li>
-            <li class="top-bar--branding__text"><H2>Island Lives</H2></li>
-        </ul>
-
-        <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">Site Title</li>
-            <li class="has-submenu">
-                <a href="#0">One</a>
-                <ul class="submenu menu vertical" data-submenu>
-                    <li><a href="#0">One</a></li>
-                    <li><a href="#0">Two</a></li>
-                    <li><a href="#0">Three</a></li>
-                </ul>
-            </li>
-            <li><a href="#0">Two</a></li>
-            <li><a href="#0">Three</a></li>
-        </ul>
-    </div>
-    <div class="top-bar-right">
-        <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-        </ul>
+    
+        <div class="dropdown-pane block--lp-search__dropdown" id="navbar--search__dropdown" data-dropdown data-auto-focus="true">
+            <ul class="menu block--lp-search__menu">
+                <li>
+                    <a class="block--lp-search__menu__link" href="/"><i class="block--lp-search__menu__icon fas fa-cogs" aria-hidden="true"></i><span>Advanced Search</span></a>
+                </li>
+                <li>
+                    <a class="block--lp-search__menu__link" href="/"><i class="block--lp-search__menu__icon fas fa-binoculars" aria-hidden="true"></i>Search Tips</a>
+                </li>
+            </ul>
+        </div>
+    
     </div>
 </div>
+</div>
+
+</div>
+<div class="grid-container grid-x">
+
+</div>
+    <div class="lp-content-wrapper grid-x grid-container">
+        <div class="hero--wrapper">
+        
     <!-- @format -->
     <div class="hero-section">
         <div class="logo-wrapper">
@@ -155,7 +150,7 @@
     </div>
     
     
-    <div class="lp-content-wrapper grid-x grid-container">
+        </div>
     <section class="cell small-12 block--lp-site-description">
         <h2>Preserving PEI's community histories</h2>
         <p class="lp-site-description">

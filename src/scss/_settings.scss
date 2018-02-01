@@ -74,14 +74,15 @@ $brown--light: #895627;
 $brown--dark: #33210D;
 $light-green: rgb(231, 237, 224);
 $yellow: #FBB040;
+$camel: #ce8a3e;
 $tan: rgb(207, 197, 170);
 //===========================
 // 1. Global
 // ---------
 
 $global-font-size: 100%;
-//$global-width: rem-calc(1440);
-$global-width: rem-calc(960);
+$global-width: rem-calc(1440);
+//$global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: $green,
@@ -408,6 +409,7 @@ $dropdown-sizes: (
 
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: $white;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
@@ -418,7 +420,7 @@ $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: 1px solid $medium-gray;
 $dropdown-menu-item-color-active: get-color(primary);
-$dropdown-menu-item-background-active: transparent;
+$dropdown-menu-item-background-active: lighten($brown--dark, 20%);
 
 // 19. Flexbox Utilities
 // ---------------------
@@ -489,7 +491,7 @@ $mediaobject-image-width-stacked: 100%;
 // 23. Menu
 // --------
 
-$menu-margin: 0;
+$menu-margin: 20px;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
@@ -867,9 +869,9 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
+//$topbar-padding: 0 0.5rem ;
 $topbar-background: $brown--dark;
-$topbar-background: $brown--dark;
-$topbar-submenu-background: $topbar-background;
+$topbar-submenu-background: lighten($brown--dark, 10%);
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;

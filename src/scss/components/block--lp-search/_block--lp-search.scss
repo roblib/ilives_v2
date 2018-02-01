@@ -1,7 +1,8 @@
 //@format
-
+$lp-search-width: rem-calc(350);
 .block--lp-search,
 %block--lp-search {
+    width: $lp-search-width;
     &__search-bar {
         //display: flex;
         //width: 100%;
@@ -35,6 +36,8 @@
     }
     &__menu__link {
         @include button;
+
+        border-radius: 20px;
     }
     &__menu__icon {
         margin-right: 4px;
@@ -44,7 +47,11 @@
         border-right: 0;
     }
     &__dropdown {
-        padding: 0;
+        padding: 0 1rem;
+
+        width: $lp-search-width;
+        border: 0;
+        background: transparent;
     }
 }
 

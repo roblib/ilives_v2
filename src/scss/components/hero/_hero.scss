@@ -2,8 +2,11 @@
 
 .hero,
 %hero {
-    &__part-a {
+    &--wrapper {
         /*style*/
+        width: 100%;
+        @include callout;
+        margin-top: $global-margin*2;
     }
     &__part-b {
         /*style*/
@@ -14,13 +17,14 @@
 // ~~There be Dragons~~ //
 //######################//
 .fugly-drupal-name-01 {
-    @extend %hero__part-a;
+    //@extend %hero__part-a;
 }
 .fugly-drupal-name-02 {
-    @extend %hero__part-b;
+    //@extend %hero__part-b;
 }
 
 $hero-height: 60vh;
+$hero-height: 400px;
 
 $bg-url: '../images/pei-scenery.jpg';
 //$bg-url: '../images/hero/Lake_of_Shining_Waters--1900w.png';

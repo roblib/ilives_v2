@@ -1,13 +1,16 @@
 <div class="navbar">
+<div class="navbar__left">
+
     <ul class="menu navbar--branding">
-        <li class="navbar--branding__logo">Logo</li>
-        <li class="navbar--branding__title">Island Lives</li>
+        <li class="navbar--branding__logo">
+        <img src="../images/UPEI_Logo_white.svg" alt="">
+        </li>
+        <li class="navbar--branding__title"><h1>Island Lives</h1></li>
     </ul>
-    <ul class="menu navbar--main-menu">
-        <li>link1</li>
-        <li>link2</li>
-    </ul>
-    <div class="navbar--search">
-    <input class="navbar--search__input" type="text"> type="text"> 
-    </div>
 </div>
+<div class="navbar__right">
+    {{> navbar--main-menu }}
+    {{> navbar--search }}
+</div>
+</div>
+

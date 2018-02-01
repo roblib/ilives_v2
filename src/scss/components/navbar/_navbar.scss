@@ -1,0 +1,54 @@
+//@format
+
+$logo-width: 100;
+$branding-title-font-size: rem-calc(39);
+
+.navbar,
+%navbar {
+    @include top-bar-container;
+    @include xy-grid-container;
+    &--wrapper {
+        background: $brown--dark;
+    }
+    &--branding__logo {
+        width: rem-calc($logo-width);
+        margin-right: $global-margin;
+    }
+    &--branding__title {
+        color: $camel;
+        font-size: $branding-title-font-size;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+    &--main-menu {
+        margin-right: $global-margin;
+        /*style*/
+        &__link {
+            /*style*/
+        }
+    }
+    &--search {
+        /*style*/
+        &__input {
+        }
+        &__submit {
+        }
+    }
+    &__left {
+        @extend .top-bar-left;
+    }
+    &__right {
+        display: flex;
+        @extend .top-bar-right;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.navbar--branding__title h1 {
+    @extend %navbar--branding__title;
+}
+.fugly-drupal-name-02 {
+    //@extend %navbar__part-b;
+}
