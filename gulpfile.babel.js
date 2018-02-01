@@ -121,7 +121,7 @@ gulp.task('file-mover', () => {
 //sub-task: Imagemin
 gulp.task('images', () => {
     gulp
-        .src('src/img-src/*')
+        .src('src/img-src/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'));
 });

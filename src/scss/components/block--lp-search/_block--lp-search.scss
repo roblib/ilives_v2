@@ -1,0 +1,59 @@
+//@format
+
+.block--lp-search,
+%block--lp-search {
+    &__search-bar {
+        //display: flex;
+        //width: 100%;
+        ////margin-bottom: 1rem;
+        //align-items: stretch;
+        margin-bottom: 0;
+    }
+    &__category-switch {
+        //width: 30px;
+    }
+    &__button {
+        margin-bottom: 0;
+        //background-color: #e7e7e7;
+        border: 1px solid #ccc;
+        border-left: 0px;
+        color: #333;
+        background: $white;
+    }
+    &__input {
+        /*style*/
+        margin-bottom: 0;
+        //did this to make it the same height as the flanking buttons
+        height: initial;
+        border-right: 0px;
+        border-left: 0px;
+    }
+    &__menu {
+        //@include button-group;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu__link {
+        @include button;
+    }
+    &__menu__icon {
+        margin-right: 4px;
+    }
+    &__adv-button {
+        background: $white;
+        border-right: 0;
+    }
+    &__dropdown {
+        padding: 0;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+//.fugly-drupal-name-01 {
+//@extend %block--lp-search__part-a;
+//}
+//.fugly-drupal-name-02 {
+//@extend %block--lp-search__part-b;
+//}

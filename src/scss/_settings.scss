@@ -80,7 +80,8 @@ $tan: rgb(207, 197, 170);
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1440);
+//$global-width: rem-calc(1440);
+$global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: $green,

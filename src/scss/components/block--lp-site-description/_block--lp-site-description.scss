@@ -1,0 +1,25 @@
+//@format
+
+.block--lp-site-description,
+%block--lp-site-description {
+    text-align: center;
+    margin-top: $global-margin;
+    margin-bottom: $global-margin;
+    font-size: 1.3rem;
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %block--lp-site-description__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %block--lp-site-description__part-b;
+}
