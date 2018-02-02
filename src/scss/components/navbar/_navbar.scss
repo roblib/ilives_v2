@@ -13,6 +13,9 @@ $branding-title-font-size: rem-calc(39);
     &--branding__logo {
         width: rem-calc($logo-width);
         margin-right: $global-margin;
+        a {
+            padding: 0;
+        }
     }
     &--branding__title {
         color: $camel;
