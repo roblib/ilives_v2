@@ -4,80 +4,46 @@
 //template naming
 //page--[CONTENT TYPE].tpl.php
 $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
+echo $theme_path;
 ?>
 <?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
 <!-- page.tpl.php-->
 <?php } ?>
 
 <?php print $mothership_poorthemers_helper; ?>
+<header role="banner" class="navbar--wrapper">
+  <div class="navbar">
+    <div class="navbar__left"><!--{{{-->
+
+      <ul class="menu navbar--branding">
+        <li class="navbar--branding__logo">
+          <figure>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+              <img src="/<?php print $theme_path; ?>/dist/images/UPEI_Logo_white.svg" alt="<?php print t('Home'); ?>" />
+            </a>
+          </figure>
+        </li>
+        <li class="navbar--branding__title">
+          <h1><?php print $site_name; ?></h1>
+        </li>
+      </ul>
+    </div><!--}}}-->
+    <!--{{{-->
 
 
-
-
-
-<header role="banner">
-
-    <div class="navbar">
-        <div class="navbar__left">
-            <ul class="menu navbar--branding">
-                <li class="navbar--branding__logo">
-                    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-                        <img src="sites/islandlives.hp1.islandarchives.ca/themes/ilives/images/white_svg_upei_logo.svg" alt="<?php print t('Home'); ?>" />
-                    </a>
-                </li>
-                <li class="navbar--branding__title">
-                    <?php if($site_name): ?>
-                    <a href="/">
-                        <h1><?php print $site_name; ?></h1>
-                    </a>
-                    <?php endif; ?>
-            </ul>
-        </div>
-        <?php if($page['header']): ?>
-        <div class="navbar__right header-region">
-            <?php print render($page['header']); ?>
-        </div>
-        <?php endif; ?>
+    <div class="navbar__right header-region">
+      <?php print render($page['header']); ?>
     </div>
-</header>
 
 
-
-<header role="banner">
-  <div class="siteinfo">
-    <?php if ($logo): ?>
-    <figure>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-        <img src="<?php print $theme_path; ?>/dist/images/white_svg_upei_logo.svg" alt="<?php print t('Home'); ?>" />
-      </a>
-    </figure>
-    <?php endif; ?>
-
-    <?php if($site_name OR $site_slogan ): ?>
-    <hgroup>
-    <?php if($site_name): ?>
-    <h1><?php print $site_name; ?></h1>
-    <?php endif; ?>
-    <?php if ($site_slogan): ?>
-    <h2><?php print $site_slogan; ?></h2>
-    <?php endif; ?>
-    </hgroup>
-    <?php endif; ?>
+    <!--}}}-->
   </div>
 
-  <?php if($page['header']): ?>
-  <div class="header-region">
-    <?php print render($page['header']); ?>
-  </div>
-  <?php endif; ?>
-
 </header>
-
 <div class="page">
-
   <div role="main" id="main-content">
 <!--
-    <?php print render($title_prefix); ?>
+    <?php print render($title_prefix); ?>/*{{{*/
     <?php if ($title): ?>
     <h1><?php print $title; ?></h1>
     <?php endif; ?>
@@ -93,15 +59,13 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
     <nav class="admin_tabs"><?php print render($tabs); ?></nav>
     <?php endif; ?>
 
--->
     <?php if($page['highlighted'] OR $messages){ ?>
     <div class="drupal-messages">
       <?php print render($page['highlighted']); ?>
       <?php print $messages; ?>
     </div>
-    <?php } ?>
-
-
+    <?php } ?>/*}}}*/
+-->
     <?php print render($page['content_pre']); ?>
 
     <?php print render($page['content']); ?>
