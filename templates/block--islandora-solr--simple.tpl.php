@@ -2,40 +2,13 @@
  //kpr($variables);
 // kpr($variables['template_files']);
 //  http://api.drupal.org/api/drupal/modules--block--block.tpl.php/7
-if ($classes) {
-  $classes = ' class="block--lp-search islandora-simple-search '. $classes . ' "';
-}
-
-//add a aria role search if this is the search block
-if($variables['block_html_id'] == "block-search-form"){
-	$role = ' role="search"';
-}else{
-$role = '';
-}
+$searchOptions = module_invoke('menu', 'block_view', 'menu-search-options');
 ?>
 
-<?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
-<!-- block -->
-<?php } ?>
-<div <?php print $id_block . $classes .  $attributes . $role; ?>>
-  <?php print $mothership_poorthemers_helper;  ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if ($block->subject): ?>
-    <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
-  <?php endif;?>
-  <?php print render($title_suffix); ?>
-
-  <?php if (!theme_get_setting('mothership_classes_block_contentdiv') AND $block->module == "block"): ?>
-  <div <?php print $content_attributes; ?>>
-  <?php endif ?>
-
+<button class="navbar--search__dropdown-trigger button" type="button" data-toggle="navbar--search"><i class="fas fa-search"></i></button>
+<div class="navbar--search__dropdown-pane dropdown-pane" id="navbar--search" data-dropdown data-auto-focus="true">
   <?php print $content ?>
-
-  <?php if (!theme_get_setting('mothership_classes_block_contentdiv') AND $block->module == "block"): ?>
-  </div>
-  <?php endif ?>
+<?php print render($searchOptions['content']); ?>
 </div>
-<?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
-<!-- /block -->
-<?php } ?>
+
