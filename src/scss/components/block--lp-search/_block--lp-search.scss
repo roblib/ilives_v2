@@ -65,7 +65,7 @@
 }
 
 .block--lp-search .menu--search-options {
-    @extend %block--lp-search__menu;
+    //@extend %block--lp-search__menu;
     a {
         @extend %block--lp-search__menu__link;
     }
