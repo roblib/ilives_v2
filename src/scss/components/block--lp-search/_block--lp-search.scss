@@ -1,17 +1,14 @@
 //@format
-$lp-search-width: rem-calc(350);
+//$lp-search-width: rem-calc(350);
 .block--lp-search,
 %block--lp-search {
-    width: $lp-search-width;
+    //width: $lp-search-width;
+    display: flex;
     &__search-bar {
-        //display: flex;
-        //width: 100%;
-        ////margin-bottom: 1rem;
-        //align-items: stretch;
         margin-bottom: 0;
     }
-    &__category-switch {
-        //width: 30px;
+    &__form-wrapper {
+        @extend .input-group;
     }
     &__button {
         margin-bottom: 0;
@@ -20,6 +17,7 @@ $lp-search-width: rem-calc(350);
         border-left: 0px;
         color: #333;
         background: $white;
+        display: none;
     }
     &__input {
         /*style*/
@@ -28,15 +26,15 @@ $lp-search-width: rem-calc(350);
         height: initial;
         border-right: 0px;
         border-left: 0px;
+
+        border-radius: 0 6px 6px 0;
     }
-    &__menu {
-        //@include button-group;
-        display: flex;
-        justify-content: space-between;
+    &__input__wrapper {
+        width: 100%;
     }
+
     &__menu__link {
         @include button;
-
         border-radius: 20px;
     }
     &__menu__icon {
@@ -44,12 +42,13 @@ $lp-search-width: rem-calc(350);
     }
     &__adv-button {
         background: $white;
+        color: $black;
         border-right: 0;
+        border-radius: 6px 0 0 6px;
     }
     &__dropdown {
         padding: 0 1rem;
-
-        width: $lp-search-width;
+        //width: $lp-search-width;
         border: 0;
         background: transparent;
     }
@@ -58,9 +57,19 @@ $lp-search-width: rem-calc(350);
 //######################//
 // ~~There be Dragons~~ //
 //######################//
-//.fugly-drupal-name-01 {
-//@extend %block--lp-search__part-a;
-//}
+.block--lp-search #edit-simple--2 {
+    @extend %block--lp-search__form-wrapper;
+}
+.block--lp-search #edit-simple--2 > div {
+    @extend %block--lp-search__input__wrapper;
+}
+
+.block--lp-search .menu--search-options {
+    @extend %block--lp-search__menu;
+    a {
+        @extend %block--lp-search__menu__link;
+    }
+}
 //.fugly-drupal-name-02 {
 //@extend %block--lp-search__part-b;
 //}
