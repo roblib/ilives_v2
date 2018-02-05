@@ -1,7 +1,7 @@
 <?php
 /*
   Preprocess
-*/
+ */
 
 
 
@@ -9,13 +9,63 @@
 //kill of the <ul class="menu" around the menues
 //we already have the menu-block-wrapper that adds a <nav tag
 function ilives_menu_tree($variables) {
-    return '<ul class="menu">' . $variables['tree'] . '</ul>';
+  return '<ul class="menu">' . $variables['tree'] . '</ul>';
 }
+
+
+//######################
+// Manipulation of menus
+//######################
+
+/* main ul */
+function ilives_menu_tree__menu_search_options($variables) {
+  return '<ul class="menu menu--search-options">' . $variables['tree'] . '</ul>';
+}
+
+/* main li */
+//function ilives_menu_link__menu_search_options(array $variables) {
+//$element = $variables['element'];
+//$sub_menu = '';
+
+//if ($element['#below']) {
+//foreach ($element['#below'] as $key => $val) {
+//if (is_numeric($key)) {
+//$element['#below'][$key]['#theme'] = 'menu_link__main_menu_inner'; // 2 lavel
+//}
+//}
+//$element['#below']['#theme_wrappers'][0] = 'menu_tree__main_menu_inner';  // 2 lavel
+//$sub_menu = drupal_render($element['#below']);
+//}
+//$output = l($element['#title'], $element['#href'], $element['#localized_options']);
+//return '' . $output . $sub_menu . "\n";
+//}
+
+///* inner ul */
+//function ilives_menu_tree__main_menu_inner($variables) {
+//return '' . $variables['tree'] . '';
+//}
+
+///* inner li */
+//function ilives_menu_link__main_menu_inner($variables) {
+////$element = $variables['element'];
+////$sub_menu = '';
+
+////if ($element['#below']) {
+////$sub_menu = drupal_render($element['#below']);
+////}
+////$output = l($element['#title'], $element['#href'], $element['#localized_options']);
+////return '' . $output . $sub_menu . "\n";
+//}
+
+
+
+
+
 /*
 function NEWTHEME_preprocess_html(&$vars) {
   //  kpr($vars['content']);
 }
-*/
+ */
 /*
 function NEWTHEME_preprocess_page(&$vars,$hook) {
   //typekit
@@ -29,12 +79,12 @@ function NEWTHEME_preprocess_page(&$vars,$hook) {
   //  drupal_add_css('http://fonts.googleapis.com/css?family=Bree+Serif','external');
 
 }
-*/
+ */
 /*
 function NEWTHEME_preprocess_region(&$vars,$hook) {
   //  kpr($vars['content']);
 }
-*/
+ */
 /*
 function NEWTHEME_preprocess_block(&$vars, $hook) {
   //  kpr($vars['content']);
@@ -74,7 +124,7 @@ function NEWTHEME_preprocess_block(&$vars, $hook) {
   }
 
 }
-*/
+ */
 /*
 function NEWTHEME_preprocess_node(&$vars,$hook) {
   //  kpr($vars['content']);
@@ -84,12 +134,12 @@ function NEWTHEME_preprocess_node(&$vars,$hook) {
   // in node.tpl  <?php if($noderegion){ ?> <?php print render($noderegion); ?><?php } ?>
   //$vars['block_in_a_node'] = block_get_blocks_by_region('block_in_a_node');
 }
-*/
+ */
 /*
 function NEWTHEME_preprocess_comment(&$vars,$hook) {
   //  kpr($vars['content']);
 }
-*/
+ */
 /*
 function NEWTHEME_preprocess_field(&$vars,$hook) {
   //  kpr($vars['content']);
@@ -110,17 +160,38 @@ function NEWTHEME_preprocess_field(&$vars,$hook) {
   }
 
 }
-*/
+ */
 /*
 function NEWTHEME_preprocess_maintenance_page(){
   //  kpr($vars['content']);
 }
-*/
-/*
-function NEWTHEME_form_alter(&$form, &$form_state, $form_id) {
-  //if ($form_id == '') {
-  //....
-  //}
+ */
+
+
+function ilives_form_alter(&$form, &$form_state, $form_id) {
+  //dsm($form);
+
+  //form id
+  $search_form_id = 'islandora_solr_simple_search_form';
+  //
+  // Vars
+  $form_class = 'block--lp-search__form';
+  $input_field_class = 'block--lp-search__input';
+  $input_field_placeholder_text = 'Search IslandLives...';
+  $submit_button_class = 'block--lp-search__button';
+  $submit_button_text = 'search';
+
+  if ($form_id == $search_form_id) {
+    //button text
+    $form['simple']['submit']['#value'] = decode_entities('&#xf002;');
+    //button class
+    $form['simple']['submit']['#attributes']['class'][] = $submit_button_class;
+    // input field class
+    $form['simple']['islandora_simple_search_query']['#attributes']['class'][] = $input_field_class;
+    // input placeholder
+    $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'][] = $input_field_placeholder_text;
+    // form class
+    $form['#attributes']['class'] = $form_class;
+  }
 }
-*/
 
