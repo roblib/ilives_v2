@@ -1,0 +1,22 @@
+//@format
+
+.navbar--search,
+%navbar--search {
+    &__dropdown-trigger {
+        /*style*/
+        margin-bottom: 0;
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %navbar--search__dropdown-trigger;
+}
+.fugly-drupal-name-02 {
+    @extend %navbar--search__part-b;
+}

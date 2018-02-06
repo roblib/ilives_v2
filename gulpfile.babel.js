@@ -133,7 +133,7 @@ gulp.task('bsRemote', () => {
         proxy: siteUrl,
         port: browserSyncPort,
         //logLevel: 'debug',
-        serveStatic: ['dist/js', 'dist/css'],
+        serveStatic: ['dist/js', 'dist/css', 'dist/assets/fonts/**/*'],
         injectChanges: true,
         files: ['dist/css/app.css', 'dist/js/app.js'],
         rewriteRules: [
