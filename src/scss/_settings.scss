@@ -80,8 +80,9 @@ $tan: rgb(207, 197, 170);
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
-$global-width: rem-calc(1440);
+////$global-font-size: 100%;
+$global-font-size: 15px;
+$global-width: rem-calc(1400);
 //$global-width: rem-calc(960);
 $global-lineheight: 1.5;
 $foundation-palette: (
@@ -100,14 +101,14 @@ $body-background: $parchment;
 $body-background: $parchment;
 $body-font-color: $brown;
 //$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: et-book;
+$body-font-family: et-book, Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 //$body-font-family: Roboto;
 //$body-font-family: 'Lato', 'Roboto', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
-$global-weight-normal: normal;
+$global-weight-normal: 400;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-menu-padding: 0.7rem 1rem;
@@ -168,9 +169,9 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h1': ('font-size': 3.2rem),
+    'h2': ('font-size': 2.1rem),
+    'h3': ('font-size': 1.7rem),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
@@ -216,6 +217,25 @@ $keystroke-background: $light-gray;
 $keystroke-padding: rem-calc(2 4 0);
 $keystroke-radius: $global-radius;
 $abbr-underline: 1px dotted $black;
+
+// misc tufte typography
+//{{{
+p,
+ol,
+ul {
+    //font-size: 1.4rem;
+    //line-height: 2rem;
+}
+
+p {
+    font-size: 1.4rem !important;
+    margin-top: 1.4rem !important;
+    line-height:2rem;
+    margin-bottom: 1.4rem !important;
+    padding-right: 0 !important;
+    vertical-align: baseline;
+}
+///}}}
 
 // 5. Typography Helpers
 // ---------------------
