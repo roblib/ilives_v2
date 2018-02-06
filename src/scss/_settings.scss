@@ -81,6 +81,11 @@ $tan: rgb(207, 197, 170);
 // ---------
 
 ////$global-font-size: 100%;
+
+
+$sans: "Gill Sans", Calibri, sans-serif;
+$serif: 'et-book', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+
 $global-font-size: 15px;
 $global-width: rem-calc(1400);
 //$global-width: rem-calc(960);
@@ -99,9 +104,8 @@ $black: #333;
 $white: #fefefe;
 $body-background: $parchment;
 $body-background: $parchment;
-$body-font-color: $brown;
-//$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$body-font-family: et-book, Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+$body-font-color: $brown--dark;
+$body-font-family: $serif;
 //$body-font-family: Roboto;
 //$body-font-family: 'Lato', 'Roboto', sans-serif;
 $body-antialiased: true;
@@ -156,7 +160,7 @@ $header-font-family: et-book;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: $brown;
+$header-color: $brown--dark;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
@@ -230,7 +234,7 @@ ul {
 p {
     font-size: 1.4rem !important;
     margin-top: 1.4rem !important;
-    line-height:2rem;
+    line-height:2rem !important;
     margin-bottom: 1.4rem !important;
     padding-right: 0 !important;
     vertical-align: baseline;
@@ -893,7 +897,7 @@ $topbar-padding: 0.5rem;
 $topbar-background: $brown--dark;
 $topbar-submenu-background: lighten($brown--dark, 10%);
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
-$topbar-input-width: 200px;
+$topbar-input-width: 100%;
 $topbar-unstack-breakpoint: medium;
 
 // 56. Xy Grid

@@ -1,13 +1,42 @@
 //@format
-
+$br: 4px;
 .navbar--search,
 %navbar--search {
     &__dropdown-trigger {
         /*style*/
         margin-bottom: 0;
+        border-radius: $br;
+        //margin-bottom: 4px;
     }
-    &__part-b {
+    &__dropdown-pane {
+        margin-top: rem-calc(14);
         /*style*/
+    }
+}
+#navbar--search {
+    .menu--search-options {
+        background-color: initial;
+        //@include button-group-expand(a);
+        li {
+            flex: 1;
+            margin-left: 4px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        a {
+            @include button;
+            font-family: $sans;
+            text-transform: capitalize;
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+    .block--lp-search__input {
+        border-radius: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 5px;
     }
 }
 
@@ -18,5 +47,5 @@
     @extend %navbar--search__dropdown-trigger;
 }
 .fugly-drupal-name-02 {
-    @extend %navbar--search__part-b;
+    //@extend %navbar--search__part-b;
 }
