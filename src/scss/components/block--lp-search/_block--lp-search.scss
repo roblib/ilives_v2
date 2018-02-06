@@ -1,5 +1,12 @@
 //@format
 //$lp-search-width: rem-calc(350);
+input[type='text']:focus {
+    border: 0;
+    outline: 0;
+    border-top: 4px double $medium-gray;
+    border-bottom: 4px double $medium-gray;
+    box-shadow: none;
+}
 .block--lp-search,
 %block--lp-search {
     //width: $lp-search-width;
@@ -9,12 +16,14 @@
     }
     &__form-wrapper {
         @extend .input-group;
+        margin-bottom: 0;
     }
     &__button {
         margin-bottom: 0;
         //background-color: #e7e7e7;
         border: 1px solid #ccc;
         border-left: 0px;
+        border: 0;
         color: #333;
         background: $white;
         display: none;
@@ -24,10 +33,21 @@
         margin-bottom: 0;
         //did this to make it the same height as the flanking buttons
         height: initial;
+        border-top: 4px double $medium-gray;
+        border-bottom: 4px double $medium-gray;
         border-right: 0px;
         border-left: 0px;
+        //border: 0;
+        font-family: $sans;
+        font-size: 1.2em;
+        //border-radius: 0 6px 6px 0;
+        :focus {
+        }
 
-        border-radius: 0 6px 6px 0;
+        ::placeholder {
+            color: $light-gray;
+            color: blue;
+        }
     }
     &__input__wrapper {
         width: 100%;
@@ -35,7 +55,9 @@
 
     &__menu__link {
         @include button;
-        border-radius: 20px;
+        width: 100%;
+        font-family: $sans;
+        //border-radius: 20px;
     }
     &__menu__icon {
         margin-right: 4px;
@@ -44,16 +66,24 @@
         background: $white;
         color: $black;
         border-right: 0;
-        border-radius: 6px 0 0 6px;
+        //border-radius: 6px 0 0 6px;
+        margin-bottom: 0;
+        border-top: 4px double $medium-gray;
+        border-bottom: 4px double $medium-gray;
     }
     &__dropdown {
-        padding: 0 1rem;
+        padding: 0;
         //width: $lp-search-width;
         border: 0;
         background: transparent;
     }
 }
-
+.menu--search-options {
+    width: 100%;
+    li {
+        flex: 1;
+    }
+}
 //######################//
 // ~~There be Dragons~~ //
 //######################//

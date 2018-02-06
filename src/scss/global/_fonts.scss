@@ -52,6 +52,14 @@ $path: '/sites/islandlives.hp1.islandarchives.ca/themes/ilives/dist/assets/fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
 
 @font-face {
-    font-family: 'gill-sans';
-    src: url('#{$path}/Gill.Sans.Nova/Monotype  - Gill Sans Nova Cn Book.ttf');
+    font-family: 'Gill Sans';
+    src: url('#{$path}/Gill.Sans.Nova/Monotype  - Gill Sans Nova Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('#{$path}/Gill.Sans.Nova/Monotype  - Gill Sans Nova SemiBold.ttf');
+    font-weight: bold;
+    font-style: normal;
 }
