@@ -1,0 +1,41 @@
+//@format
+
+.pager,
+%pager {
+    @include pagination-container;
+    font-family: $sans;
+    text-align: center;
+    li {
+        font-size: 1rem;
+    }
+    a {
+        //@include button;
+    }
+    li.current a {
+        @include pagination-item-current;
+    }
+    li.next {
+    }
+    li.last {
+    }
+    li.ellipsis {
+        @include pagination-ellipsis;
+    }
+
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %pager__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %pager__part-b;
+}
