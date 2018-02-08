@@ -2,11 +2,22 @@
 
 .footer,
 %footer {
+    @include callout();
+    background: $brown--dark;
+    .container {
+        @include xy-grid-container;
+    }
     &__part-a {
         /*style*/
     }
     &__part-b {
         /*style*/
+    }
+    .footer-logo {
+        width: rem-calc(200);
+    }
+    .footer-blurb {
+        color: $white;
     }
 }
 

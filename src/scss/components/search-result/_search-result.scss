@@ -1,0 +1,82 @@
+//@format
+
+.search-result,
+%search-result {
+    dl,
+    dt {
+        margin: 0;
+    }
+    //outline: 1px solid red;
+    @include xy-grid;
+    &__wrapper {
+        margin-bottom: $global-margin*4;
+    }
+    &__thumbnail {
+        //outline: 1px solid green;
+        margin-bottom: 0;
+        @include xy-cell(13%,false);
+        margin-right: $global-margin;
+        dt {
+            margin-bottom: 0;
+        }
+        img {
+            width: 100%;
+            display: none;
+            @include thumbnail;
+            margin-bottom: 0;
+        }
+    }
+    &__metadata {
+        @include xy-cell(auto,true);
+
+        @include xy-grid;
+    }
+    &__metadata__label {
+        &:first-of-type {
+            border-top: 4px solid #ccc;
+        }
+        padding-right: $global-padding;
+        margin-bottom: 0;
+        //outline: 1px solid blue;
+        @include xy-cell(2,false);
+        font-family: $sans;
+        font-weight: normal !important;
+        line-height: 3.1;
+        //@include vertical-center;
+        text-align: right;
+        font-size: 1rem;
+        text-transform: uppercase;
+        //width: 100px !important;
+
+        border-bottom: 1px solid #ccc;
+        &:after {
+            content: ':';
+        }
+        /*style*/
+    }
+    &__metadata__value {
+        padding-left: $global-padding;
+        @include xy-cell(10,false);
+        line-height: 2.2;
+        //outline: 1px solid orange;
+        border-bottom: 1px solid #ccc;
+        &:first-of-type {
+            border-top: 4px solid #ccc;
+        }
+        /*style*/
+        //width: 400px !important;
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    //@extend %search-result__part-a;
+}
+.fugly-drupal-name-02 {
+    //@extend %search-result__part-b;
+}
