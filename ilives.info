@@ -42,6 +42,8 @@ stylesheets[all][] = dist/css/app.css
 ;-------------- CSS FOAD -------------
 ;stylesheets[all][] = donteverloadmeagain.css
 stylesheets[all][] = system.menus.css
+stylesheets[all][] = islandora_solr.theme.css
+stylesheets[all][] = islandora.base.css
 
 ;-------------- JS -------------
 scripts[] = dist/assets/lib/what-input.min.js

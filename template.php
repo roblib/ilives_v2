@@ -22,42 +22,6 @@ function ilives_menu_tree__menu_search_options($variables) {
   return '<ul class="menu menu--search-options">' . $variables['tree'] . '</ul>';
 }
 
-/* main li */
-//function ilives_menu_link__menu_search_options(array $variables) {
-//$element = $variables['element'];
-//$sub_menu = '';
-
-//if ($element['#below']) {
-//foreach ($element['#below'] as $key => $val) {
-//if (is_numeric($key)) {
-//$element['#below'][$key]['#theme'] = 'menu_link__main_menu_inner'; // 2 lavel
-//}
-//}
-//$element['#below']['#theme_wrappers'][0] = 'menu_tree__main_menu_inner';  // 2 lavel
-//$sub_menu = drupal_render($element['#below']);
-//}
-//$output = l($element['#title'], $element['#href'], $element['#localized_options']);
-//return '' . $output . $sub_menu . "\n";
-//}
-
-///* inner ul */
-//function ilives_menu_tree__main_menu_inner($variables) {
-//return '' . $variables['tree'] . '';
-//}
-
-///* inner li */
-//function ilives_menu_link__main_menu_inner($variables) {
-////$element = $variables['element'];
-////$sub_menu = '';
-
-////if ($element['#below']) {
-////$sub_menu = drupal_render($element['#below']);
-////}
-////$output = l($element['#title'], $element['#href'], $element['#localized_options']);
-////return '' . $output . $sub_menu . "\n";
-//}
-
-
 
 
 

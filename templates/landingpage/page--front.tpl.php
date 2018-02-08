@@ -51,7 +51,7 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 
 </div><!-- /page-->
 
-<footer role="contentinfo">
+<footer class="footer" role="contentinfo">
 <div class="container">
 
   <div class="footer-left footer-branding">
