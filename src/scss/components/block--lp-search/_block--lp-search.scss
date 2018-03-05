@@ -10,7 +10,7 @@ input[type='text']:focus {
 .block--lp-search,
 %block--lp-search {
     //width: $lp-search-width;
-    display: flex;
+    //display: flex;
     &__search-bar {
         margin-bottom: 0;
     }
@@ -55,6 +55,7 @@ input[type='text']:focus {
 
     &__menu__link {
         @include button;
+        margin-bottom: 0;
         width: 100%;
         font-family: $sans;
         //border-radius: 20px;
@@ -62,26 +63,16 @@ input[type='text']:focus {
     &__menu__icon {
         margin-right: 4px;
     }
-    &__adv-button {
-        background: $white;
-        color: $black;
-        border-right: 0;
-        //border-radius: 6px 0 0 6px;
-        margin-bottom: 0;
-        border-top: 4px double $medium-gray;
-        border-bottom: 4px double $medium-gray;
-    }
-    &__dropdown {
-        padding: 0;
-        //width: $lp-search-width;
-        border: 0;
-        background: transparent;
-    }
 }
 .menu--search-options {
     width: 100%;
+    //margin-top: 2px;
     li {
         flex: 1;
+        border-right: 1px solid lighten($green, 10%);
+        &:last-child {
+            border-right: 0px;
+        }
     }
 }
 //######################//
