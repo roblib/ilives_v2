@@ -79,11 +79,11 @@ const handlebarsOptions = {
  *==================*/
 
 // Default Task
-gulp.task('default', ['sass-dev', 'images', 'file-mover', 'bsRemote'], () => {
+gulp.task('default', ['sass-dev', 'images', 'js-concat', 'file-mover', 'bsRemote'], () => {
     // watch and compile sass
     gulp.watch('src/scss/**/*.scss', ['sass-dev']);
     // watch and compile sass
-    gulp.watch('src/scss/**/*.js', ['js-concat']);
+    gulp.watch('src/js/*.js', ['js-concat']);
     // watch for minify images
     gulp.watch('src/img-src/*', ['images']);
     // watch this stuff and reload the browser when there are changes
@@ -102,7 +102,7 @@ gulp.task(
         // watch and compile sass
         gulp.watch('src/scss/**/*.scss', ['sass-dev']);
         // watch and compile sass
-        gulp.watch('src/scss/**/*.js', ['js-concat']);
+        gulp.watch('src/js/*.js', ['js-concat']);
         // watch for minify images
         gulp.watch('src/img-src/*', ['images']);
         // watch this stuff and reload the browser when there are changes
@@ -154,7 +154,7 @@ gulp.task(
         gulp.watch('dist/static/*').on('change', browserSync.reload);
         gulp.watch('src/static/**/*.*', ['static--templates']);
         gulp.watch('src/scss/**/*.scss', ['sass-dev']);
-        gulp.watch('src/scss/**/*.js', ['js-concat']);
+        gulp.watch('src/js/app.js', ['js-concat']);
     },
 );
 
@@ -174,12 +174,13 @@ gulp.task('static--templates', () => {
 
 // sub-task: JS concatination
 gulp.task('js-concat', () => {
-    gulp
-        .src('src/scss/{,*/}*.js')
-        .pipe(concat('app.js'))
-        .pipe(concat.header('(function($) {\n'))
-        .pipe(concat.footer('\n})(jQuery);'))
-        .pipe(gulp.dest('dist/js'));
+    gulp.src('src/js/app.js').pipe(gulp.dest('dist/js'));
+
+    //.src('src/scss/{,*/}*.js')
+    //.pipe(concat('app.js'))
+    //.pipe(concat.header('(function($) {\n'))
+    //.pipe(concat.footer('\n})(jQuery);'))
+    //.pipe(gulp.dest('dist/js'));
 });
 
 //sub-task: Sass compiler (dev)

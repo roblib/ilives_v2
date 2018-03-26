@@ -1,0 +1,44 @@
+//@format
+
+.masonry-grid,
+%masonry-grid {
+    &__part-a {
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+
+.book-grid {
+    .book-grid__book,
+    .grid-spacer {
+        //width: 20%;
+        width: rem-calc(250);
+    }
+}
+.book-grid {
+    //display: none;
+    font-family: $sans;
+    font-size: 1rem;
+    line-height: 1.2;
+    &__book {
+        @include callout;
+        //outline: 1px solid red;
+        //height: 300px;
+        overflow: hidden;
+        //width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+}
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.fugly-drupal-name-01 {
+    @extend %masonry-grid__part-a;
+}
+.fugly-drupal-name-02 {
+    @extend %masonry-grid__part-b;
+}
