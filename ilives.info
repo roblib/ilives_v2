@@ -49,6 +49,7 @@ stylesheets[all][] = islandora.base.css
 scripts[] = dist/assets/lib/what-input.min.js
 scripts[] = dist/assets/lib/foundation.min.js
 scripts[] = dist/assets/lib/fontawesome/svg-with-js/js/fontawesome-all.js
+scripts[] = dist/assets/lib/masonry.pkgd.min.js
 scripts[] = dist/js/app.js
 
 ;-------------- Default Mothership Settings  -------------

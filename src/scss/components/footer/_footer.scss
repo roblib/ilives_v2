@@ -1,5 +1,15 @@
 //@format
 
+//sticky footer
+.page {
+  min-height: calc(100vh - 234px);
+}
+.footer {
+  height: 140px;
+}
+
+
+
 .footer,
 %footer {
     @include callout();

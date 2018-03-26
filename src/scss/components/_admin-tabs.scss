@@ -5,10 +5,17 @@
         border: 3px double $light-gray;
         border-right: 0px;
         border-left: 0px;
-        a {
-            transition: background-color 0.5s ease;
-            &:hover {
-                background-color: $green--light !important;
+        li {
+            a {
+                color: $black;
+                font-family:$sans;
+                font-size:.8rem;
+                text-transform:uppercase;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background-color: $brown--light !important;
+                    color:#fff;
+                }
             }
         }
     }
