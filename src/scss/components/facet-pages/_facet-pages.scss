@@ -1,0 +1,43 @@
+//@format
+
+.page-browse .breadcrumb {
+    display: none;
+}
+.facet-page,
+%facet-page {
+    &__letterer {
+        text-align: center;
+        margin-top: $global-margin*2;
+        margin-bottom: $global-margin*2;
+        font-family: $sans;
+        font-size: 1.2rem;
+    }
+    &__pager {
+        text-align: center;
+        margin-bottom: $global-margin*2;
+    }
+    &__results-count {
+        margin-bottom: $global-margin;
+        display: block;
+    }
+    &__results {
+        list-style-type: none;
+        margin-left: 0;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.islandora-solr-facet-pages-letterer {
+    @extend %facet-page__letterer;
+}
+.item-list-pager {
+    @extend %facet-page__pager;
+}
+.results-count {
+    @extend %facet-page__results-count;
+}
+.islandora-solr-facet-pages-results {
+    @extend %facet-page__results;
+}
