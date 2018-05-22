@@ -83,13 +83,13 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
   <?php endif; ?>
 </div><!-- /page-->
 
-<footer role="contentinfo">
+<footer class="footer" role="contentinfo">
 <div class="container">
 
   <div class="footer-left footer-branding">
       <figure class="footer-logo">
     <a href="upei.ca">
-        <img src="<?php print $theme_path; ?>/dist/images/UPEI_Logo_white.svg" alt=""></a>
+        <img src="/<?php print $theme_path; ?>/dist/images/UPEI_Logo_white.svg" alt=""></a>
 
 
       </figure>

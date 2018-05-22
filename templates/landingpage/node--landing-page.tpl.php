@@ -74,11 +74,10 @@ hide($content['links']);
     </div>
 
     <div class="block--lp-search">
-      <button class="button block--lp-search__adv-button" type="button" data-toggle="lp-search-dropdown"> <i class="block--lp-search__menu__icon fas fa-cogs" aria-hidden="true"></i></button>
       <?php print render($simpleSearch['content']); ?>
-      <div class="dropdown-pane block--lp-search__dropdown" id="lp-search-dropdown" data-dropdown data-auto-focus="true">
+
         <?php print render($searchOptions['content']); ?>
-      </div>
+
     </div>
 
   </div>
