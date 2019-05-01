@@ -2,20 +2,29 @@
 
 //sticky footer
 .page {
-  min-height: calc(100vh - 234px);
+    min-height: calc(100vh - 234px);
 }
 .footer {
-  height: 140px;
+    //height: 140px;
 }
-
-
 
 .footer,
 %footer {
     @include callout();
     background: $brown--dark;
+    color: $white;
+    font-family: $sans;
+    p {
+        font-size: 1rem;
+    }
     .container {
         @include xy-grid-container;
+        @include breakpoint(medium) {
+            @include xy-grid;
+            & > * {
+                @include xy-cell(auto);
+            }
+        }
     }
     &__part-a {
         /*style*/
@@ -29,6 +38,9 @@
     .footer-blurb {
         color: $white;
     }
+    .title {
+        color: $white;
+    }
 }
 
 //######################//
@@ -39,83 +51,4 @@
 }
 .fugly-drupal-name-02 {
     @extend %footer__part-b;
-}
-
-$marketing-site-footer-bg: $brown--dark;
-
-.marketing-site-footer {
-    background: $marketing-site-footer-bg;
-    color: lighten($marketing-site-footer-bg, 40%);
-    padding: 2rem 0 0;
-
-    .marketing-site-footer-menu-social a {
-        color: $white;
-    }
-
-    .column-block {
-        margin-bottom: 30px;
-    }
-
-    > .row {
-        margin-bottom: 1rem;
-    }
-
-    @include breakpoint(small only) {
-        .columns {
-            margin-bottom: 2rem;
-        }
-    }
-}
-
-.marketing-site-footer-name {
-    color: $white;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.marketing-site-footer-title {
-    color: $white;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-}
-
-.marketing-site-footer-block {
-    display: flex;
-    margin-bottom: 1rem;
-
-    .fa {
-        font-size: 2rem;
-        color: darken($marketing-site-footer-bg, 20%);
-    }
-
-    p {
-        margin-left: 1rem;
-        line-height: 1.125rem;
-    }
-}
-
-.marketing-site-footer-bottom {
-    background: darken($marketing-site-footer-bg, 20%);
-    padding: 1rem 0;
-
-    p,
-    .menu {
-        margin-bottom: 0;
-    }
-
-    .marketing-site-footer-bottom-links {
-        justify-content: flex-end;
-
-        a {
-            color: lighten($marketing-site-footer-bg, 40%);
-        }
-
-        @include breakpoint(medium down) {
-            justify-content: center;
-        }
-    }
-
-    @include breakpoint(medium down) {
-        text-align: center;
-    }
 }

@@ -1,5 +1,12 @@
 //@format
-
+.lp-feature-row {
+    @include breakpoint(medium) {
+        @include xy-grid;
+        > * {
+            @include xy-cell(auto);
+        }
+    }
+}
 .block--lp-feature,
 %block--lp-feature {
     &__part-a {
