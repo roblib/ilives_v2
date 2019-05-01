@@ -6,7 +6,7 @@
     &__link {
         color: $tan !important;
         margin-left: 1px;
-        background-color: lighten($brown--dark, 10%);
+        background-color: lighten($brown--dark, 10%) !important;
         line-height: 1.3;
         font-family: $sans;
         font-weight: normal;
@@ -44,7 +44,7 @@
 .menu--main .menu .is-active a {
     @extend %navbar--main-menu__link--active;
 }
-.navbar--main-menu li a {
+.navbar--main-menu > li > a {
     @extend %navbar--main-menu__link;
 }
 .navbar--main-menu .submenu {

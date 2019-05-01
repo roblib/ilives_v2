@@ -6,7 +6,7 @@ let siteUrl, sassImportPaths;
 //###########################################################
 // site to be proxied
 //###########################################################
-siteUrl = 'http://islandlives.hp1.islandarchives.ca';
+siteUrl = 'http://islandlives.dev.islandarchives.ca';
 //###########################################################
 // sass libraries to be made available to '@import' in *.scss files
 //###########################################################

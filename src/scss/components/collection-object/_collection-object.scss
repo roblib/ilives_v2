@@ -1,0 +1,34 @@
+//@format
+
+.collection-object {
+    &__metadata {
+        h2 {
+            margin: 0;
+        }
+        @include breakpoint(small only) {
+            @include table-stack();
+        }
+        &__label {
+            @include breakpoint(medium) {
+                text-align: right;
+            }
+            font-family: $sans;
+            text-transform: uppercase;
+            font-size: rem-calc(16);
+        }
+        &__value {
+        }
+        /*style*/
+    }
+    &__part-b {
+        /*style*/
+    }
+}
+#book-viewer {
+    margin-top: $global-margin * 2;
+    margin-bottom: $global-margin * 2;
+}
+#book-viewer,
+.islandora-book-metadata > div {
+    margin-bottom: $global-margin * 2;
+}

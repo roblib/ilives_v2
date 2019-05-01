@@ -9,25 +9,27 @@
     //outline: 1px solid red;
     @include xy-grid;
     &__wrapper {
-        margin-bottom: $global-margin*4;
+        margin-bottom: $global-margin * 4;
     }
-    &__thumbnail {
+    &_thumbnail {
         //outline: 1px solid green;
+        //display: none;
+        padding: 4px;
         margin-bottom: 0;
-        @include xy-cell(13%,false);
+        @include xy-cell(13%, false);
         margin-right: $global-margin;
         dt {
             margin-bottom: 0;
         }
         img {
             width: 100%;
-            display: none;
+            //display: none;
             @include thumbnail;
             margin-bottom: 0;
         }
     }
     &__metadata {
-        @include xy-cell(auto,true);
+        @include xy-cell(auto, true);
 
         @include xy-grid;
     }
@@ -38,7 +40,7 @@
         padding-right: $global-padding;
         margin-bottom: 0;
         //outline: 1px solid blue;
-        @include xy-cell(2,false);
+        @include xy-cell(3, false);
         font-family: $sans;
         font-weight: normal !important;
         line-height: 3.1;
@@ -56,7 +58,7 @@
     }
     &__metadata__value {
         padding-left: $global-padding;
-        @include xy-cell(10,false);
+        @include xy-cell(9, false);
         line-height: 2.2;
         //outline: 1px solid orange;
         border-bottom: 1px solid #ccc;
@@ -70,7 +72,33 @@
         /*style*/
     }
 }
-
+.islandora-solr-facet-wrapper {
+    //@include card-container($background, $color, $margin, $border, $radius, $shadow);
+    @include card-container();
+    h3 {
+        @include card-divider;
+    }
+    .islandora-solr-facet {
+        @include card-section;
+        font-family: $sans;
+        list-style: none;
+        margin-left: 0;
+        font-size: rem-calc(18);
+    }
+    .islandora-solr-date-filter,
+    .islandora-solr-range-slider {
+        @include card-section;
+        font-family: $sans;
+        font-size: rem-calc(18);
+    }
+}
+.solr-facets {
+    margin-top: rem-calc(15);
+}
+input#edit-date-filter-date-filter-submit,
+input#edit-range-slider-submit {
+    @include button();
+}
 //######################//
 // ~~There be Dragons~~ //
 //######################//
