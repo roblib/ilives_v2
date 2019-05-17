@@ -9,19 +9,59 @@
 }
 .block--lp-feature,
 %block--lp-feature {
-    &__part-a {
+    &__latest-additions {
         /*style*/
+        //display: none;
+        &--list {
+            list-style-type: none;
+            margin: 0;
+            font-size: 1.2rem;
+            font-family: $sans;
+            line-height: 1.4;
+        }
+        &--list-item {
+            margin: 0;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: $global-margin/2;
+            padding-bottom: $global-padding/2;
+            //text-align: justify;
+            /*text-justify: inter-word;*/
+            &:hover {
+                //background: $white;
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+        &--list-item--link {
+            color: $black;
+            &:hover {
+                //text-decoration: underline;
+            }
+            /*line-height: 0.6rem;*/
+        }
     }
     &__part-b {
         /*style*/
     }
 }
+.block-views-latest-additions-block {
+}
 
 //######################//
 // ~~There be Dragons~~ //
 //######################//
-.fugly-drupal-name-01 {
-    @extend %block--lp-feature__part-a;
+.block-views-latest-additions-block {
+    @extend %block--lp-feature__latest-additions;
+}
+.block-views-latest-additions-block .item-list ul {
+    @extend %block--lp-feature__latest-additions--list;
+}
+.block-views-latest-additions-block .item-list li {
+    @extend %block--lp-feature__latest-additions--list-item;
+}
+.block-views-latest-additions-block .item-list li a {
+    @extend %block--lp-feature__latest-additions--list-item--link;
 }
 .fugly-drupal-name-02 {
     @extend %block--lp-feature__part-b;
