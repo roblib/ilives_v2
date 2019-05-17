@@ -3,7 +3,19 @@
   Preprocess
  */
 
+function ilives_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  if (!empty($breadcrumb)) {
+//kpr($breadcrumb);
 
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+    $output .= '<ul class="breadcrumbs"><li class="breadcrumb">' . implode('</li><li class="breadcrumb">', $breadcrumb) . '</ul>';
+    //$output .= '<div class="breadcrumb">' . $breadcrumb . '</div>';
+    return $output;
+  }
+}
 
 
 //kill of the <ul class="menu" around the menues
