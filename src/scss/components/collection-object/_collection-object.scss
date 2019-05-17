@@ -1,5 +1,9 @@
 //@format
 
+.page-islandora-object h1 {
+    font-size: 2.4rem;
+}
+
 .collection-object {
     &__metadata {
         h2 {
@@ -11,12 +15,19 @@
         &__label {
             @include breakpoint(medium) {
                 text-align: right;
+                width: 250px;
             }
             font-family: $sans;
             text-transform: uppercase;
             font-size: rem-calc(16);
+            &:after {
+                //content: ':';
+            }
         }
         &__value {
+            p {
+                margin: 0;
+            }
         }
         /*style*/
     }

@@ -1,0 +1,760 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/2165a71/
+0	_settings.scss	/^                       0 2px 10px 0 rgba(0,0,0,.12);$/;"	t
+0	_settings.scss	/^$prototype-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),$/;"	t
+0	components/_search--simple.scss	/^    box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.18);$/;"	t
+0	global/_tufte.scss	/^    @media screen and (-webkit-min-device-pixel-ratio: 0) {$/;"	t
+16	_settings.scss	/^    'h6': ('font-size': 16),$/;"	t
+17	_settings.scss	/^    'h5': ('font-size': 17),$/;"	t
+18	_settings.scss	/^    'h4': ('font-size': 18),$/;"	t
+19	_settings.scss	/^    'h3': ('font-size': 19),$/;"	t
+197	_settings.scss	/^$tan: rgb(207, 197, 170);$/;"	t
+20	_settings.scss	/^    'h2': ('font-size': 20),$/;"	t
+20	_settings.scss	/^    'h5': ('font-size': 20),$/;"	t
+2012	global/_islandora.base.scss	/^    Created on : May 23, 2012, 11:22:04 AM$/;"	t
+22313f	components/breadcrumbs/_breadcrumbs.scss	/^\/\/background-color: lighten(#22313f, 45%);$/;"	i
+237	_settings.scss	/^$light-green: rgb(231, 237, 224);$/;"	t
+24	_settings.scss	/^    'h1': ('font-size': 24),$/;"	t
+25	_settings.scss	/^    'h4': ('font-size': 25),$/;"	t
+333	global/_tufte.scss	/^            linear-gradient($page-bg, $page-bg), linear-gradient(#333, #333);$/;"	i
+3adb76	_settings.scss	/^  success: #3adb76,$/;"	i
+400i	global/_fonts.scss	/^@import url('https:\/\/fonts.googleapis.com\/css?family=Lato:300,400,400i,700');$/;"	t
+500italic	global/_fonts.scss	/^@import url(\/\/fonts.googleapis.com\/css?family=Roboto:400,500,300,700,300italic,400italic,500i/;"	t
+760px	global/_tufte.scss	/^@media (max-width: 760px) {$/;"	t
+767676	_settings.scss	/^  secondary: #767676,$/;"	i
+Calibri	_settings.scss	/^$sans: "Gill Sans", Calibri, sans-serif;$/;"	t
+Calibri	global/_tufte.scss	/^    \/\/font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;$/;"	t
+Courier	_settings.scss	/^$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;$/;"	t
+Courier	global/_tufte.scss	/^    \/\/font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;$/;"	t
+Georgia	_settings.scss	/^$serif: 'et-book', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, se/;"	t
+Georgia	global/_tufte.scss	/^    \/\/'Book Antiqua', Georgia, serif;$/;"	t
+Palatino	global/_tufte.scss	/^    \/\/font-family: et-book, Palatino, 'Palatino Linotype', 'Palatino LT STD',$/;"	t
+a	components/_admin-tabs.scss	/^            a {$/;"	t
+a	components/block--lp-search/_block--lp-search.scss	/^    a {$/;"	t
+a	components/navbar--menu/_navbar--menu.scss	/^    a {$/;"	t
+a	components/navbar--search/_navbar--search.scss	/^        a {$/;"	t
+a	components/navbar/_navbar.scss	/^        a {$/;"	t
+a	components/pager/_pager.scss	/^    a {$/;"	t
+abbr-underline	_settings.scss	/^$abbr-underline: 1px dotted $black;$/;"	v
+abide-inputs	_settings.scss	/^$abide-inputs: true;$/;"	v
+abide-labels	_settings.scss	/^$abide-labels: true;$/;"	v
+absolute	_settings.scss	/^  absolute,$/;"	t
+accordion-background	_settings.scss	/^$accordion-background: $white;$/;"	v
+accordion-content-background	_settings.scss	/^$accordion-content-background: $white;$/;"	v
+accordion-content-border	_settings.scss	/^$accordion-content-border: 1px solid $light-gray;$/;"	v
+accordion-content-color	_settings.scss	/^$accordion-content-color: $body-font-color;$/;"	v
+accordion-content-padding	_settings.scss	/^$accordion-content-padding: 1rem;$/;"	v
+accordion-item-background-hover	_settings.scss	/^$accordion-item-background-hover: $light-gray;$/;"	v
+accordion-item-color	_settings.scss	/^$accordion-item-color: $primary-color;$/;"	v
+accordion-item-padding	_settings.scss	/^$accordion-item-padding: 1.25rem 1rem;$/;"	v
+accordion-plusminus	_settings.scss	/^$accordion-plusminus: true;$/;"	v
+accordion-submenu-toggle-border	_settings.scss	/^$accordion-submenu-toggle-border: $accordionmenu-border;$/;"	v
+accordion-title-font-size	_settings.scss	/^$accordion-title-font-size: rem-calc(12);$/;"	v
+accordionmenu-arrow-color	_settings.scss	/^$accordionmenu-arrow-color: $primary-color;$/;"	v
+accordionmenu-arrow-size	_settings.scss	/^$accordionmenu-arrow-size: 6px;$/;"	v
+accordionmenu-arrows	_settings.scss	/^$accordionmenu-arrows: true;$/;"	v
+accordionmenu-border	_settings.scss	/^$accordionmenu-border: null;$/;"	v
+accordionmenu-item-background	_settings.scss	/^$accordionmenu-item-background: null;$/;"	v
+accordionmenu-nested-margin	_settings.scss	/^$accordionmenu-nested-margin: $global-menu-nested-margin;$/;"	v
+accordionmenu-padding	_settings.scss	/^$accordionmenu-padding: $global-menu-padding;$/;"	v
+accordionmenu-submenu-padding	_settings.scss	/^$accordionmenu-submenu-padding: $accordionmenu-padding;$/;"	v
+accordionmenu-submenu-toggle-background	_settings.scss	/^$accordionmenu-submenu-toggle-background: null;$/;"	v
+accordionmenu-submenu-toggle-height	_settings.scss	/^$accordionmenu-submenu-toggle-height: $accordionmenu-submenu-toggle-width;$/;"	v
+accordionmenu-submenu-toggle-width	_settings.scss	/^$accordionmenu-submenu-toggle-width: 40px;$/;"	v
+admin_tabs	components/_admin-tabs.scss	/^.admin_tabs {$/;"	c
+anchor-color	_settings.scss	/^$anchor-color: $primary-color;$/;"	v
+anchor-color-hover	_settings.scss	/^$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);$/;"	v
+anchor-text-decoration	_settings.scss	/^$anchor-text-decoration: none;$/;"	v
+anchor-text-decoration-hover	_settings.scss	/^$anchor-text-decoration-hover: none;$/;"	v
+animated-search-form-initial-width	components/_search--simple.scss	/^$animated-search-form-initial-width: 10rem;$/;"	v
+animated-search-form-transition-duration	components/_search--simple.scss	/^$animated-search-form-transition-duration: 0.4s;$/;"	v
+article	global/_tufte.scss	/^article {$/;"	t
+badge-background	_settings.scss	/^$badge-background: $primary-color;$/;"	v
+badge-color	_settings.scss	/^$badge-color: $white;$/;"	v
+badge-color-alt	_settings.scss	/^$badge-color-alt: $black;$/;"	v
+badge-font-size	_settings.scss	/^$badge-font-size: 0.6rem;$/;"	v
+badge-minwidth	_settings.scss	/^$badge-minwidth: 2.1em;$/;"	v
+badge-padding	_settings.scss	/^$badge-padding: 0.3em;$/;"	v
+badge-palette	_settings.scss	/^$badge-palette: $foundation-palette;$/;"	v
+bg-url	components/hero/_hero.scss	/^$bg-url: '#{$path}\/images\/pei-scenery--1900w.png';$/;"	v
+bg-url	components/showcase/_showcase.scss	/^$bg-url: '..\/images\/pei-scenery.jpg';$/;"	v
+bg-url	components/showcase/_showcase.scss	/^$bg-url: 'https:\/\/static.pexels.com\/photos\/248064\/pexels-photo-248064.jpeg';$/;"	v
+black	_settings.scss	/^$black: #333;$/;"	v
+block	_settings.scss	/^  block,$/;"	t
+block--lp-feature	components/block--lp-feature/_block--lp-feature.scss	/^.block--lp-feature,$/;"	c
+block--lp-search	components/block--lp-search/_block--lp-search.scss	/^.block--lp-search,$/;"	c
+block--lp-search__input	components/navbar--search/_navbar--search.scss	/^    .block--lp-search__input {$/;"	c
+block--lp-site-description	components/block--lp-site-description/_block--lp-site-description.scss	/^.block--lp-site-description,$/;"	c
+block-grid-max	_settings.scss	/^$block-grid-max: 8;$/;"	v
+blockquote	global/_tufte.scss	/^    blockquote {$/;"	t
+blockquote	global/_tufte.scss	/^blockquote {$/;"	t
+blockquote-border	_settings.scss	/^$blockquote-border: 1px solid $medium-gray;$/;"	v
+blockquote-color	_settings.scss	/^$blockquote-color: $dark-gray;$/;"	v
+blockquote-padding	_settings.scss	/^$blockquote-padding: rem-calc(9 20 0 19);$/;"	v
+body	global/_tufte.scss	/^    body {$/;"	t
+body	global/_tufte.scss	/^body {$/;"	t
+body-antialiased	_settings.scss	/^$body-antialiased: true;$/;"	v
+body-background	_settings.scss	/^$body-background: $parchment;$/;"	v
+body-font-color	_settings.scss	/^$body-font-color: $brown--dark;$/;"	v
+body-font-family	_settings.scss	/^$body-font-family: $serif;$/;"	v
+book-grid	components/masonry-grid/_masonry-grid.scss	/^.book-grid {$/;"	c
+book-grid__book	components/masonry-grid/_masonry-grid.scss	/^    .book-grid__book,$/;"	c
+book-viewer	components/collection-object/_collection-object.scss	/^#book-viewer {$/;"	i
+book-viewer	components/collection-object/_collection-object.scss	/^#book-viewer,$/;"	i
+br	components/navbar--search/_navbar--search.scss	/^$br: 0px;$/;"	v
+branding-title-font-size	components/navbar/_navbar.scss	/^$branding-title-font-size: rem-calc(39);$/;"	v
+breadcrumb	components/breadcrumbs/_breadcrumbs.scss	/^.breadcrumb {$/;"	c
+breadcrumbs	components/breadcrumbs/_breadcrumbs.scss	/^.breadcrumbs,$/;"	c
+breadcrumbs-item-color	_settings.scss	/^$breadcrumbs-item-color: $primary-color;$/;"	v
+breadcrumbs-item-color-current	_settings.scss	/^$breadcrumbs-item-color-current: $black;$/;"	v
+breadcrumbs-item-color-disabled	_settings.scss	/^$breadcrumbs-item-color-disabled: $medium-gray;$/;"	v
+breadcrumbs-item-font-size	_settings.scss	/^$breadcrumbs-item-font-size: rem-calc(11);$/;"	v
+breadcrumbs-item-margin	_settings.scss	/^$breadcrumbs-item-margin: 0.75rem;$/;"	v
+breadcrumbs-item-separator	_settings.scss	/^$breadcrumbs-item-separator: true;$/;"	v
+breadcrumbs-item-separator-color	_settings.scss	/^$breadcrumbs-item-separator-color: $medium-gray;$/;"	v
+breadcrumbs-item-separator-item	_settings.scss	/^$breadcrumbs-item-separator-item: '\/';$/;"	v
+breadcrumbs-item-separator-item-rtl	_settings.scss	/^$breadcrumbs-item-separator-item-rtl: '\\\\';$/;"	v
+breadcrumbs-item-uppercase	_settings.scss	/^$breadcrumbs-item-uppercase: true;$/;"	v
+breadcrumbs-margin	_settings.scss	/^$breadcrumbs-margin: 0 0 $global-margin 0;$/;"	v
+breakpoint-classes	_settings.scss	/^$breakpoint-classes: (small medium large);$/;"	v
+breakpoints	_settings.scss	/^$breakpoints: ($/;"	v
+brown	_settings.scss	/^$brown: #492f13;$/;"	v
+brown--dark	_settings.scss	/^$brown--dark: #33210D;$/;"	v
+brown--light	_settings.scss	/^$brown--light: #895627;$/;"	v
+button-background	_settings.scss	/^$button-background: $primary-color;$/;"	v
+button-background-hover	_settings.scss	/^$button-background-hover: scale-color($button-background, $lightness: -15%);$/;"	v
+button-background-hover-lightness	_settings.scss	/^$button-background-hover-lightness: -20%;$/;"	v
+button-color	_settings.scss	/^$button-color: $white;$/;"	v
+button-color-alt	_settings.scss	/^$button-color-alt: $black;$/;"	v
+button-fill	_settings.scss	/^$button-fill: solid;$/;"	v
+button-font-family	_settings.scss	/^$button-font-family: inherit;$/;"	v
+button-hollow-border-width	_settings.scss	/^$button-hollow-border-width: 1px;$/;"	v
+button-hollow-hover-lightness	_settings.scss	/^$button-hollow-hover-lightness: -50%;$/;"	v
+button-margin	_settings.scss	/^$button-margin: 0 0 $global-margin 0;$/;"	v
+button-opacity-disabled	_settings.scss	/^$button-opacity-disabled: 0.25;$/;"	v
+button-padding	_settings.scss	/^$button-padding: 0.85em 1em;$/;"	v
+button-palette	_settings.scss	/^$button-palette: $foundation-palette;$/;"	v
+button-radius	_settings.scss	/^$button-radius: $global-radius;$/;"	v
+button-responsive-expanded	_settings.scss	/^$button-responsive-expanded: false;$/;"	v
+button-sizes	_settings.scss	/^$button-sizes: ($/;"	v
+button-transition	_settings.scss	/^$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;$/;"	v
+buttongroup-child-selector	_settings.scss	/^$buttongroup-child-selector: '.button';$/;"	v
+buttongroup-expand-max	_settings.scss	/^$buttongroup-expand-max: 6;$/;"	v
+buttongroup-margin	_settings.scss	/^$buttongroup-margin: 1rem;$/;"	v
+buttongroup-radius-on-each	_settings.scss	/^$buttongroup-radius-on-each: true;$/;"	v
+buttongroup-spacing	_settings.scss	/^$buttongroup-spacing: 1px;$/;"	v
+callout-background	_settings.scss	/^$callout-background: $white;$/;"	v
+callout-background-fade	_settings.scss	/^$callout-background-fade: 85%;$/;"	v
+callout-border	_settings.scss	/^$callout-border: 1px solid rgba($black, 0.25);$/;"	v
+callout-font-color	_settings.scss	/^$callout-font-color: $body-font-color;$/;"	v
+callout-font-color-alt	_settings.scss	/^$callout-font-color-alt: $body-background;$/;"	v
+callout-link-tint	_settings.scss	/^$callout-link-tint: 30%;$/;"	v
+callout-margin	_settings.scss	/^$callout-margin: 0 0 1rem 0;$/;"	v
+callout-padding	_settings.scss	/^$callout-padding: 1rem;$/;"	v
+callout-radius	_settings.scss	/^$callout-radius: $global-radius;$/;"	v
+camel	_settings.scss	/^$camel: #ce8a3e;$/;"	v
+card-background	_settings.scss	/^$card-background: $white;$/;"	v
+card-border	_settings.scss	/^$card-border: 1px solid $light-gray;$/;"	v
+card-border-radius	_settings.scss	/^$card-border-radius: $global-radius;$/;"	v
+card-divider-background	_settings.scss	/^$card-divider-background: $light-gray;$/;"	v
+card-font-color	_settings.scss	/^$card-font-color: $body-font-color;$/;"	v
+card-margin-bottom	_settings.scss	/^$card-margin-bottom: $global-margin;$/;"	v
+card-padding	_settings.scss	/^$card-padding: $global-padding;$/;"	v
+card-shadow	_settings.scss	/^$card-shadow: none;$/;"	v
+cc4b37	_settings.scss	/^  alert: #cc4b37,$/;"	i
+circle	_settings.scss	/^  circle,$/;"	t
+cite-color	_settings.scss	/^$cite-color: $dark-gray;$/;"	v
+cite-font-size	_settings.scss	/^$cite-font-size: rem-calc(13);$/;"	v
+cite-pseudo-content	_settings.scss	/^$cite-pseudo-content: '\\2014 \\0020';$/;"	v
+closebutton-color	_settings.scss	/^$closebutton-color: $dark-gray;$/;"	v
+closebutton-color-hover	_settings.scss	/^$closebutton-color-hover: $black;$/;"	v
+closebutton-lineheight	_settings.scss	/^$closebutton-lineheight: 1;$/;"	v
+closebutton-offset-horizontal	_settings.scss	/^$closebutton-offset-horizontal: ($/;"	v
+closebutton-offset-vertical	_settings.scss	/^$closebutton-offset-vertical: ($/;"	v
+closebutton-position	_settings.scss	/^$closebutton-position: right top;$/;"	v
+closebutton-size	_settings.scss	/^$closebutton-size: ($/;"	v
+code	global/_tufte.scss	/^code {$/;"	t
+code	global/_tufte.scss	/^pre.code {$/;"	c
+code-background	_settings.scss	/^$code-background: $light-gray;$/;"	v
+code-border	_settings.scss	/^$code-border: 1px solid $medium-gray;$/;"	v
+code-color	_settings.scss	/^$code-color: $black;$/;"	v
+code-font-family	_settings.scss	/^$code-font-family: $font-family-monospace;$/;"	v
+code-font-weight	_settings.scss	/^$code-font-weight: $global-weight-normal;$/;"	v
+code-padding	_settings.scss	/^$code-padding: rem-calc(2 5 1);$/;"	v
+collection-object	components/collection-object/_collection-object.scss	/^.collection-object {$/;"	c
+container	components/footer/_footer.scss	/^    .container {$/;"	c
+container	components/showcase/_showcase.scss	/^    .container {$/;"	c
+content	global/_tufte.scss	/^.content {$/;"	c
+danger	global/_tufte.scss	/^.danger {$/;"	c
+dark-gray	_settings.scss	/^$dark-gray: #8a8a8a;$/;"	v
+decimal	_settings.scss	/^  decimal,$/;"	t
+defnlist-margin-bottom	_settings.scss	/^$defnlist-margin-bottom: 1rem;$/;"	v
+defnlist-term-margin-bottom	_settings.scss	/^$defnlist-term-margin-bottom: 0.3rem;$/;"	v
+defnlist-term-weight	_settings.scss	/^$defnlist-term-weight: $global-weight-bold;$/;"	v
+disc	_settings.scss	/^  disc,$/;"	t
+dl	components/search-result/_search-result.scss	/^    dl,$/;"	t
+down	_settings.scss	/^  down,$/;"	t
+drilldown-arrow-color	_settings.scss	/^$drilldown-arrow-color: $primary-color;$/;"	v
+drilldown-arrow-size	_settings.scss	/^$drilldown-arrow-size: 6px;$/;"	v
+drilldown-arrows	_settings.scss	/^$drilldown-arrows: true;$/;"	v
+drilldown-background	_settings.scss	/^$drilldown-background: $white;$/;"	v
+drilldown-nested-margin	_settings.scss	/^$drilldown-nested-margin: 0;$/;"	v
+drilldown-padding	_settings.scss	/^$drilldown-padding: $global-menu-padding;$/;"	v
+drilldown-submenu-background	_settings.scss	/^$drilldown-submenu-background: $white;$/;"	v
+drilldown-submenu-padding	_settings.scss	/^$drilldown-submenu-padding: $drilldown-padding;$/;"	v
+drilldown-transition	_settings.scss	/^$drilldown-transition: transform 0.15s linear;$/;"	v
+dropdown-background	_settings.scss	/^$dropdown-background: $body-background;$/;"	v
+dropdown-border	_settings.scss	/^$dropdown-border: 1px solid $medium-gray;$/;"	v
+dropdown-font-size	_settings.scss	/^$dropdown-font-size: 1rem;$/;"	v
+dropdown-menu-item-background-active	_settings.scss	/^$dropdown-menu-item-background-active: lighten($brown--dark, 20%);$/;"	v
+dropdown-menu-item-color-active	_settings.scss	/^$dropdown-menu-item-color-active: get-color(primary);$/;"	v
+dropdown-padding	_settings.scss	/^$dropdown-padding: 1rem;$/;"	v
+dropdown-radius	_settings.scss	/^$dropdown-radius: $global-radius;$/;"	v
+dropdown-sizes	_settings.scss	/^$dropdown-sizes: ($/;"	v
+dropdown-width	_settings.scss	/^$dropdown-width: 300px;$/;"	v
+dropdownmenu-arrow-color	_settings.scss	/^$dropdownmenu-arrow-color: $anchor-color;$/;"	v
+dropdownmenu-arrow-color	_settings.scss	/^$dropdownmenu-arrow-color: $white;$/;"	v
+dropdownmenu-arrow-padding	_settings.scss	/^$dropdownmenu-arrow-padding: 1.5rem;$/;"	v
+dropdownmenu-arrow-size	_settings.scss	/^$dropdownmenu-arrow-size: 6px;$/;"	v
+dropdownmenu-arrows	_settings.scss	/^$dropdownmenu-arrows: false;$/;"	v
+dropdownmenu-background	_settings.scss	/^$dropdownmenu-background: $white;$/;"	v
+dropdownmenu-border	_settings.scss	/^$dropdownmenu-border: 1px solid $medium-gray;$/;"	v
+dropdownmenu-min-width	_settings.scss	/^$dropdownmenu-min-width: 200px;$/;"	v
+dropdownmenu-nested-margin	_settings.scss	/^$dropdownmenu-nested-margin: 0;$/;"	v
+dropdownmenu-padding	_settings.scss	/^$dropdownmenu-padding: $global-menu-padding;$/;"	v
+dropdownmenu-submenu-background	_settings.scss	/^$dropdownmenu-submenu-background: $dropdownmenu-background;$/;"	v
+dropdownmenu-submenu-padding	_settings.scss	/^$dropdownmenu-submenu-padding: $dropdownmenu-padding;$/;"	v
+dt	components/search-result/_search-result.scss	/^        dt {$/;"	t
+dt	components/search-result/_search-result.scss	/^    dt {$/;"	t
+edit-date-filter-date-filter-submit	components/search-result/_search-result.scss	/^input#edit-date-filter-date-filter-submit,$/;"	i
+edit-range-slider-submit	components/search-result/_search-result.scss	/^input#edit-range-slider-submit {$/;"	i
+edit-simple--2	components/block--lp-search/_block--lp-search.scss	/^.block--lp-search #edit-simple--2 {$/;"	i
+epigraph	global/_tufte.scss	/^div.epigraph {$/;"	c
+facet-page	components/facet-pages/_facet-pages.scss	/^.facet-page,$/;"	c
+ffae00	_settings.scss	/^  warning: #ffae00,$/;"	i
+fieldset-border	_settings.scss	/^$fieldset-border: 1px solid $medium-gray;$/;"	v
+fieldset-margin	_settings.scss	/^$fieldset-margin: rem-calc(18 0);$/;"	v
+fieldset-padding	_settings.scss	/^$fieldset-padding: rem-calc(20);$/;"	v
+figcaption	global/_tufte.scss	/^    figcaption,$/;"	t
+figcaption	global/_tufte.scss	/^figcaption {$/;"	t
+figure	global/_tufte.scss	/^    figure {$/;"	t
+figure	global/_tufte.scss	/^figure {$/;"	t
+figures	global/_tufte.scss	/^\/* Sidenotes, margin notes, figures, captions *\/$/;"	t
+flex-source-ordering-count	_settings.scss	/^$flex-source-ordering-count: 6;$/;"	v
+flexbox-responsive-breakpoints	_settings.scss	/^$flexbox-responsive-breakpoints: true;$/;"	v
+font-color	components/breadcrumbs/_breadcrumbs.scss	/^$font-color: #fff;$/;"	v
+font-family-monospace	_settings.scss	/^$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;$/;"	v
+footer	components/_footer.scss	/^footer {$/;"	t
+footer	components/footer/_footer.scss	/^.footer {$/;"	c
+footer	components/footer/_footer.scss	/^.footer,$/;"	c
+footer-blurb	components/_footer.scss	/^.footer-blurb {$/;"	c
+footer-blurb	components/footer/_footer.scss	/^    .footer-blurb {$/;"	c
+footer-logo	components/_footer.scss	/^.footer-logo {$/;"	c
+footer-logo	components/footer/_footer.scss	/^    .footer-logo {$/;"	c
+form-button-radius	_settings.scss	/^$form-button-radius: $global-radius;$/;"	v
+form-label-color	_settings.scss	/^$form-label-color: $black;$/;"	v
+form-label-color-invalid	_settings.scss	/^$form-label-color-invalid: get-color(alert);$/;"	v
+form-label-font-size	_settings.scss	/^$form-label-font-size: 1.4rem;$/;"	v
+form-label-font-size	_settings.scss	/^$form-label-font-size: rem-calc(14);$/;"	v
+form-label-font-weight	_settings.scss	/^$form-label-font-weight: $global-weight-normal;$/;"	v
+form-label-line-height	_settings.scss	/^$form-label-line-height: 1.8;$/;"	v
+form-spacing	_settings.scss	/^$form-spacing: rem-calc(16);$/;"	v
+foundation-palette	_settings.scss	/^$foundation-palette: ($/;"	v
+fugly-drupal-name-01	components/_lp-feature-block.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/_lp-logo-block.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/_lp-slideshow.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/block--lp-feature/_block--lp-feature.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/footer/_footer.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/hero/_hero.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/lp-search-block/_lp-search-block.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/masonry-grid/_masonry-grid.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/navbar--search/_navbar--search.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/pager/_pager.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/search-result/_search-result.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	components/showcase/_showcase.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-01	layout/_lp-layout.scss	/^.fugly-drupal-name-01 {$/;"	c
+fugly-drupal-name-02	components/_lp-feature-block.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/_lp-logo-block.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/_lp-slideshow.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/block--lp-feature/_block--lp-feature.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/footer/_footer.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/hero/_hero.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/lp-search-block/_lp-search-block.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/masonry-grid/_masonry-grid.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/navbar--search/_navbar--search.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/navbar/_navbar.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/pager/_pager.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/search-result/_search-result.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	components/showcase/_showcase.scss	/^.fugly-drupal-name-02 {$/;"	c
+fugly-drupal-name-02	layout/_lp-layout.scss	/^.fugly-drupal-name-02 {$/;"	c
+fullwidth	global/_tufte.scss	/^.fullwidth {$/;"	c
+fullwidth	global/_tufte.scss	/^div.fullwidth,$/;"	c
+fullwidth	global/_tufte.scss	/^table.fullwidth {$/;"	c
+global-button-cursor	_settings.scss	/^$global-button-cursor: auto;$/;"	v
+global-color-pick-contrast-tolerance	_settings.scss	/^$global-color-pick-contrast-tolerance: 0;$/;"	v
+global-flexbox	_settings.scss	/^$global-flexbox: true;$/;"	v
+global-font-size	_settings.scss	/^$global-font-size: 15px;$/;"	v
+global-lineheight	_settings.scss	/^$global-lineheight: 1.5;$/;"	v
+global-margin	_settings.scss	/^$global-margin: 1rem;$/;"	v
+global-menu-nested-margin	_settings.scss	/^$global-menu-nested-margin: 1rem;$/;"	v
+global-menu-padding	_settings.scss	/^$global-menu-padding: 0.7rem 1rem;$/;"	v
+global-padding	_settings.scss	/^$global-padding: 1rem;$/;"	v
+global-position	_settings.scss	/^$global-position: 1rem;$/;"	v
+global-prototype-breakpoints	_settings.scss	/^$global-prototype-breakpoints: false;$/;"	v
+global-radius	_settings.scss	/^$global-radius: 0;$/;"	v
+global-text-direction	_settings.scss	/^$global-text-direction: ltr;$/;"	v
+global-weight-bold	_settings.scss	/^$global-weight-bold: bold;$/;"	v
+global-weight-normal	_settings.scss	/^$global-weight-normal: 400;$/;"	v
+global-width	_settings.scss	/^$global-width: rem-calc(1400);$/;"	v
+green	_settings.scss	/^$green: #5C8727;$/;"	v
+green--dark	_settings.scss	/^$green--dark: #31341d;$/;"	v
+green--light	_settings.scss	/^$green--light: #ADD37D;$/;"	v
+grid-column-alias	_settings.scss	/^$grid-column-alias: 'columns';$/;"	v
+grid-column-align-edge	_settings.scss	/^$grid-column-align-edge: true;$/;"	v
+grid-column-count	_settings.scss	/^$grid-column-count: 12;$/;"	v
+grid-column-gutter	_settings.scss	/^$grid-column-gutter: ($/;"	v
+grid-columns	_settings.scss	/^$grid-columns: 12;$/;"	v
+grid-container	_settings.scss	/^$grid-container: $global-width;$/;"	v
+grid-container-max	_settings.scss	/^$grid-container-max: $global-width;$/;"	v
+grid-container-padding	_settings.scss	/^$grid-container-padding: $grid-padding-gutters;$/;"	v
+grid-margin-gutters	_settings.scss	/^$grid-margin-gutters: ($/;"	v
+grid-padding-gutters	_settings.scss	/^$grid-padding-gutters: $grid-margin-gutters;$/;"	v
+grid-row-width	_settings.scss	/^$grid-row-width: $global-width;$/;"	v
+grid-spacer	components/masonry-grid/_masonry-grid.scss	/^    .grid-spacer {$/;"	c
+h1	components/block--lp-site-description/_block--lp-site-description.scss	/^    h1 {$/;"	t
+h1	global/_tufte.scss	/^h1 {$/;"	t
+h2	components/collection-object/_collection-object.scss	/^        h2 {$/;"	t
+h2	global/_tufte.scss	/^h2 {$/;"	t
+h3	components/search-result/_search-result.scss	/^    h3 {$/;"	t
+h3	global/_tufte.scss	/^h3 {$/;"	t
+has-tip-border-bottom	_settings.scss	/^$has-tip-border-bottom: dotted 1px $dark-gray;$/;"	v
+has-tip-cursor	_settings.scss	/^$has-tip-cursor: help;$/;"	v
+has-tip-font-weight	_settings.scss	/^$has-tip-font-weight: $global-weight-bold;$/;"	v
+header-color	_settings.scss	/^$header-color: $brown--dark;$/;"	v
+header-font-family	_settings.scss	/^$header-font-family: et-book;$/;"	v
+header-font-style	_settings.scss	/^$header-font-style: normal;$/;"	v
+header-font-weight	_settings.scss	/^$header-font-weight: $global-weight-normal;$/;"	v
+header-lineheight	_settings.scss	/^$header-lineheight: 1.4;$/;"	v
+header-margin-bottom	_settings.scss	/^$header-margin-bottom: 0.5rem;$/;"	v
+header-small-font-color	_settings.scss	/^$header-small-font-color: $medium-gray;$/;"	v
+header-styles	_settings.scss	/^$header-styles: ($/;"	v
+header-text-rendering	_settings.scss	/^$header-text-rendering: optimizeLegibility;$/;"	v
+helptext-color	_settings.scss	/^$helptext-color: $black;$/;"	v
+helptext-font-size	_settings.scss	/^$helptext-font-size: rem-calc(13);$/;"	v
+helptext-font-style	_settings.scss	/^$helptext-font-style: italic;$/;"	v
+hero	components/hero/_hero.scss	/^.hero {$/;"	c
+hero-height	components/hero/_hero.scss	/^$hero-height: 400px;$/;"	v
+hero-height	components/hero/_hero.scss	/^$hero-height: 60vh;$/;"	v
+hero-section	components/hero/_hero.scss	/^.hero-section {$/;"	c
+hero-section-text	components/hero/_hero.scss	/^    .hero-section-text {$/;"	c
+hidden	_settings.scss	/^  hidden,$/;"	t
+hr	global/_tufte.scss	/^hr {$/;"	t
+hr-border	_settings.scss	/^$hr-border: 1px solid $medium-gray;$/;"	v
+hr-margin	_settings.scss	/^$hr-margin: rem-calc(20) auto;$/;"	v
+hr-width	_settings.scss	/^$hr-width: $global-width;$/;"	v
+html	global/_tufte.scss	/^html {$/;"	t
+iframe-wrapper	global/_tufte.scss	/^.iframe-wrapper {$/;"	c
+img	components/masonry-grid/_masonry-grid.scss	/^        img {$/;"	t
+img	components/search-result/_search-result.scss	/^        img {$/;"	t
+img	global/_tufte.scss	/^    img {$/;"	t
+img	global/_tufte.scss	/^img {$/;"	t
+img	layout/_lp-layout.scss	/^    img {$/;"	t
+inline	_settings.scss	/^  inline,$/;"	t
+inline-block	_settings.scss	/^  inline-block,$/;"	t
+input-background	_settings.scss	/^$input-background: $white;$/;"	v
+input-background-disabled	_settings.scss	/^$input-background-disabled: $light-gray;$/;"	v
+input-background-focus	_settings.scss	/^$input-background-focus: $white;$/;"	v
+input-background-invalid	_settings.scss	/^$input-background-invalid: get-color(alert);$/;"	v
+input-border	_settings.scss	/^$input-border: 1px solid $medium-gray;$/;"	v
+input-border-focus	_settings.scss	/^$input-border-focus: 1px solid $dark-gray;$/;"	v
+input-color	_settings.scss	/^$input-color: $black;$/;"	v
+input-cursor-disabled	_settings.scss	/^$input-cursor-disabled: not-allowed;$/;"	v
+input-error-color	_settings.scss	/^$input-error-color: get-color(alert);$/;"	v
+input-error-font-size	_settings.scss	/^$input-error-font-size: rem-calc(12);$/;"	v
+input-error-font-weight	_settings.scss	/^$input-error-font-weight: $global-weight-bold;$/;"	v
+input-font-family	_settings.scss	/^$input-font-family: inherit;$/;"	v
+input-font-size	_settings.scss	/^$input-font-size: rem-calc(16);$/;"	v
+input-font-weight	_settings.scss	/^$input-font-weight: $global-weight-normal;$/;"	v
+input-line-height	_settings.scss	/^$input-line-height: $global-lineheight;$/;"	v
+input-number-spinners	_settings.scss	/^$input-number-spinners: true;$/;"	v
+input-padding	_settings.scss	/^$input-padding: $form-spacing \/ 2;$/;"	v
+input-placeholder-color	_settings.scss	/^$input-placeholder-color: $medium-gray;$/;"	v
+input-prefix-background	_settings.scss	/^$input-prefix-background: $light-gray;$/;"	v
+input-prefix-border	_settings.scss	/^$input-prefix-border: 1px solid $medium-gray;$/;"	v
+input-prefix-color	_settings.scss	/^$input-prefix-color: $black;$/;"	v
+input-prefix-padding	_settings.scss	/^$input-prefix-padding: 1rem;$/;"	v
+input-radius	_settings.scss	/^$input-radius: $global-radius;$/;"	v
+input-shadow	_settings.scss	/^$input-shadow: inset 0 1px 2px rgba($black, 0.1);$/;"	v
+input-shadow-focus	_settings.scss	/^$input-shadow-focus: 0 0 5px $medium-gray;$/;"	v
+input-transition	_settings.scss	/^$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;$/;"	v
+island	components/logo--ilives/_logo--ilives.scss	/^$island: $brown--light;$/;"	v
+islandora-simple-search	components/_is-simple-search.scss	/^.islandora-simple-search,$/;"	c
+islandora-solr-breadcrumb-super	components/breadcrumbs/_breadcrumbs.scss	/^    .islandora-solr-breadcrumb-super {$/;"	c
+islandora-solr-date-filter	components/search-result/_search-result.scss	/^    .islandora-solr-date-filter,$/;"	c
+islandora-solr-facet	components/search-result/_search-result.scss	/^    .islandora-solr-facet {$/;"	c
+islandora-solr-facet-pages-letterer	components/facet-pages/_facet-pages.scss	/^.islandora-solr-facet-pages-letterer {$/;"	c
+islandora-solr-facet-pages-results	components/facet-pages/_facet-pages.scss	/^.islandora-solr-facet-pages-results {$/;"	c
+islandora-solr-facet-wrapper	components/search-result/_search-result.scss	/^.islandora-solr-facet-wrapper {$/;"	c
+islandora-solr-range-slider	components/search-result/_search-result.scss	/^    .islandora-solr-range-slider {$/;"	c
+islandora-solr-range-slider	global/_islandora_solr.theme.scss	/^.islandora-solr-range-slider,$/;"	c
+item-list-pager	components/facet-pages/_facet-pages.scss	/^.item-list-pager {$/;"	c
+keystroke-background	_settings.scss	/^$keystroke-background: $light-gray;$/;"	v
+keystroke-color	_settings.scss	/^$keystroke-color: $black;$/;"	v
+keystroke-font	_settings.scss	/^$keystroke-font: $font-family-monospace;$/;"	v
+keystroke-padding	_settings.scss	/^$keystroke-padding: rem-calc(2 4 0);$/;"	v
+keystroke-radius	_settings.scss	/^$keystroke-radius: $global-radius;$/;"	v
+label	global/_tufte.scss	/^    label {$/;"	t
+label-background	_settings.scss	/^$label-background: $primary-color;$/;"	v
+label-color	_settings.scss	/^$label-color: $white;$/;"	v
+label-color-alt	_settings.scss	/^$label-color-alt: $black;$/;"	v
+label-font-size	_settings.scss	/^$label-font-size: 0.8rem;$/;"	v
+label-padding	_settings.scss	/^$label-padding: 0.33333rem 0.5rem;$/;"	v
+label-palette	_settings.scss	/^$label-palette: $foundation-palette;$/;"	v
+label-radius	_settings.scss	/^$label-radius: $global-radius;$/;"	v
+lead-font-size	_settings.scss	/^$lead-font-size: $global-font-size * 1.25;$/;"	v
+lead-lineheight	_settings.scss	/^$lead-lineheight: 1.6;$/;"	v
+legend-padding	_settings.scss	/^$legend-padding: rem-calc(0 3);$/;"	v
+li	components/_admin-tabs.scss	/^        li {$/;"	t
+li	components/block--lp-search/_block--lp-search.scss	/^    li {$/;"	t
+li	components/navbar--search/_navbar--search.scss	/^        li {$/;"	t
+li	components/pager/_pager.scss	/^    li {$/;"	t
+light-gray	_settings.scss	/^$light-gray: #e6e6e6;$/;"	v
+light-green	_settings.scss	/^$light-green: rgb(231, 237, 224);$/;"	v
+line-through	_settings.scss	/^  line-through,$/;"	t
+list-lineheight	_settings.scss	/^$list-lineheight: $paragraph-lineheight;$/;"	v
+list-margin-bottom	_settings.scss	/^$list-margin-bottom: $paragraph-margin-bottom;$/;"	v
+list-nested-side-margin	_settings.scss	/^$list-nested-side-margin: 1.25rem;$/;"	v
+list-side-margin	_settings.scss	/^$list-side-margin: 1.25rem;$/;"	v
+list-style-position	_settings.scss	/^$list-style-position: outside;$/;"	v
+list-style-type	_settings.scss	/^$list-style-type: disc;$/;"	v
+lives	components/logo--ilives/_logo--ilives.scss	/^$lives: $brown--light;$/;"	v
+logo--ilives	components/logo--ilives/_logo--ilives.scss	/^.logo--ilives,$/;"	c
+logo--ilives	components/showcase/_showcase.scss	/^    .logo--ilives {$/;"	c
+logo--ilives	layout/_lp-layout.scss	/^.logo--ilives {$/;"	c
+logo--island	components/logo--ilives/_logo--ilives.scss	/^#logo--island path {$/;"	i
+logo--lives	components/logo--ilives/_logo--ilives.scss	/^#logo--lives path {$/;"	i
+logo--map	components/logo--ilives/_logo--ilives.scss	/^#logo--map path {$/;"	i
+logo-width	components/navbar/_navbar.scss	/^$logo-width: 100;$/;"	v
+logo-width	components/showcase/_showcase.scss	/^$logo-width: 300px;$/;"	v
+lower-alpha	_settings.scss	/^  lower-alpha,$/;"	t
+lower-latin	_settings.scss	/^  lower-latin,$/;"	t
+lower-roman	_settings.scss	/^  lower-roman,$/;"	t
+lowercase	_settings.scss	/^  lowercase,$/;"	t
+lp-feature-block	components/_lp-feature-block.scss	/^.lp-feature-block,$/;"	c
+lp-feature-block	layout/_lp-layout.scss	/^        .lp-feature-block {$/;"	c
+lp-feature-blocks	layout/_lp-layout.scss	/^    .lp-feature-blocks {$/;"	c
+lp-feature-row	components/block--lp-feature/_block--lp-feature.scss	/^.lp-feature-row {$/;"	c
+lp-left	layout/_lp-layout.scss	/^    .lp-left {$/;"	c
+lp-right	layout/_lp-layout.scss	/^    .lp-right {$/;"	c
+lp-search-block	components/lp-search-block/_lp-search-block.scss	/^.lp-search-block,$/;"	c
+lp-search-block	components/showcase/_showcase.scss	/^    .lp-search-block {$/;"	c
+main-content	layout/_page.scss	/^        #main-content {$/;"	i
+main-content	layout/_page.scss	/^    #main-content {$/;"	i
+main-content	layout/_page.scss	/^    #main-content,$/;"	i
+maincontent-class	_settings.scss	/^$maincontent-class: 'off-canvas-content';$/;"	v
+map	components/logo--ilives/_logo--ilives.scss	/^$map: #ecb785;$/;"	v
+margin-toggle	global/_tufte.scss	/^input.margin-toggle {$/;"	c
+marginnote	global/_tufte.scss	/^    .marginnote {$/;"	c
+marginnote	global/_tufte.scss	/^.marginnote {$/;"	c
+masonry-grid	components/masonry-grid/_masonry-grid.scss	/^.masonry-grid,$/;"	c
+mediaobject-image-width-stacked	_settings.scss	/^$mediaobject-image-width-stacked: 100%;$/;"	v
+mediaobject-margin-bottom	_settings.scss	/^$mediaobject-margin-bottom: $global-margin;$/;"	v
+mediaobject-section-padding	_settings.scss	/^$mediaobject-section-padding: $global-padding;$/;"	v
+medium-gray	_settings.scss	/^$medium-gray: #cacaca;$/;"	v
+menu--search-options	components/block--lp-search/_block--lp-search.scss	/^.menu--search-options {$/;"	c
+menu--search-options	components/navbar--search/_navbar--search.scss	/^    .menu--search-options {$/;"	c
+menu-centered-back-compat	_settings.scss	/^$menu-centered-back-compat: true;$/;"	v
+menu-icon-spacing	_settings.scss	/^$menu-icon-spacing: 0.25rem;$/;"	v
+menu-icons-back-compat	_settings.scss	/^$menu-icons-back-compat: true;$/;"	v
+menu-item-background-active	_settings.scss	/^$menu-item-background-active: get-color(primary);$/;"	v
+menu-item-background-hover	_settings.scss	/^$menu-item-background-hover: $light-gray;$/;"	v
+menu-item-color-active	_settings.scss	/^$menu-item-color-active: $white;$/;"	v
+menu-items-padding	_settings.scss	/^$menu-items-padding: $global-menu-padding;$/;"	v
+menu-margin	_settings.scss	/^$menu-margin: 20px;$/;"	v
+menu-nested-margin	_settings.scss	/^$menu-nested-margin: $global-menu-nested-margin;$/;"	v
+menu-simple-margin	_settings.scss	/^$menu-simple-margin: 1rem;$/;"	v
+menu-state-back-compat	_settings.scss	/^$menu-state-back-compat: true;$/;"	v
+meter-background	_settings.scss	/^$meter-background: $medium-gray;$/;"	v
+meter-fill-bad	_settings.scss	/^$meter-fill-bad: $alert-color;$/;"	v
+meter-fill-good	_settings.scss	/^$meter-fill-good: $success-color;$/;"	v
+meter-fill-medium	_settings.scss	/^$meter-fill-medium: $warning-color;$/;"	v
+meter-height	_settings.scss	/^$meter-height: 1rem;$/;"	v
+meter-radius	_settings.scss	/^$meter-radius: $global-radius;$/;"	v
+nav-background	components/breadcrumbs/_breadcrumbs.scss	/^$nav-background: #2c3e50;$/;"	v
+navbar	components/navbar/_navbar.scss	/^.navbar,$/;"	c
+navbar--main-menu	components/navbar--menu/_navbar--menu.scss	/^.navbar--main-menu,$/;"	c
+navbar--search	components/navbar--search/_navbar--search.scss	/^#navbar--search {$/;"	i
+navbar--search	components/navbar--search/_navbar--search.scss	/^.navbar--search,$/;"	c
+navbar-menu	_unsorted-hacks.scss	/^.navbar-menu {$/;"	c
+newthought	global/_tufte.scss	/^span.newthought {$/;"	c
+nice-component-name	components/_lp-logo-block.scss	/^.nice-component-name,$/;"	c
+nice-component-name	components/_lp-slideshow.scss	/^.nice-component-name,$/;"	c
+nice-component-name	layout/_lp-layout.scss	/^.nice-component-name,$/;"	c
+no-repeat	global/_tufte.scss	/^        background-repeat: no-repeat, no-repeat, repeat-x;$/;"	t
+no-sidebars	layout/_page.scss	/^.no-sidebars {$/;"	c
+node-landing-page	layout/_lp-layout.scss	/^.node-landing-page {$/;"	c
+numeral	global/_tufte.scss	/^.numeral {$/;"	c
+offcanvas-background	_settings.scss	/^$offcanvas-background: $light-gray;$/;"	v
+offcanvas-exit-background	_settings.scss	/^$offcanvas-exit-background: rgba($white, 0.25);$/;"	v
+offcanvas-fixed-reveal	_settings.scss	/^$offcanvas-fixed-reveal: true;$/;"	v
+offcanvas-inner-shadow-color	_settings.scss	/^$offcanvas-inner-shadow-color: rgba($black, 0.25);$/;"	v
+offcanvas-inner-shadow-size	_settings.scss	/^$offcanvas-inner-shadow-size: 20px;$/;"	v
+offcanvas-overlap-zindex	_settings.scss	/^$offcanvas-overlap-zindex: 13;$/;"	v
+offcanvas-overlay-zindex	_settings.scss	/^$offcanvas-overlay-zindex: 11;$/;"	v
+offcanvas-push-zindex	_settings.scss	/^$offcanvas-push-zindex: 12;$/;"	v
+offcanvas-reveal-zindex	_settings.scss	/^$offcanvas-reveal-zindex: 12;$/;"	v
+offcanvas-shadow	_settings.scss	/^$offcanvas-shadow: 0 0 10px rgba($black, 0.7);$/;"	v
+offcanvas-sizes	_settings.scss	/^$offcanvas-sizes: ($/;"	v
+offcanvas-transition-length	_settings.scss	/^$offcanvas-transition-length: 0.5s;$/;"	v
+offcanvas-transition-timing	_settings.scss	/^$offcanvas-transition-timing: ease;$/;"	v
+offcanvas-vertical-sizes	_settings.scss	/^$offcanvas-vertical-sizes: ($/;"	v
+ol	global/_tufte.scss	/^ol,$/;"	t
+only	components/collection-object/_collection-object.scss	/^        @include breakpoint(small only) {$/;"	t
+orangered	_settings.scss	/^$orangered: #a12d1a;$/;"	v
+orbit-bullet-background	_settings.scss	/^$orbit-bullet-background: $medium-gray;$/;"	v
+orbit-bullet-background-active	_settings.scss	/^$orbit-bullet-background-active: $dark-gray;$/;"	v
+orbit-bullet-diameter	_settings.scss	/^$orbit-bullet-diameter: 1.2rem;$/;"	v
+orbit-bullet-margin	_settings.scss	/^$orbit-bullet-margin: 0.1rem;$/;"	v
+orbit-bullet-margin-bottom	_settings.scss	/^$orbit-bullet-margin-bottom: 0.8rem;$/;"	v
+orbit-bullet-margin-top	_settings.scss	/^$orbit-bullet-margin-top: 0.8rem;$/;"	v
+orbit-caption-background	_settings.scss	/^$orbit-caption-background: rgba($black, 0.5);$/;"	v
+orbit-caption-padding	_settings.scss	/^$orbit-caption-padding: 1rem;$/;"	v
+orbit-control-background-hover	_settings.scss	/^$orbit-control-background-hover: rgba($black, 0.5);$/;"	v
+orbit-control-padding	_settings.scss	/^$orbit-control-padding: 1rem;$/;"	v
+orbit-control-zindex	_settings.scss	/^$orbit-control-zindex: 10;$/;"	v
+overline	_settings.scss	/^  overline,$/;"	t
+p	components/footer/_footer.scss	/^    p {$/;"	t
+p	global/_tufte.scss	/^p {$/;"	t
+p	global/_tufte.scss	/^p,$/;"	t
+page	components/footer/_footer.scss	/^.page {$/;"	c
+page	layout/_page.scss	/^.page {$/;"	c
+page-bg	global/_tufte.scss	/^$page-bg: #fffff8;$/;"	v
+pager	components/pager/_pager.scss	/^.pager,$/;"	c
+pagination-arrows	_settings.scss	/^$pagination-arrows: true;$/;"	v
+pagination-ellipsis-color	_settings.scss	/^$pagination-ellipsis-color: $black;$/;"	v
+pagination-font-size	_settings.scss	/^$pagination-font-size: rem-calc(14);$/;"	v
+pagination-item-background-current	_settings.scss	/^$pagination-item-background-current: $primary-color;$/;"	v
+pagination-item-background-hover	_settings.scss	/^$pagination-item-background-hover: $light-gray;$/;"	v
+pagination-item-color	_settings.scss	/^$pagination-item-color: $black;$/;"	v
+pagination-item-color-current	_settings.scss	/^$pagination-item-color-current: $white;$/;"	v
+pagination-item-color-disabled	_settings.scss	/^$pagination-item-color-disabled: $medium-gray;$/;"	v
+pagination-item-padding	_settings.scss	/^$pagination-item-padding: rem-calc(3 10);$/;"	v
+pagination-item-spacing	_settings.scss	/^$pagination-item-spacing: rem-calc(1);$/;"	v
+pagination-margin-bottom	_settings.scss	/^$pagination-margin-bottom: $global-margin;$/;"	v
+pagination-mobile-current-item	_settings.scss	/^$pagination-mobile-current-item: false;$/;"	v
+pagination-mobile-items	_settings.scss	/^$pagination-mobile-items: false;$/;"	v
+pagination-radius	_settings.scss	/^$pagination-radius: $global-radius;$/;"	v
+paragraph-lineheight	_settings.scss	/^$paragraph-lineheight: 1.6;$/;"	v
+paragraph-margin-bottom	_settings.scss	/^$paragraph-margin-bottom: 1rem;$/;"	v
+paragraph-text-rendering	_settings.scss	/^$paragraph-text-rendering: optimizeLegibility;$/;"	v
+parchment	_settings.scss	/^$parchment: #fffef2;$/;"	v
+path	components/hero/_hero.scss	/^$path: '\/sites\/islandlives.dev.islandarchives.ca\/themes\/ilives\/dist';$/;"	v
+path	global/_fonts.scss	/^$path: '\/sites\/islandlives.hp1.islandarchives.ca\/themes\/ilives\/dist\/assets\/fonts';$/;"	v
+print-breakpoint	_settings.scss	/^$print-breakpoint: large;$/;"	v
+print-transparent-backgrounds	_settings.scss	/^$print-transparent-backgrounds: true;$/;"	v
+progress-background	_settings.scss	/^$progress-background: $medium-gray;$/;"	v
+progress-height	_settings.scss	/^$progress-height: 1rem;$/;"	v
+progress-margin-bottom	_settings.scss	/^$progress-margin-bottom: $global-margin;$/;"	v
+progress-meter-background	_settings.scss	/^$progress-meter-background: $primary-color;$/;"	v
+progress-radius	_settings.scss	/^$progress-radius: $global-radius;$/;"	v
+prototype-arrow-color	_settings.scss	/^$prototype-arrow-color: $black;$/;"	v
+prototype-arrow-directions	_settings.scss	/^$prototype-arrow-directions: ($/;"	v
+prototype-arrow-size	_settings.scss	/^$prototype-arrow-size: 0.4375rem;$/;"	v
+prototype-border-box-breakpoints	_settings.scss	/^$prototype-border-box-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-border-color	_settings.scss	/^$prototype-border-color: $medium-gray;$/;"	v
+prototype-border-none-breakpoints	_settings.scss	/^$prototype-border-none-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-border-radius	_settings.scss	/^$prototype-border-radius: rem-calc(3);$/;"	v
+prototype-border-type	_settings.scss	/^$prototype-border-type: solid;$/;"	v
+prototype-border-width	_settings.scss	/^$prototype-border-width: rem-calc(1);$/;"	v
+prototype-bordered-breakpoints	_settings.scss	/^$prototype-bordered-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-box-shadow	_settings.scss	/^$prototype-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),$/;"	v
+prototype-decoration-breakpoints	_settings.scss	/^$prototype-decoration-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-display	_settings.scss	/^$prototype-display: ($/;"	v
+prototype-display-breakpoints	_settings.scss	/^$prototype-display-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-font-bold	_settings.scss	/^$prototype-font-bold: $global-weight-bold;$/;"	v
+prototype-font-breakpoints	_settings.scss	/^$prototype-font-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-font-normal	_settings.scss	/^$prototype-font-normal: $global-weight-normal;$/;"	v
+prototype-list-breakpoints	_settings.scss	/^$prototype-list-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-overflow	_settings.scss	/^$prototype-overflow: ($/;"	v
+prototype-overflow-breakpoints	_settings.scss	/^$prototype-overflow-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-position	_settings.scss	/^$prototype-position: ($/;"	v
+prototype-position-breakpoints	_settings.scss	/^$prototype-position-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-position-z-index	_settings.scss	/^$prototype-position-z-index: 975;$/;"	v
+prototype-rounded-breakpoints	_settings.scss	/^$prototype-rounded-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-separator-align	_settings.scss	/^$prototype-separator-align: center;$/;"	v
+prototype-separator-background	_settings.scss	/^$prototype-separator-background: $primary-color;$/;"	v
+prototype-separator-breakpoints	_settings.scss	/^$prototype-separator-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-separator-height	_settings.scss	/^$prototype-separator-height: rem-calc(2);$/;"	v
+prototype-separator-margin-top	_settings.scss	/^$prototype-separator-margin-top: $global-margin;$/;"	v
+prototype-separator-width	_settings.scss	/^$prototype-separator-width: 3rem;$/;"	v
+prototype-shadow-breakpoints	_settings.scss	/^$prototype-shadow-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-sizes	_settings.scss	/^$prototype-sizes: ($/;"	v
+prototype-sizing	_settings.scss	/^$prototype-sizing: ($/;"	v
+prototype-sizing-breakpoints	_settings.scss	/^$prototype-sizing-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-spacers-count	_settings.scss	/^$prototype-spacers-count: 3;$/;"	v
+prototype-spacing-breakpoints	_settings.scss	/^$prototype-spacing-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-style-type-ordered	_settings.scss	/^$prototype-style-type-ordered: ($/;"	v
+prototype-style-type-unordered	_settings.scss	/^$prototype-style-type-unordered: ($/;"	v
+prototype-text-decoration	_settings.scss	/^$prototype-text-decoration: ($/;"	v
+prototype-text-overflow	_settings.scss	/^$prototype-text-overflow: ellipsis;$/;"	v
+prototype-text-transformation	_settings.scss	/^$prototype-text-transformation: ($/;"	v
+prototype-transformation-breakpoints	_settings.scss	/^$prototype-transformation-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-utilities-breakpoints	_settings.scss	/^$prototype-utilities-breakpoints: $global-prototype-breakpoints;$/;"	v
+prototype-wide-letter-spacing	_settings.scss	/^$prototype-wide-letter-spacing: rem-calc(4);$/;"	v
+range-slider-tooltip	global/_islandora_solr.theme.scss	/^#range-slider-tooltip span$/;"	i
+range-slider-tooltip	global/_islandora_solr.theme.scss	/^#range-slider-tooltip$/;"	i
+red	_settings.scss	/^$red: #8c2004;$/;"	v
+relative	_settings.scss	/^  relative,$/;"	t
+responsive-embed-margin-bottom	_settings.scss	/^$responsive-embed-margin-bottom: rem-calc(16);$/;"	v
+responsive-embed-ratios	_settings.scss	/^$responsive-embed-ratios: ($/;"	v
+results-count	components/facet-pages/_facet-pages.scss	/^.results-count {$/;"	c
+reveal-background	_settings.scss	/^$reveal-background: $white;$/;"	v
+reveal-border	_settings.scss	/^$reveal-border: 1px solid $medium-gray;$/;"	v
+reveal-max-width	_settings.scss	/^$reveal-max-width: $global-width;$/;"	v
+reveal-overlay-background	_settings.scss	/^$reveal-overlay-background: rgba($black, 0.45);$/;"	v
+reveal-padding	_settings.scss	/^$reveal-padding: $global-padding;$/;"	v
+reveal-radius	_settings.scss	/^$reveal-radius: $global-radius;$/;"	v
+reveal-width	_settings.scss	/^$reveal-width: 600px;$/;"	v
+reveal-zindex	_settings.scss	/^$reveal-zindex: 1005;$/;"	v
+right	_settings.scss	/^  right,$/;"	t
+sans	_settings.scss	/^$sans: "Gill Sans", Calibri, sans-serif;$/;"	v
+sans	global/_tufte.scss	/^.sans {$/;"	c
+search-result	components/search-result/_search-result.scss	/^.search-result,$/;"	c
+search-width	components/showcase/_showcase.scss	/^$search-width: 600px;$/;"	v
+section	global/_tufte.scss	/^section {$/;"	t
+select-background	_settings.scss	/^$select-background: $white;$/;"	v
+select-radius	_settings.scss	/^$select-radius: $global-radius;$/;"	v
+select-triangle-color	_settings.scss	/^$select-triangle-color: $dark-gray;$/;"	v
+selection-color	global/_tufte.scss	/^$selection-color: #b4d5fe;$/;"	v
+serif	_settings.scss	/^$serif: 'et-book', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, se/;"	v
+show-header-for-stacked	_settings.scss	/^$show-header-for-stacked: true;$/;"	v
+showcase	components/showcase/_showcase.scss	/^.showcase,$/;"	c
+showcase-height	components/showcase/_showcase.scss	/^$showcase-height: 60vh;$/;"	v
+showcase-max-width	components/showcase/_showcase.scss	/^$showcase-max-width: 1100px;$/;"	v
+sidebar-first	layout/_page.scss	/^        .sidebar-first {$/;"	c
+sidebar-first	layout/_page.scss	/^    .sidebar-first {$/;"	c
+sidebar-first	layout/_page.scss	/^    .sidebar-first,$/;"	c
+sidebar-second	layout/_page.scss	/^        .sidebar-second {$/;"	c
+sidebar-second	layout/_page.scss	/^    .sidebar-second {$/;"	c
+sidenote	global/_tufte.scss	/^    .sidenote,$/;"	c
+sidenote	global/_tufte.scss	/^.sidenote,$/;"	c
+sidenote-number	global/_tufte.scss	/^.sidenote-number {$/;"	c
+sidenote-number	global/_tufte.scss	/^label.sidenote-number {$/;"	c
+slider-background	_settings.scss	/^$slider-background: $light-gray;$/;"	v
+slider-fill-background	_settings.scss	/^$slider-fill-background: $medium-gray;$/;"	v
+slider-handle-background	_settings.scss	/^$slider-handle-background: $primary-color;$/;"	v
+slider-handle-height	_settings.scss	/^$slider-handle-height: 1.4rem;$/;"	v
+slider-handle-width	_settings.scss	/^$slider-handle-width: 1.4rem;$/;"	v
+slider-height	_settings.scss	/^$slider-height: 0.5rem;$/;"	v
+slider-opacity-disabled	_settings.scss	/^$slider-opacity-disabled: 0.25;$/;"	v
+slider-popup-from	global/_islandora_solr.theme.scss	/^.slider-popup-from,$/;"	c
+slider-popup-from-wrapper	global/_islandora_solr.theme.scss	/^.slider-popup-from-wrapper,$/;"	c
+slider-radius	_settings.scss	/^$slider-radius: $global-radius;$/;"	v
+slider-transition	_settings.scss	/^$slider-transition: all 0.2s ease-in-out;$/;"	v
+slider-width-vertical	_settings.scss	/^$slider-width-vertical: 0.5rem;$/;"	v
+small-font-size	_settings.scss	/^$small-font-size: 80%;$/;"	v
+solr-facets	components/search-result/_search-result.scss	/^.solr-facets {$/;"	c
+stat-font-size	_settings.scss	/^$stat-font-size: 2.5rem;$/;"	v
+static	_settings.scss	/^  static,$/;"	t
+subheader-color	_settings.scss	/^$subheader-color: $dark-gray;$/;"	v
+subheader-font-weight	_settings.scss	/^$subheader-font-weight: $global-weight-normal;$/;"	v
+subheader-lineheight	_settings.scss	/^$subheader-lineheight: 1.4;$/;"	v
+subheader-margin-bottom	_settings.scss	/^$subheader-margin-bottom: 0.5rem;$/;"	v
+subheader-margin-top	_settings.scss	/^$subheader-margin-top: 0.2rem;$/;"	v
+subtitle	global/_tufte.scss	/^p.subtitle {$/;"	c
+switch-background	_settings.scss	/^$switch-background: $medium-gray;$/;"	v
+switch-background-active	_settings.scss	/^$switch-background-active: $primary-color;$/;"	v
+switch-height	_settings.scss	/^$switch-height: 2rem;$/;"	v
+switch-height-large	_settings.scss	/^$switch-height-large: 2.5rem;$/;"	v
+switch-height-small	_settings.scss	/^$switch-height-small: 1.75rem;$/;"	v
+switch-height-tiny	_settings.scss	/^$switch-height-tiny: 1.5rem;$/;"	v
+switch-margin	_settings.scss	/^$switch-margin: $global-margin;$/;"	v
+switch-paddle-background	_settings.scss	/^$switch-paddle-background: $white;$/;"	v
+switch-paddle-offset	_settings.scss	/^$switch-paddle-offset: 0.25rem;$/;"	v
+switch-paddle-radius	_settings.scss	/^$switch-paddle-radius: $global-radius;$/;"	v
+switch-paddle-transition	_settings.scss	/^$switch-paddle-transition: all 0.25s ease-out;$/;"	v
+switch-radius	_settings.scss	/^$switch-radius: $global-radius;$/;"	v
+tab-active-color	_settings.scss	/^$tab-active-color: $primary-color;$/;"	v
+tab-background	_settings.scss	/^$tab-background: blue;$/;"	v
+tab-background-active	_settings.scss	/^$tab-background-active: $light-gray;$/;"	v
+tab-color	_settings.scss	/^$tab-color: $primary-color;$/;"	v
+tab-content-background	_settings.scss	/^$tab-content-background: $white;$/;"	v
+tab-content-border	_settings.scss	/^$tab-content-border: $light-gray;$/;"	v
+tab-content-color	_settings.scss	/^$tab-content-color: $body-font-color;$/;"	v
+tab-content-padding	_settings.scss	/^$tab-content-padding: 1rem;$/;"	v
+tab-expand-max	_settings.scss	/^$tab-expand-max: 6;$/;"	v
+tab-item-background-hover	_settings.scss	/^$tab-item-background-hover: $white;$/;"	v
+tab-item-font-size	_settings.scss	/^$tab-item-font-size: rem-calc(12);$/;"	v
+tab-item-padding	_settings.scss	/^$tab-item-padding: 1.25rem 1.5rem;$/;"	v
+tab-margin	_settings.scss	/^$tab-margin: 0;$/;"	v
+table	_settings.scss	/^  table,$/;"	t
+table	global/_tufte.scss	/^    table {$/;"	t
+table-background	_settings.scss	/^$table-background: $parchment;$/;"	v
+table-border	_settings.scss	/^$table-border: 1px solid $tan;$/;"	v
+table-border	_settings.scss	/^$table-border: 1px solid smart-scale($table-background, $table-color-scale);$/;"	v
+table-color-scale	_settings.scss	/^$table-color-scale: 5%;$/;"	v
+table-foot-background	_settings.scss	/^$table-foot-background: smart-scale($table-background, $table-color-scale);$/;"	v
+table-foot-font-color	_settings.scss	/^$table-foot-font-color: $body-font-color;$/;"	v
+table-foot-row-hover	_settings.scss	/^$table-foot-row-hover: darken($table-foot-background, $table-hover-scale);$/;"	v
+table-head-background	_settings.scss	/^$table-head-background: smart-scale($table-background, $table-color-scale \/ 2);$/;"	v
+table-head-font-color	_settings.scss	/^$table-head-font-color: $body-font-color;$/;"	v
+table-head-row-hover	_settings.scss	/^$table-head-row-hover: darken($table-head-background, $table-hover-scale);$/;"	v
+table-hover-scale	_settings.scss	/^$table-hover-scale: 2%;$/;"	v
+table-is-striped	_settings.scss	/^$table-is-striped: false;$/;"	v
+table-padding	_settings.scss	/^$table-padding: rem-calc(8 10 10);$/;"	v
+table-row-hover	_settings.scss	/^$table-row-hover: darken($table-background, $table-hover-scale);$/;"	v
+table-row-stripe-hover	_settings.scss	/^$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);$/;"	v
+table-stack-breakpoint	_settings.scss	/^$table-stack-breakpoint: medium;$/;"	v
+table-stripe	_settings.scss	/^$table-stripe: even;$/;"	v
+table-striped-background	_settings.scss	/^$table-striped-background: smart-scale($table-background, $table-color-scale);$/;"	v
+table-wrapper	global/_tufte.scss	/^div.table-wrapper {$/;"	c
+tabs	components/_admin-tabs.scss	/^    .tabs {$/;"	c
+tan	_settings.scss	/^$tan: rgb(207, 197, 170);$/;"	v
+text-color	global/_tufte.scss	/^$text-color: ;$/;"	v
+thumbnail-border	_settings.scss	/^$thumbnail-border: solid 4px $white;$/;"	v
+thumbnail-margin-bottom	_settings.scss	/^$thumbnail-margin-bottom: $global-margin;$/;"	v
+thumbnail-radius	_settings.scss	/^$thumbnail-radius: $global-radius;$/;"	v
+thumbnail-shadow	_settings.scss	/^$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);$/;"	v
+thumbnail-shadow-hover	_settings.scss	/^$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);$/;"	v
+thumbnail-transition	_settings.scss	/^$thumbnail-transition: box-shadow 200ms ease-out;$/;"	v
+title	components/footer/_footer.scss	/^    .title {$/;"	c
+titlebar-background	_settings.scss	/^$titlebar-background: $black;$/;"	v
+titlebar-color	_settings.scss	/^$titlebar-color: $white;$/;"	v
+titlebar-icon-color	_settings.scss	/^$titlebar-icon-color: $white;$/;"	v
+titlebar-icon-color-hover	_settings.scss	/^$titlebar-icon-color-hover: $medium-gray;$/;"	v
+titlebar-icon-spacing	_settings.scss	/^$titlebar-icon-spacing: 0.25rem;$/;"	v
+titlebar-padding	_settings.scss	/^$titlebar-padding: 0.5rem;$/;"	v
+titlebar-text-font-weight	_settings.scss	/^$titlebar-text-font-weight: bold;$/;"	v
+tooltip-background-color	_settings.scss	/^$tooltip-background-color: $black;$/;"	v
+tooltip-color	_settings.scss	/^$tooltip-color: $white;$/;"	v
+tooltip-font-size	_settings.scss	/^$tooltip-font-size: $small-font-size;$/;"	v
+tooltip-max-width	_settings.scss	/^$tooltip-max-width: 10rem;$/;"	v
+tooltip-padding	_settings.scss	/^$tooltip-padding: 0.75rem;$/;"	v
+tooltip-pip-height	_settings.scss	/^$tooltip-pip-height: $tooltip-pip-width * 0.866;$/;"	v
+tooltip-pip-width	_settings.scss	/^$tooltip-pip-width: 0.75rem;$/;"	v
+tooltip-radius	_settings.scss	/^$tooltip-radius: $global-radius;$/;"	v
+topbar-background	_settings.scss	/^$topbar-background: $brown--dark;$/;"	v
+topbar-input-width	_settings.scss	/^$topbar-input-width: 100%;$/;"	v
+topbar-padding	_settings.scss	/^$topbar-padding: 0.5rem;$/;"	v
+topbar-submenu-background	_settings.scss	/^$topbar-submenu-background: lighten($brown--dark, 10%);$/;"	v
+topbar-title-spacing	_settings.scss	/^$topbar-title-spacing: 0.5rem 1rem 0.5rem 0;$/;"	v
+topbar-unstack-breakpoint	_settings.scss	/^$topbar-unstack-breakpoint: medium;$/;"	v
+two-sidebars	layout/_page.scss	/^.two-sidebars {$/;"	c
+ui-datepicker-div	global/_islandora_solr.theme.scss	/^#ui-datepicker-div {$/;"	i
+ul	global/_tufte.scss	/^ul {$/;"	t
+underline	_settings.scss	/^  underline,$/;"	t
+up	_settings.scss	/^  up,$/;"	t
+upper-alpha	_settings.scss	/^  upper-alpha,$/;"	t
+upper-latin	_settings.scss	/^  upper-latin,$/;"	t
+uppercase	_settings.scss	/^  uppercase,$/;"	t
+visible	_settings.scss	/^  visible,$/;"	t
+white	_settings.scss	/^$white: #fefefe;$/;"	v
+width	_settings.scss	/^  width,$/;"	t
+xy-block-grid-max	_settings.scss	/^$xy-block-grid-max: 8;$/;"	v
+xy-grid	_settings.scss	/^$xy-grid: true;$/;"	v
+yellow	_settings.scss	/^$yellow: #FBB040;$/;"	v
