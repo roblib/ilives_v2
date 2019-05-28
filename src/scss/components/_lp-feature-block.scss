@@ -2,21 +2,47 @@
 
 .lp-feature-block,
 %lp-feature-block {
-    @include callout;
-    &__text {
+    //@include card-container();
+    &__caption {
         /*style*/
+        font-family: $sans;
+        font-size: rem-calc(18);
     }
     &__image {
         /*style*/
+        width: 100%;
     }
+}
+.lp-feature {
+    @include card-container();
+    .title {
+        @include card-divider;
+    }
+    p {
+        @include card-section;
+        font-family: $sans;
+        font-size: rem-calc(18);
+    }
+}
+.block-views-latest-additions-block {
+    @include card-container();
+    .title {
+        @include card-divider;
+    }
+    .item-list {
+        @include card-section;
+    }
+}
+#islandora-onthisday-random {
+    @include card-container();
 }
 
 //######################//
 // ~~There be Dragons~~ //
 //######################//
-.fugly-drupal-name-01 {
-    @extend %lp-feature-block__text;
+.lp-feature-block h2 {
+    //@extend %lp-feature-block__text;
 }
-.fugly-drupal-name-02 {
+.lp-feature-block {
     @extend %lp-feature-block__image;
 }
