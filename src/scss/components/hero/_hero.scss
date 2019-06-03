@@ -12,8 +12,14 @@ $bg-url: '#{$path}/images/pei-scenery--1900w.png';
     flex-direction: column;
     text-align: center;
     display: flex;
+
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: $global-padding * 2;
+    @include breakpoint(medium) {
+        justify-content: center;
+        padding-top: 0;
+    }
 
     .hero-section-text {
         color: $white;
