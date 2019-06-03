@@ -1,5 +1,5 @@
 //@format
-
+$results__border-color: $tan;
 .search-result,
 %search-result {
     dl,
@@ -35,7 +35,7 @@
     }
     &__metadata__label {
         &:first-of-type {
-            border-top: 4px solid #ccc;
+            border-top: 4px solid $results__border-color;
         }
         padding-right: $global-padding;
         margin-bottom: 0;
@@ -50,7 +50,7 @@
         text-transform: uppercase;
         //width: 100px !important;
 
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid $results__border-color;
         &:after {
             content: ':';
         }
@@ -61,11 +61,18 @@
         @include xy-cell(9, false);
         line-height: 2.2;
         //outline: 1px solid orange;
-        border-bottom: 1px solid #ccc;
-        &:first-of-type {
-            border-top: 4px solid #ccc;
+        border-bottom: 1px solid $results__border-color;
+        a {
+            color: $brown--dark;
+            text-decoration: underline;
+            &:hover {
+                //text-decoration-style: double;
+            }
         }
-        /*style*/
+        &:first-of-type {
+            border-top: 4px solid $results__border-color;
+        }
+        /*stle*/
         //width: 400px !important;
     }
     &__part-b {

@@ -6,6 +6,9 @@
 
 .collection-object {
     &__metadata {
+        th {
+            border-color: $tan;
+        }
         h2 {
             margin: 0;
         }

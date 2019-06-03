@@ -9,9 +9,7 @@ $branding-title-font-size--mobile: rem-calc(36);
     @include top-bar-container;
     @include xy-grid-container;
     flex-direction: column;
-    padding-bottom: 0;
     @include breakpoint(medium) {
-        padding-bottom: 0.5rem;
         flex-direction: row;
     }
     &--wrapper {
@@ -52,8 +50,7 @@ $branding-title-font-size--mobile: rem-calc(36);
         @extend .top-bar-left;
         flex-direction: row;
         @include breakpoint(small only) {
-            margin-bottom: $global-margin;
-            margin-top: $global-margin;
+            margin-bottom: $global-margin/2;
         }
     }
     &__right {
