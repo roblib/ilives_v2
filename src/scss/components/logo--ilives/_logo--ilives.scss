@@ -7,6 +7,7 @@ $map: #ecb785;
 .logo--ilives,
 %logo--ilives {
     margin-bottom: $global-margin;
+    width: rem-calc(300);
     &__island {
         fill: $island !important;
         stroke: darken($island, 10%) !important;
