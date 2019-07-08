@@ -1,0 +1,46 @@
+//@format
+
+.adv-search,
+%adv-search {
+    &__submit {
+        /*style*/
+        @include button();
+    }
+    &__add-term {
+        /*style*/
+        @include button();
+    }
+    &__remove-term {
+        /*style*/
+        @include button();
+    }
+    &__select-list {
+        /*style*/
+        //@include button();
+        //display: none;
+    }
+    &__text-field {
+        /*style*/
+        //@include button();
+        //display: none;
+    }
+}
+
+//######################//
+// ~~There be Dragons~~ //
+//######################//
+.islandora-solr-advanced-controls input {
+    @extend %adv-search__submit;
+}
+#islandora-solr-advanced-terms input[type='text'] {
+    @extend %adv-search__text-field;
+}
+#islandora-solr-advanced-terms select {
+    @extend %adv-search__select-list;
+}
+input[title='Add field'] {
+    @extend %adv-search__add-term;
+}
+input[title='Remove field'] {
+    @extend %adv-search__remove-term;
+}

@@ -6,7 +6,7 @@ let siteUrl, sassImportPaths;
 //###########################################################
 // site to be proxied
 //###########################################################
-siteUrl = 'http://islandlives.dev.islandarchives.ca';
+siteUrl = 'https://islandlives.dev.islandarchives.ca';
 //###########################################################
 // sass libraries to be made available to '@import' in *.scss files
 //###########################################################
@@ -79,17 +79,21 @@ const handlebarsOptions = {
  *==================*/
 
 // Default Task
-gulp.task('default', ['sass-dev', 'images', 'js-concat', 'file-mover', 'bsRemote'], () => {
-    // watch and compile sass
-    gulp.watch('src/scss/**/*.scss', ['sass-dev']);
-    // watch and compile sass
-    gulp.watch('src/js/*.js', ['js-concat']);
-    // watch for minify images
-    gulp.watch('src/img-src/*', ['images']);
-    // watch this stuff and reload the browser when there are changes
-    gulp.watch('src/assets/*', ['file-mover']);
-    //gulp.watch(PATHS.reloadFiles).on('change', browserSync.reload);
-});
+gulp.task(
+    'default',
+    ['sass-dev', 'images', 'js-concat', 'file-mover', 'bsRemote'],
+    () => {
+        // watch and compile sass
+        gulp.watch('src/scss/**/*.scss', ['sass-dev']);
+        // watch and compile sass
+        gulp.watch('src/js/*.js', ['js-concat']);
+        // watch for minify images
+        gulp.watch('src/img-src/*', ['images']);
+        // watch this stuff and reload the browser when there are changes
+        gulp.watch('src/assets/*', ['file-mover']);
+        //gulp.watch(PATHS.reloadFiles).on('change', browserSync.reload);
+    },
+);
 
 // 'build' task (for production: compressed css, no sourcemaps etc)
 gulp.task('production', ['images', 'file-mover', 'sass-prod']);
@@ -120,8 +124,7 @@ gulp.task('file-mover', () => {
 
 //sub-task: Imagemin
 gulp.task('images', () => {
-    gulp
-        .src('src/img-src/**/*')
+    gulp.src('src/img-src/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'));
 });
@@ -132,6 +135,7 @@ gulp.task('bsRemote', () => {
     browserSync.init({
         proxy: siteUrl,
         port: browserSyncPort,
+        //startPath: 'user',
         //logLevel: 'debug',
         serveStatic: ['dist/js', 'dist/css', 'dist/assets/fonts/**/*'],
         injectChanges: true,
@@ -166,8 +170,7 @@ gulp.task('static--server', () => {
     });
 });
 gulp.task('static--templates', () => {
-    gulp
-        .src('src/static/index.html')
+    gulp.src('src/static/index.html')
         .pipe(handlebars(handlebarsTemplateData, handlebarsOptions))
         .pipe(gulp.dest('dist/static'));
 });
@@ -185,8 +188,7 @@ gulp.task('js-concat', () => {
 
 //sub-task: Sass compiler (dev)
 gulp.task('sass-dev', () => {
-    gulp
-        .src('src/scss/app.scss')
+    gulp.src('src/scss/app.scss')
         .pipe(sassGlob())
         .pipe($.sourcemaps.init())
         .pipe($.sass(sassOptions__dev).on('error', $.sass.logError))
@@ -198,8 +200,7 @@ gulp.task('sass-dev', () => {
 
 //sub-task: Sass compiler (prod)
 gulp.task('sass-prod', () => {
-    gulp
-        .src('src/scss/app.scss')
+    gulp.src('src/scss/app.scss')
         .pipe(sassGlob())
         .pipe($.sass(sassOptions__prod).on('error', $.sass.logError))
         .pipe($.autoprefixer(autoprefixerOptions))
