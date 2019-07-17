@@ -1,40 +1,43 @@
 //@format
 
-$island: $brown--light;
-$lives: $brown--light;
+$island: $tan;
+$lives: $tan;
 $map: #ecb785;
 
 .logo--ilives,
 %logo--ilives {
-    margin-bottom: $global-margin;
-    width: rem-calc(300);
-    &__island {
-        fill: $island !important;
-        stroke: darken($island, 10%) !important;
-        stroke-width: 1px !important;
-    }
-    &__lives {
-        fill: $lives !important;
-        stroke: darken($lives, 10%);
-        stroke-width: 1px !important;
-    }
-    &__map {
-        fill: $map !important;
-        //stroke: $map !important;
-        stroke: $brown--dark !important;
-        stroke-width: 1px !important;
-    }
+  margin-bottom: $global-margin;
+  width: rem-calc(400);
+  &__island {
+    fill: $island !important;
+    fill: lighten($island, 10%) !important;
+    stroke: darken($island, 10%) !important;
+    stroke-width: 0px !important;
+  }
+  &__lives {
+    fill: $lives !important;
+    fill: lighten($island, 10%) !important;
+    stroke: darken($lives, 10%);
+    stroke-width: 0px !important;
+  }
+  &__map {
+    display: none;
+    fill: $map !important;
+    //stroke: $map !important;
+    stroke: $brown--dark !important;
+    stroke-width: 1px !important;
+  }
 }
 
 //######################//
 // ~~There be Dragons~~ //
 //######################//
 #logo--island path {
-    @extend %logo--ilives__island;
+  @extend %logo--ilives__island;
 }
 #logo--lives path {
-    @extend %logo--ilives__lives;
+  @extend %logo--ilives__lives;
 }
 #logo--map path {
-    @extend %logo--ilives__map;
+  @extend %logo--ilives__map;
 }
