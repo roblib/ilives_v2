@@ -145,19 +145,32 @@ function NEWTHEME_preprocess_maintenance_page(){
 
 
 function ilives_form_alter(&$form, &$form_state, $form_id) {
-  //dsm($form);
+  dsm($form);
 
   //form id
-  $search_form_id = 'islandora_solr_simple_search_form';
+  $simple_search_form_id = 'islandora_solr_simple_search_form';
+  $advanced_search_form_id = 'islandora_solr_advanced_search_form';
   //
-  // Vars
-  $form_class = 'block--lp-search__form';
-  $input_field_class = 'block--lp-search__input';
-  $input_field_placeholder_text = 'Search IslandLives...';
-  $submit_button_class = 'block--lp-search__button';
-  $submit_button_text = 'search';
+  if ($form_id == $advanced_search_form_id) {
 
-  if ($form_id == $search_form_id) {
+    // Vars
+    $form_class = 'block--lp-search__form';
+    $input_field_class = 'block--lp-search__input';
+    $input_field_placeholder_text = 'Search IslandLives...';
+    $submit_button_class = 'block--lp-search__button';
+    $submit_button_text = 'search';
+$form['terms']['field']['#title'] = 'Field';
+    //button text
+  }
+  if ($form_id == $simple_search_form_id) {
+
+    // Vars
+    $form_class = 'block--lp-search__form';
+    $input_field_class = 'block--lp-search__input';
+    $input_field_placeholder_text = 'Search IslandLives...';
+    $submit_button_class = 'block--lp-search__button';
+    $submit_button_text = 'search';
+
     //button text
     $form['simple']['submit']['#value'] = decode_entities('&#xf002;');
     //button class
