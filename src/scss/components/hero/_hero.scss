@@ -3,8 +3,8 @@
 $hero-height: 60vh;
 $hero-height: 400px;
 $path: '/sites/islandlives.dev.islandarchives.ca/themes/ilives/dist';
-//$bg-url: '#{$path}/images/old-books-ladder.jpg';
-$bg-url: '#{$path}/images/pei-scenery--1900w.png';
+$bg-url: '#{$path}/images/old-books-ladder.jpg';
+//$bg-url: '#{$path}/images/pei-scenery--1900w.png';
 
 .hero-section {
     background: url($bg-url) 50% no-repeat;
