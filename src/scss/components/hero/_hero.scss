@@ -7,43 +7,43 @@ $bg-url: '#{$path}/images/old-books-ladder.jpg';
 //$bg-url: '#{$path}/images/pei-scenery--1900w.png';
 
 .hero-section {
-  background: url($bg-url) 50% no-repeat;
-  background-size: cover;
-  height: $hero-height;
-  flex-direction: column;
-  text-align: center;
-  display: flex;
+    background: url($bg-url) 50% no-repeat;
+    background-size: cover;
+    height: $hero-height;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
 
-  align-items: center;
-  justify-content: space-between;
-  padding-top: $global-padding * 2;
-  @include breakpoint(medium) {
-    justify-content: center;
-    padding-top: 0;
-  }
+    align-items: center;
+    justify-content: space-between;
+    padding-top: $global-padding * 2;
+    @include breakpoint(medium) {
+        justify-content: center;
+        padding-top: 0;
+    }
 
-  .hero-section-text {
-    color: $white;
-    text-shadow: 1px 1px 2px $black;
-  }
+    .hero-section-text {
+        color: $white;
+        text-shadow: 1px 1px 2px $black;
+    }
 }
 .hero {
-  &--wrapper {
-    width: 100%;
-    @include callout;
-    margin-top: $global-margin;
-  }
-  &__part-b {
-    /*style*/
-  }
+    &--wrapper {
+        width: 100%;
+        @include callout;
+        margin-top: $global-margin;
+    }
+    &__part-b {
+        /*style*/
+    }
 }
 
 //######################//
 // ~~There be Dragons~~ //
 //######################//
 .fugly-drupal-name-01 {
-  //@extend %hero__part-a;
+    //@extend %hero__part-a;
 }
 .fugly-drupal-name-02 {
-  //@extend %hero__part-b;
+    //@extend %hero__part-b;
 }
