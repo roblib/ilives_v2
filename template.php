@@ -145,7 +145,7 @@ function NEWTHEME_preprocess_maintenance_page(){
 
 
 function ilives_form_alter(&$form, &$form_state, $form_id) {
-  dsm($form);
+  //dsm($form);
 
   //form id
   $simple_search_form_id = 'islandora_solr_simple_search_form';
