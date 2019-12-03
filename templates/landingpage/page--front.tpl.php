@@ -44,9 +44,11 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
     <?php print render($page['content_pre']); ?>
 
     <?php print render($page['content']); ?>
-
-    <?php print render($page['content_post']); ?>
-
+<!--content_post-->
+    <section class="lp-feature-row">
+      <?php print render($page['content_post']); ?>
+    </section>
+<!--/content_post-->
   </div><!-- /main-->
 
 </div><!-- /page-->
@@ -54,7 +56,7 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 <footer class="footer" role="contentinfo">
 <div class="container">
 
-  <div class="footer-left footer-branding">
+<!--   <div class="footer-left footer-branding">
       <figure class="footer-logo">
     <a href="upei.ca">
         <img src="<?php print $theme_path; ?>/dist/images/UPEI_Logo_white.svg" alt=""></a>
@@ -66,9 +68,7 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 
       IslandLives is part of the <a href="islandarchives.ca">IslandArchives Collection</a>
 </div>
-  </div>
-  <div class="footer-right footer-region">
+  </div>-->
     <?php print render($page['footer']); ?>
-  </div>
 </div>
 </footer>

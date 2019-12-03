@@ -21,18 +21,20 @@ features[] = comment_user_verification
 ;regions_hidden[] = im_a_hidden_but_visibel_for_a_module
 
 ;-- Required Regions
-regions[page_top] = Page Top
-regions[content] = Content
-regions[page_bottom] = Page Bottom
+regions[page_top]       = Page Top
+regions[page_bottom]    = Page Bottom
 
 ;-- Core Regions
-regions[topnav] = Topnav
-regions[header] = Header
-regions[footer] = Footer
-regions[sidebar_first] = Sidebar First
+regions[topnav]         = Topnav
+regions[header]         = Header
+regions[content_pre]    = Content (pre)
+regions[content]        = Content
+regions[content_post]   = Content (post)
+regions[footer]         = Footer
+regions[sidebar_first]  = Sidebar First
 regions[sidebar_second] = Sidebar Second
-regions[help] = Help
-regions[highlighted] = Highlighted
+regions[help]           = Help
+regions[highlighted]    = Highlighted
 
 
 

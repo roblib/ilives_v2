@@ -3,7 +3,19 @@
   Preprocess
  */
 
+function ilives_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  if (!empty($breadcrumb)) {
+//kpr($breadcrumb);
 
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+    $output .= '<ul class="breadcrumbs"><li class="breadcrumb">' . implode('</li><li class="breadcrumb">', $breadcrumb) . '</ul>';
+    //$output .= '<div class="breadcrumb">' . $breadcrumb . '</div>';
+    return $output;
+  }
+}
 
 
 //kill of the <ul class="menu" around the menues
@@ -136,16 +148,29 @@ function ilives_form_alter(&$form, &$form_state, $form_id) {
   //dsm($form);
 
   //form id
-  $search_form_id = 'islandora_solr_simple_search_form';
+  $simple_search_form_id = 'islandora_solr_simple_search_form';
+  $advanced_search_form_id = 'islandora_solr_advanced_search_form';
   //
-  // Vars
-  $form_class = 'block--lp-search__form';
-  $input_field_class = 'block--lp-search__input';
-  $input_field_placeholder_text = 'Search IslandLives...';
-  $submit_button_class = 'block--lp-search__button';
-  $submit_button_text = 'search';
+  if ($form_id == $advanced_search_form_id) {
 
-  if ($form_id == $search_form_id) {
+    // Vars
+    $form_class = 'block--lp-search__form';
+    $input_field_class = 'block--lp-search__input';
+    $input_field_placeholder_text = 'Search IslandLives...';
+    $submit_button_class = 'block--lp-search__button';
+    $submit_button_text = 'search';
+$form['terms']['field']['#title'] = 'Field';
+    //button text
+  }
+  if ($form_id == $simple_search_form_id) {
+
+    // Vars
+    $form_class = 'block--lp-search__form';
+    $input_field_class = 'block--lp-search__input';
+    $input_field_placeholder_text = 'Search IslandLives...';
+    $submit_button_class = 'block--lp-search__button';
+    $submit_button_text = 'search';
+
     //button text
     $form['simple']['submit']['#value'] = decode_entities('&#xf002;');
     //button class
