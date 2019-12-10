@@ -1,48 +1,48 @@
 //@format
 
 .page-islandora-object h1 {
-    font-size: 2.4rem;
+  //font-size: 2.4rem;
 }
 
 .collection-object {
-    &__metadata {
-        th {
-            border-color: $tan;
-        }
-        h2 {
-            margin: 0;
-        }
-        @include breakpoint(small only) {
-            @include table-stack();
-        }
-        &__label {
-            @include breakpoint(medium) {
-                text-align: right;
-                width: 250px;
-            }
-            font-family: $sans;
-            text-transform: uppercase;
-            font-size: rem-calc(16);
-            &:after {
-                //content: ':';
-            }
-        }
-        &__value {
-            p {
-                margin: 0;
-            }
-        }
-        /*style*/
+  &__metadata {
+    th {
+      border-color: $tan;
     }
-    &__part-b {
-        /*style*/
+    h2 {
+      margin: 0;
     }
+    @include breakpoint(small only) {
+      @include table-stack();
+    }
+    &__label {
+      @include breakpoint(medium) {
+        text-align: right;
+        width: 250px;
+      }
+      font-family: $sans;
+      text-transform: uppercase;
+      font-size: rem-calc(16);
+      &:after {
+        //content: ':';
+      }
+    }
+    &__value {
+      p {
+        margin: 0;
+      }
+    }
+    /*style*/
+  }
+  &__part-b {
+    /*style*/
+  }
 }
 #book-viewer {
-    margin-top: $global-margin * 2;
-    margin-bottom: $global-margin * 2;
+  margin-top: $global-margin * 2;
+  margin-bottom: $global-margin * 2;
 }
 #book-viewer,
 .islandora-book-metadata > div {
-    margin-bottom: $global-margin * 2;
+  margin-bottom: $global-margin * 2;
 }
