@@ -1,3 +1,9 @@
+//@format
 nav#navbar-administration a {
-    font-size: 13px;
+  font-size: 13px;
+}
+.page-islandora {
+  nav {
+    display: initial;
+  }
 }

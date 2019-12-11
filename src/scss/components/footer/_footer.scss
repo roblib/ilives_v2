@@ -2,53 +2,56 @@
 
 //sticky footer
 .page {
-    min-height: calc(100vh - 234px);
+  min-height: calc(100vh - 234px);
 }
 .footer {
-    //height: 140px;
+  //height: 140px;
 }
 
 .footer,
 %footer {
-    @include callout();
-    background: $brown--dark;
+  @include callout();
+  background: $brown--dark;
+  color: $white;
+
+  padding-top: $global-padding * 4;
+  padding-bottom: $global-padding * 2;
+  font-family: $sans;
+  p {
+    font-size: 1rem;
+  }
+  .container {
+    @include xy-grid-container;
+    @include breakpoint(medium) {
+      @include xy-grid;
+      & > * {
+        @include xy-cell(auto);
+      }
+    }
+  }
+  &__part-a {
+    /*style*/
+  }
+  &__part-b {
+    /*style*/
+  }
+  .footer-logo {
+    width: rem-calc(200);
+  }
+  .footer-blurb {
     color: $white;
-    font-family: $sans;
-    p {
-        font-size: 1rem;
-    }
-    .container {
-        @include xy-grid-container;
-        @include breakpoint(medium) {
-            @include xy-grid;
-            & > * {
-                @include xy-cell(auto);
-            }
-        }
-    }
-    &__part-a {
-        /*style*/
-    }
-    &__part-b {
-        /*style*/
-    }
-    .footer-logo {
-        width: rem-calc(200);
-    }
-    .footer-blurb {
-        color: $white;
-    }
-    .title {
-        color: $white;
-    }
+  }
+  .title {
+    color: $white;
+  }
 }
 
 //######################//
 // ~~There be Dragons~~ //
 //######################//
 .fugly-drupal-name-01 {
-    @extend %footer__part-a;
+  @extend %footer__part-a;
 }
 .fugly-drupal-name-02 {
-    @extend %footer__part-b;
+  @extend %footer__part-b;
 }
