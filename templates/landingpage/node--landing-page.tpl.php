@@ -56,10 +56,28 @@ hide($content['field_hero_image']);
     </div>
 
     <div class="block--lp-search">
-      <?php print render($simpleSearch['content']); ?>
+      <?php //print render($simpleSearch['content']); ?>
+        <?php //print render($searchOptions['content']); ?>
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<form class="block--lp-search__form" action="/" method="post" id="islandora-solr-simple-search-form--2" accept-charset="UTF-8">
+   <div class="container-inline form-wrapper" id="edit-simple--2">
+      <div>
+         <label class="element-invisible" for="edit-islandora-simple-search-query--2">Search Term</label>
+         <input class="block--lp-search__input" placeholder="Search IslandLives..." type="text" id="edit-islandora-simple-search-query--2" name="islandora_simple_search_query" value="" size="30" maxlength="128">
+      </div>
+   </div>
+   <input type="hidden" name="form_build_id" value="form-gqIRQpET4W8VrV0TKCQzQmE_YObilzp9GsxM6lS2590">
+   <input type="hidden" name="form_token" value="UZxyQSAuS-ALo4QHT1Bz3lSp15yAhb7R19d096zyywM">
+   <input type="hidden" name="form_id" value="islandora_solr_simple_search_form">
+<ul class="menu menu--search-options">
+   <li class="first"><a href="/advanced-search">Advanced Search</a></li>
+   <li class="last">
+      <input class="block--lp-search__button" type="submit" id="edit-submit--2" name="op" value="Search">
+</li>
+</ul>
+</form>
 
-        <?php print render($searchOptions['content']); ?>
-
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
     </div>
 
   </div>
