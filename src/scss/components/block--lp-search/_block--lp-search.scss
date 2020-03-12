@@ -1,95 +1,94 @@
 //@format
 //$lp-search-width: rem-calc(350);
 input[type='text']:focus {
-    border: 0;
-    outline: 0;
-    border-top: 4px double $medium-gray;
-    border-bottom: 4px double $medium-gray;
-    box-shadow: none;
+  border: 0;
+  outline: 0;
+  border-top: 4px double $medium-gray;
+  border-bottom: 4px double $medium-gray;
+  box-shadow: none;
 }
 .block--lp-search,
 %block--lp-search {
-    //width: $lp-search-width;
-    //display: flex;
-    &__search-bar {
-        margin-bottom: 0;
-    }
-    &__form-wrapper {
-        @extend .input-group;
-        margin-bottom: 0;
-    }
-    &__button {
-        margin-bottom: 0;
-        //background-color: #e7e7e7;
-        border: 1px solid #ccc;
-        border-left: 0px;
-        border: 0;
-        color: #333;
-        background: $white;
-        display: none;
-    }
-    &__input {
-        /*style*/
-        margin-bottom: 0;
-        //did this to make it the same height as the flanking buttons
-        height: initial;
-        border-top: 4px double $medium-gray;
-        border-bottom: 4px double $medium-gray;
-        border-right: 0px;
-        border-left: 0px;
-        //border: 0;
-        font-family: $sans;
-        font-size: 1.1rem;
-        //border-radius: 0 6px 6px 0;
-        :focus {
-        }
-
-        ::placeholder {
-            color: $light-gray;
-            color: blue;
-        }
-    }
-    &__input__wrapper {
-        width: 100%;
-    }
-
-    &__menu__link {
-        @include button;
-        margin-bottom: 0;
-        width: 100%;
-        font-family: $sans;
-        //border-radius: 20px;
-    }
-    &__menu__icon {
-        margin-right: 4px;
-    }
-}
-.menu--search-options {
+  //width: $lp-search-width;
+  //display: flex;
+  &__search-bar {
+    margin-bottom: 0;
+  }
+  &__form-wrapper {
+    @extend .input-group;
+    margin-bottom: 0;
+  }
+  &__button {
+    @include button;
+    margin-bottom: 0;
     width: 100%;
-    //margin-top: 2px;
-    li {
-        flex: 1;
-        border-right: 1px solid lighten($green, 10%);
-        &:last-child {
-            border-right: 0px;
-        }
+    font-family: $sans;
+    //border-radius: 20px;
+  }
+  &__input {
+    /*style*/
+    margin-bottom: 0;
+    //did this to make it the same height as the flanking buttons
+    height: initial;
+    border-top: 4px double $medium-gray;
+    border-bottom: 4px double $medium-gray;
+    border-right: 0px;
+    border-left: 0px;
+    //border: 0;
+    font-family: $sans;
+    font-size: 1.1rem;
+    //border-radius: 0 6px 6px 0;
+    :focus {
     }
+
+    ::placeholder {
+      color: $light-gray;
+      color: blue;
+    }
+  }
+  &__input__wrapper {
+    width: 100%;
+  }
+
+  &__menu__link {
+    @include button;
+    margin-bottom: 0;
+    width: 100%;
+    font-family: $sans;
+    //border-radius: 20px;
+  }
+  &__menu__icon {
+    margin-right: 4px;
+  }
 }
+
+.menu--search-options {
+  width: 100%;
+  //margin-top: 2px;
+  li {
+    flex: 1;
+    border-right: 1px solid lighten($green, 10%);
+    &:last-child {
+      border-right: 0px;
+    }
+  }
+}
+
 //######################//
 // ~~There be Dragons~~ //
 //######################//
 .block--lp-search #edit-simple--2 {
-    @extend %block--lp-search__form-wrapper;
+  @extend %block--lp-search__form-wrapper;
 }
 .block--lp-search #edit-simple--2 > div {
-    @extend %block--lp-search__input__wrapper;
+  @extend %block--lp-search__input__wrapper;
 }
 
 .block--lp-search .menu--search-options {
-    //@extend %block--lp-search__menu;
-    a {
-        @extend %block--lp-search__menu__link;
-    }
+  //@extend %block--lp-search__menu;
+  a {
+    @extend %block--lp-search__menu__link;
+  }
 }
 //.fugly-drupal-name-02 {
 //@extend %block--lp-search__part-b;
