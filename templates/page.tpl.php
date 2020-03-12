@@ -8,11 +8,6 @@
 if(drupal_is_front_page()) {unset($page['content']['system_main']['default_message']);}
 $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 ?>
-<?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
-<!-- page.tpl.php-->
-<?php } ?>
-
-<?php print $mothership_poorthemers_helper; ?>
 <!--header-->
 <header role="banner" class="navbar--wrapper">
   <div class="navbar">
@@ -20,13 +15,15 @@ $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
       <ul class="menu navbar--branding">
         <li class="navbar--branding__logo">
           <figure>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+            <a href="https://upei.ca" title="<?php print t('Home'); ?>" rel="home">
               <img src="/<?php print $theme_path; ?>/dist/images/UPEI_Logo_white.svg" alt="<?php print t('Home'); ?>" />
             </a>
           </figure>
         </li>
         <li class="navbar--branding__title">
-          <h1><?php print $site_name; ?></h1>
+          <a href="/">
+            <h1><?php print $site_name; ?></h1>
+          </a>
         </li>
       </ul>
     </div>
