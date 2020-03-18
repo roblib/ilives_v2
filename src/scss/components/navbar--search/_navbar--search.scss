@@ -2,50 +2,56 @@
 $br: 0px;
 .navbar--search,
 %navbar--search {
-    &__dropdown-trigger {
-        /*style*/
-        margin-bottom: 0;
-        border-radius: $br;
-        //margin-bottom: 4px;
-    }
-    &__dropdown-pane {
-        margin-top: rem-calc(14);
-        /*style*/
-    }
+  &__dropdown-trigger {
+    /*style*/
+    margin-bottom: 0;
+    border-radius: $br;
+    //margin-bottom: 4px;
+  }
+  &__dropdown-pane {
+    margin-top: rem-calc(14);
+    /*style*/
+  }
 }
 #navbar--search {
-    .menu--search-options {
-        background-color: initial;
-        //@include button-group-expand(a);
-        li {
-            flex: 1;
-            margin-left: 4px;
-            &:first-child {
-                margin-left: 0;
-            }
-        }
-        a {
-            @include button;
-            font-family: $sans;
-            text-transform: capitalize;
-            width: 100%;
-            margin-bottom: 0;
-        }
+  .menu--search-options {
+    margin-top: 2px;
+    background-color: initial;
+    //@include button-group-expand(a);
+    li {
+      flex: 1;
+      margin-left: 4px;
+      &:first-child {
+        margin-left: 0;
+      }
     }
-    .block--lp-search__input {
-        border-radius: 0;
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 5px;
+    a {
+      @include button;
+      font-family: $sans;
+      text-transform: capitalize;
+      width: 100%;
+      margin-bottom: 0;
     }
+  }
+  .block--lp-search__input {
+    border-radius: 0;
+    //width: 100%;
+    //max-width: 100%;
+  }
+}
+div#edit-simple {
+  display: flex;
+}
+.block--lp-search__button {
+  margin-right: 0 !important;
 }
 
 //######################//
 // ~~There be Dragons~~ //
 //######################//
 .fugly-drupal-name-01 {
-    @extend %navbar--search__dropdown-trigger;
+  @extend %navbar--search__dropdown-trigger;
 }
 .fugly-drupal-name-02 {
-    //@extend %navbar--search__part-b;
+  //@extend %navbar--search__part-b;
 }

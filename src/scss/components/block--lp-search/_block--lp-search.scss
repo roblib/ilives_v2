@@ -9,19 +9,17 @@ input[type='text']:focus {
 }
 .block--lp-search,
 %block--lp-search {
-  //width: $lp-search-width;
-  //display: flex;
   &__search-bar {
     margin-bottom: 0;
   }
   &__form-wrapper {
     @extend .input-group;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
   &__button {
     @include button;
     margin-bottom: 0;
-    width: 100%;
+    //width: 100%;
     font-family: $sans;
     //border-radius: 20px;
   }
