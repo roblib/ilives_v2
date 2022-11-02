@@ -12,7 +12,7 @@
     "browser-sync": "^2.23.5",
     "bs-rewrite-rules": "^2.1.2",
     "fs": "0.0.1-security",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-concat-util": "^0.5.5",
